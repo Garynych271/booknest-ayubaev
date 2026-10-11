@@ -1,0 +1,850 @@
+[
+  {
+    "page": "index.html",
+    "url": "http://127.0.0.1:8080/index.html",
+    "measuredAt": "2026-10-11T13:20:59.216Z",
+    "title": "BookNest — каталог книг",
+    "h1Count": 1,
+    "links": [
+      {
+        "text": "BookNest",
+        "href": "index.html",
+        "absolute": "http://127.0.0.1:8080/index.html"
+      },
+      {
+        "text": "Каталог",
+        "href": "index.html",
+        "absolute": "http://127.0.0.1:8080/index.html"
+      },
+      {
+        "text": "Карточка книги",
+        "href": "book.html",
+        "absolute": "http://127.0.0.1:8080/book.html"
+      },
+      {
+        "text": "Форма выдачи",
+        "href": "loan.html",
+        "absolute": "http://127.0.0.1:8080/loan.html"
+      },
+      {
+        "text": "Solaris",
+        "href": "book.html",
+        "absolute": "http://127.0.0.1:8080/book.html"
+      },
+      {
+        "text": "Оформить выдачу",
+        "href": "loan.html",
+        "absolute": "http://127.0.0.1:8080/loan.html"
+      },
+      {
+        "text": "1984",
+        "href": "book.html",
+        "absolute": "http://127.0.0.1:8080/book.html"
+      },
+      {
+        "text": "Оформить выдачу",
+        "href": "loan.html",
+        "absolute": "http://127.0.0.1:8080/loan.html"
+      },
+      {
+        "text": "Clean Code",
+        "href": "book.html",
+        "absolute": "http://127.0.0.1:8080/book.html"
+      },
+      {
+        "text": "Оформить выдачу",
+        "href": "loan.html",
+        "absolute": "http://127.0.0.1:8080/loan.html"
+      },
+      {
+        "text": "Sapiens",
+        "href": "book.html",
+        "absolute": "http://127.0.0.1:8080/book.html"
+      },
+      {
+        "text": "Оформить выдачу",
+        "href": "loan.html",
+        "absolute": "http://127.0.0.1:8080/loan.html"
+      },
+      {
+        "text": "The Pragmatic Programmer",
+        "href": "book.html",
+        "absolute": "http://127.0.0.1:8080/book.html"
+      },
+      {
+        "text": "Оформить выдачу",
+        "href": "loan.html",
+        "absolute": "http://127.0.0.1:8080/loan.html"
+      },
+      {
+        "text": "Имя розы",
+        "href": "book.html",
+        "absolute": "http://127.0.0.1:8080/book.html"
+      },
+      {
+        "text": "Оформить выдачу",
+        "href": "loan.html",
+        "absolute": "http://127.0.0.1:8080/loan.html"
+      }
+    ],
+    "forms": [
+      {
+        "action": "index.html",
+        "method": "get",
+        "checkValidity": true,
+        "controls": [
+          {
+            "tag": "input",
+            "type": "search",
+            "name": "q",
+            "id": "search",
+            "required": false,
+            "hasLabel": true
+          },
+          {
+            "tag": "select",
+            "type": "select",
+            "name": "genre",
+            "id": "genre",
+            "required": false,
+            "hasLabel": true
+          },
+          {
+            "tag": "select",
+            "type": "select",
+            "name": "sort",
+            "id": "sort",
+            "required": false,
+            "hasLabel": true
+          },
+          {
+            "tag": "input",
+            "type": "checkbox",
+            "name": "available",
+            "id": "available",
+            "required": false,
+            "hasLabel": true
+          },
+          {
+            "tag": "button",
+            "type": "submit",
+            "name": null,
+            "id": "",
+            "required": false,
+            "hasLabel": false
+          }
+        ]
+      }
+    ],
+    "headings": [
+      {
+        "level": 1,
+        "text": "Каталог книг BookNest"
+      },
+      {
+        "level": 2,
+        "text": "Фильтры каталога"
+      },
+      {
+        "level": 2,
+        "text": "Найденные книги"
+      },
+      {
+        "level": 3,
+        "text": "Solaris"
+      },
+      {
+        "level": 3,
+        "text": "1984"
+      },
+      {
+        "level": 3,
+        "text": "Clean Code"
+      },
+      {
+        "level": 3,
+        "text": "Sapiens"
+      },
+      {
+        "level": 3,
+        "text": "The Pragmatic Programmer"
+      },
+      {
+        "level": 3,
+        "text": "Имя розы"
+      },
+      {
+        "level": 2,
+        "text": "Правило книжного клуба"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://covers.openlibrary.org/b/isbn/9780156027601-M.jpg",
+        "alt": "Обложка книги Solaris Станислава Лема",
+        "width": "180",
+        "height": "270"
+      },
+      {
+        "src": "https://covers.openlibrary.org/b/isbn/9780451524935-M.jpg",
+        "alt": "Обложка романа 1984 Джорджа Оруэлла",
+        "width": "180",
+        "height": "270"
+      },
+      {
+        "src": "https://covers.openlibrary.org/b/isbn/9780132350884-M.jpg",
+        "alt": "Обложка книги Clean Code Роберта Мартина",
+        "width": "180",
+        "height": "270"
+      },
+      {
+        "src": "https://covers.openlibrary.org/b/isbn/9780062316097-M.jpg",
+        "alt": "Обложка книги Sapiens Юваля Ноя Харари",
+        "width": "180",
+        "height": "270"
+      },
+      {
+        "src": "https://covers.openlibrary.org/b/isbn/9780201616224-M.jpg",
+        "alt": "Обложка книги The Pragmatic Programmer",
+        "width": "180",
+        "height": "270"
+      },
+      {
+        "src": "https://covers.openlibrary.org/b/isbn/9780156001311-M.jpg",
+        "alt": "Обложка романа Имя розы Умберто Эко",
+        "width": "180",
+        "height": "270"
+      }
+    ],
+    "focusOrder": [
+      {
+        "tag": "a",
+        "id": "",
+        "text": "BookNest",
+        "name": "",
+        "href": "index.html"
+      },
+      {
+        "tag": "a",
+        "id": "",
+        "text": "Каталог",
+        "name": "",
+        "href": "index.html"
+      },
+      {
+        "tag": "a",
+        "id": "",
+        "text": "Карточка книги",
+        "name": "",
+        "href": "book.html"
+      },
+      {
+        "tag": "a",
+        "id": "",
+        "text": "Форма выдачи",
+        "name": "",
+        "href": "loan.html"
+      },
+      {
+        "tag": "input",
+        "id": "search",
+        "text": "",
+        "name": "q",
+        "href": ""
+      },
+      {
+        "tag": "select",
+        "id": "genre",
+        "text": "Все жанры\n              Научная фантастика\n              Роман\n              Нон",
+        "name": "genre",
+        "href": ""
+      },
+      {
+        "tag": "select",
+        "id": "sort",
+        "text": "По названию\n              Сначала новые\n              По рейтингу",
+        "name": "sort",
+        "href": ""
+      },
+      {
+        "tag": "input",
+        "id": "available",
+        "text": "",
+        "name": "available",
+        "href": ""
+      },
+      {
+        "tag": "button",
+        "id": "",
+        "text": "Применить фильтры",
+        "name": "",
+        "href": ""
+      },
+      {
+        "tag": "a",
+        "id": "",
+        "text": "Solaris",
+        "name": "",
+        "href": "book.html"
+      },
+      {
+        "tag": "a",
+        "id": "",
+        "text": "Оформить выдачу",
+        "name": "",
+        "href": "loan.html"
+      },
+      {
+        "tag": "a",
+        "id": "",
+        "text": "1984",
+        "name": "",
+        "href": "book.html"
+      }
+    ],
+    "screenshot": "index.png"
+  },
+  {
+    "page": "book.html",
+    "url": "http://127.0.0.1:8080/book.html",
+    "measuredAt": "2026-10-11T13:21:10.036Z",
+    "title": "BookNest — Solaris",
+    "h1Count": 1,
+    "links": [
+      {
+        "text": "BookNest",
+        "href": "index.html",
+        "absolute": "http://127.0.0.1:8080/index.html"
+      },
+      {
+        "text": "Каталог",
+        "href": "index.html",
+        "absolute": "http://127.0.0.1:8080/index.html"
+      },
+      {
+        "text": "Карточка книги",
+        "href": "book.html",
+        "absolute": "http://127.0.0.1:8080/book.html"
+      },
+      {
+        "text": "Форма выдачи",
+        "href": "loan.html",
+        "absolute": "http://127.0.0.1:8080/loan.html"
+      },
+      {
+        "text": "Каталог",
+        "href": "index.html",
+        "absolute": "http://127.0.0.1:8080/index.html"
+      },
+      {
+        "text": "Пикник на обочине",
+        "href": "book.html",
+        "absolute": "http://127.0.0.1:8080/book.html"
+      },
+      {
+        "text": "Марсианские хроники",
+        "href": "book.html",
+        "absolute": "http://127.0.0.1:8080/book.html"
+      },
+      {
+        "text": "Левая рука Тьмы",
+        "href": "book.html",
+        "absolute": "http://127.0.0.1:8080/book.html"
+      },
+      {
+        "text": "Гиперион",
+        "href": "book.html",
+        "absolute": "http://127.0.0.1:8080/book.html"
+      },
+      {
+        "text": "Оформить выдачу Solaris",
+        "href": "loan.html",
+        "absolute": "http://127.0.0.1:8080/loan.html"
+      }
+    ],
+    "forms": [
+      {
+        "action": "book.html",
+        "method": "post",
+        "checkValidity": false,
+        "controls": [
+          {
+            "tag": "fieldset",
+            "type": "fieldset",
+            "name": null,
+            "id": "",
+            "required": false,
+            "hasLabel": false
+          },
+          {
+            "tag": "input",
+            "type": "radio",
+            "name": "rating",
+            "id": "rating-5",
+            "required": true,
+            "hasLabel": true
+          },
+          {
+            "tag": "input",
+            "type": "radio",
+            "name": "rating",
+            "id": "rating-4",
+            "required": false,
+            "hasLabel": true
+          },
+          {
+            "tag": "input",
+            "type": "radio",
+            "name": "rating",
+            "id": "rating-3",
+            "required": false,
+            "hasLabel": true
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "reviewerName",
+            "id": "reviewer-name",
+            "required": true,
+            "hasLabel": true
+          },
+          {
+            "tag": "textarea",
+            "type": "textarea",
+            "name": "reviewText",
+            "id": "review-text",
+            "required": true,
+            "hasLabel": true
+          },
+          {
+            "tag": "button",
+            "type": "submit",
+            "name": null,
+            "id": "",
+            "required": false,
+            "hasLabel": false
+          }
+        ]
+      }
+    ],
+    "headings": [
+      {
+        "level": 1,
+        "text": "Solaris"
+      },
+      {
+        "level": 2,
+        "text": "Характеристики"
+      },
+      {
+        "level": 2,
+        "text": "Описание"
+      },
+      {
+        "level": 2,
+        "text": "Отзывы читателей"
+      },
+      {
+        "level": 3,
+        "text": "Тихая и тревожная фантастика"
+      },
+      {
+        "level": 3,
+        "text": "Хорошая книга для обсуждения"
+      },
+      {
+        "level": 2,
+        "text": "Оставить отзыв"
+      },
+      {
+        "level": 2,
+        "text": "Похожие книги"
+      },
+      {
+        "level": 3,
+        "text": "Пикник на обочине"
+      },
+      {
+        "level": 3,
+        "text": "Марсианские хроники"
+      },
+      {
+        "level": 3,
+        "text": "Левая рука Тьмы"
+      },
+      {
+        "level": 3,
+        "text": "Гиперион"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://covers.openlibrary.org/b/isbn/9780156027601-L.jpg",
+        "alt": "Обложка книги Solaris Станислава Лема",
+        "width": "360",
+        "height": "540"
+      }
+    ],
+    "focusOrder": [
+      {
+        "tag": "a",
+        "id": "",
+        "text": "BookNest",
+        "name": "",
+        "href": "index.html"
+      },
+      {
+        "tag": "a",
+        "id": "",
+        "text": "Каталог",
+        "name": "",
+        "href": "index.html"
+      },
+      {
+        "tag": "a",
+        "id": "",
+        "text": "Карточка книги",
+        "name": "",
+        "href": "book.html"
+      },
+      {
+        "tag": "a",
+        "id": "",
+        "text": "Форма выдачи",
+        "name": "",
+        "href": "loan.html"
+      },
+      {
+        "tag": "a",
+        "id": "",
+        "text": "Каталог",
+        "name": "",
+        "href": "index.html"
+      },
+      {
+        "tag": "input",
+        "id": "rating-5",
+        "text": "",
+        "name": "rating",
+        "href": ""
+      },
+      {
+        "tag": "input",
+        "id": "reviewer-name",
+        "text": "",
+        "name": "reviewerName",
+        "href": ""
+      },
+      {
+        "tag": "textarea",
+        "id": "review-text",
+        "text": "",
+        "name": "reviewText",
+        "href": ""
+      },
+      {
+        "tag": "button",
+        "id": "",
+        "text": "Отправить отзыв",
+        "name": "",
+        "href": ""
+      },
+      {
+        "tag": "a",
+        "id": "",
+        "text": "Пикник на обочине",
+        "name": "",
+        "href": "book.html"
+      },
+      {
+        "tag": "a",
+        "id": "",
+        "text": "Марсианские хроники",
+        "name": "",
+        "href": "book.html"
+      },
+      {
+        "tag": "a",
+        "id": "",
+        "text": "Левая рука Тьмы",
+        "name": "",
+        "href": "book.html"
+      }
+    ],
+    "screenshot": "book.png"
+  },
+  {
+    "page": "loan.html",
+    "url": "http://127.0.0.1:8080/loan.html",
+    "measuredAt": "2026-10-11T13:21:20.833Z",
+    "title": "BookNest — форма выдачи книги",
+    "h1Count": 1,
+    "links": [
+      {
+        "text": "BookNest",
+        "href": "index.html",
+        "absolute": "http://127.0.0.1:8080/index.html"
+      },
+      {
+        "text": "Каталог",
+        "href": "index.html",
+        "absolute": "http://127.0.0.1:8080/index.html"
+      },
+      {
+        "text": "Карточка книги",
+        "href": "book.html",
+        "absolute": "http://127.0.0.1:8080/book.html"
+      },
+      {
+        "text": "Форма выдачи",
+        "href": "loan.html",
+        "absolute": "http://127.0.0.1:8080/loan.html"
+      },
+      {
+        "text": "Каталог",
+        "href": "index.html",
+        "absolute": "http://127.0.0.1:8080/index.html"
+      },
+      {
+        "text": "Solaris",
+        "href": "book.html",
+        "absolute": "http://127.0.0.1:8080/book.html"
+      },
+      {
+        "text": "Вернуться в каталог",
+        "href": "index.html",
+        "absolute": "http://127.0.0.1:8080/index.html"
+      }
+    ],
+    "forms": [
+      {
+        "action": "loan.html",
+        "method": "post",
+        "checkValidity": false,
+        "controls": [
+          {
+            "tag": "fieldset",
+            "type": "fieldset",
+            "name": null,
+            "id": "",
+            "required": false,
+            "hasLabel": false
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "readerName",
+            "id": "reader-name",
+            "required": true,
+            "hasLabel": true
+          },
+          {
+            "tag": "input",
+            "type": "email",
+            "name": "readerEmail",
+            "id": "reader-email",
+            "required": true,
+            "hasLabel": true
+          },
+          {
+            "tag": "input",
+            "type": "text",
+            "name": "readerCard",
+            "id": "reader-card",
+            "required": true,
+            "hasLabel": true
+          },
+          {
+            "tag": "fieldset",
+            "type": "fieldset",
+            "name": null,
+            "id": "",
+            "required": false,
+            "hasLabel": false
+          },
+          {
+            "tag": "select",
+            "type": "select",
+            "name": "bookCopy",
+            "id": "book-copy",
+            "required": true,
+            "hasLabel": true
+          },
+          {
+            "tag": "input",
+            "type": "date",
+            "name": "loanDate",
+            "id": "loan-date",
+            "required": true,
+            "hasLabel": true
+          },
+          {
+            "tag": "input",
+            "type": "number",
+            "name": "loanDays",
+            "id": "loan-days",
+            "required": true,
+            "hasLabel": true
+          },
+          {
+            "tag": "textarea",
+            "type": "textarea",
+            "name": "loanComment",
+            "id": "loan-comment",
+            "required": false,
+            "hasLabel": true
+          },
+          {
+            "tag": "fieldset",
+            "type": "fieldset",
+            "name": null,
+            "id": "",
+            "required": false,
+            "hasLabel": false
+          },
+          {
+            "tag": "input",
+            "type": "checkbox",
+            "name": "rulesAccepted",
+            "id": "rules-accepted",
+            "required": true,
+            "hasLabel": true
+          },
+          {
+            "tag": "button",
+            "type": "submit",
+            "name": null,
+            "id": "",
+            "required": false,
+            "hasLabel": false
+          },
+          {
+            "tag": "button",
+            "type": "reset",
+            "name": null,
+            "id": "",
+            "required": false,
+            "hasLabel": false
+          }
+        ]
+      }
+    ],
+    "headings": [
+      {
+        "level": 1,
+        "text": "Форма выдачи книги"
+      },
+      {
+        "level": 2,
+        "text": "Выбранная книга"
+      },
+      {
+        "level": 3,
+        "text": "Solaris"
+      },
+      {
+        "level": 2,
+        "text": "Данные выдачи"
+      },
+      {
+        "level": 2,
+        "text": "Памятка библиотекаря"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://covers.openlibrary.org/b/isbn/9780156027601-M.jpg",
+        "alt": "Обложка книги Solaris Станислава Лема",
+        "width": "180",
+        "height": "270"
+      }
+    ],
+    "focusOrder": [
+      {
+        "tag": "a",
+        "id": "",
+        "text": "BookNest",
+        "name": "",
+        "href": "index.html"
+      },
+      {
+        "tag": "a",
+        "id": "",
+        "text": "Каталог",
+        "name": "",
+        "href": "index.html"
+      },
+      {
+        "tag": "a",
+        "id": "",
+        "text": "Карточка книги",
+        "name": "",
+        "href": "book.html"
+      },
+      {
+        "tag": "a",
+        "id": "",
+        "text": "Форма выдачи",
+        "name": "",
+        "href": "loan.html"
+      },
+      {
+        "tag": "a",
+        "id": "",
+        "text": "Каталог",
+        "name": "",
+        "href": "index.html"
+      },
+      {
+        "tag": "a",
+        "id": "",
+        "text": "Solaris",
+        "name": "",
+        "href": "book.html"
+      },
+      {
+        "tag": "input",
+        "id": "reader-name",
+        "text": "",
+        "name": "readerName",
+        "href": ""
+      },
+      {
+        "tag": "input",
+        "id": "reader-email",
+        "text": "",
+        "name": "readerEmail",
+        "href": ""
+      },
+      {
+        "tag": "input",
+        "id": "reader-card",
+        "text": "",
+        "name": "readerCard",
+        "href": ""
+      },
+      {
+        "tag": "select",
+        "id": "book-copy",
+        "text": "Выберите экземпляр\n                BN-SF-042 — читальный зал\n                BN-",
+        "name": "bookCopy",
+        "href": ""
+      },
+      {
+        "tag": "input",
+        "id": "loan-date",
+        "text": "",
+        "name": "loanDate",
+        "href": ""
+      },
+      {
+        "tag": "input",
+        "id": "loan-date",
+        "text": "",
+        "name": "loanDate",
+        "href": ""
+      }
+    ],
+    "screenshot": "loan.png"
+  }
+]
