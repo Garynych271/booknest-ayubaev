@@ -319,6 +319,8 @@ Implementation tasks:
 
 ### Лабораторная 2. W3 CSS adaptive layout and tokens, 6 баллов
 
+Обновление 17.10.2026: реализация и реальные аудиты находятся в `lab-2/styles`, созданной от `lab-1/markup` (`c56b695`). Результаты, ограничения сети и незакрытые пункты описаны в [docs/lab2/README.md](lab2/README.md). Исходные ограничения «этого сеанса» в начале плана относятся к первому сеансу ЛР1. Приёмка и объединение PR ЛР1 остаются внешней зависимостью; `main` не изменялся.
+
 Обязательно:
 
 - Style the three Lab 1 pages mobile-first without changing HTML structure except adding classes.

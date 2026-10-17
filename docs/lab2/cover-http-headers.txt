@@ -1,0 +1,13 @@
+HTTP/1.1 302 Found
+Server: nginx/1.30.6
+Date: Sat, 17 Oct 2026 02:38:35 GMT
+Content-Length: 0
+Connection: keep-alive
+cache-control: public
+expires: Sat, 17 Oct 2026 02:48:35 GMT
+location: https://archive.org/download/m_covers_0008/m_covers_0008_26.zip/0008260624-M.jpg
+access-control-allow-origin: *
+access-control-allow-methods: GET, HEAD, OPTIONS
+access-control-max-age: 86400
+vary: Origin
+
