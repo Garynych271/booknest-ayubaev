@@ -458,6 +458,8 @@ Artifacts/files:
 
 ### Лабораторная 6. W7-W8 Router, hooks, forms, 9 баллов
 
+Статус части A на 17.10.2026: завершена в `lab-6a/hooks` от `lab-5/react` (`282b962`). Реализованы типизированные hooks, cleanup/abort и Context только для темы/пользователя; результаты: [lab6a/README.md](lab6a/README.md), архитектура: [lab6a/architecture.md](lab6a/architecture.md), описание PR: [lab6a-pr.md](lab6a-pr.md). Часть B и ЛР7 не начинались; публикация требует подтверждения пользователя.
+
 Обязательно:
 
 - Part A W7: own hooks and API layer, Context for theme/current user.
