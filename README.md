@@ -1,6 +1,6 @@
 # BookNest
 
-Накопительный учебный проект курса «Современные веб-технологии». Текущий этап — часть A ЛР6: типизированные React-хуки, изолированный слой данных и Context для темы и локального пользователя.
+Накопительный учебный проект курса «Современные веб-технологии». Текущий этап — часть B ЛР6: React Router, URL-состояние каталога и единая create/edit форма на React Hook Form и Zod.
 
 ## Запуск
 
@@ -18,22 +18,24 @@ Vite выведет локальный URL. Для production-проверки: 
 - Пагинация Open Library по 20 записей, счётчик результатов и блокировка кнопок на границах.
 - Взаимоисключающие состояния loading, success, empty и error; Retry и отдельные сообщения network, 4xx, 5xx и timeout.
 - Отмена устаревших запросов через `AbortController` и cleanup общего `useFetch<T>`; отдельная загрузка страницы книги и обработка 404.
-- Wishlist и параметры каталога в `localStorage`, включая миграцию данных ЛР3/ЛР4.
-- Каталог, детали и учебная форма выдачи доступны обычными URL-параметрами без React Router.
+- Wishlist и локальные учебные записи в `localStorage`, включая миграцию данных ЛР3/ЛР4.
+- Маршруты каталога, деталей, create/edit формы, wishlist, login и 404; поиск, фильтры, сортировка и страница хранятся в query string.
+- Единая форма из восьми полей с клиентской и межполевой Zod-валидацией, prefill и отображением mock-ошибок 422/409/500.
+- Защищённый `/wishlist` с локальной заглушкой входа и возвратом на исходный URL.
 - Адаптивность 375 / 768 / 1440 px, сохраняемый переключатель светлой/тёмной темы, клавиатурная навигация.
 
 ## Архитектура
 
-- `booknest-web/src/App.tsx` владеет фильтрами, страницей и wishlist.
-- `booknest-web/src/components/` содержит 16 компонентов; вместе с `App` — 17, из них 12 презентационных.
+- `booknest-web/src/app/` содержит дерево nested routes, общий layout и `RequireAuth`; `App` владеет wishlist.
+- `booknest-web/src/pages/` содержит тонкие компоненты маршрутов, `features/` — каталог, детали, wishlist и форму.
 - `booknest-web/src/api/` изолирует `fetch`, нормализацию ответов и типизированные ошибки.
-- `booknest-web/src/hooks/` содержит `useFetch<T>`, `useBooks`, `useBook` и `useDebounce<T>`; компоненты не знают про HTTP и AbortController.
-- `booknest-web/src/contexts/` содержит только `ThemeContext` и `AuthContext` с локальной заглушкой читателя.
-- `booknest-web/src/lib/` содержит работу с preferences, URL и проверку неизвестных данных.
+- `booknest-web/src/shared/hooks/` содержит `useFetch<T>` и `useDebounce<T>`; `features/books/useBooks.ts` связывает hooks с API.
+- `booknest-web/src/shared/contexts/` содержит только `ThemeContext` и `AuthContext` с локальной заглушкой читателя.
+- `booknest-web/src/shared/` содержит UI, preferences, URL helpers и Zod-схему формы.
 - `booknest-web/src/types.ts` содержит предметные интерфейсы и union-типы.
 - `booknest-web/src/styles/` сохраняет дизайн-токены, Grid/Flexbox и темы ЛР2–4.
 
-React Router, Zod, `react-hook-form`, маршруты login/wishlist и защищённые страницы не добавлены: это часть B ЛР6.
+Подробные границы слоёв и маршруты: [docs/lab6b/architecture.md](docs/lab6b/architecture.md).
 
 ## Проверки
 
@@ -45,12 +47,13 @@ npm test
 npm run build
 ```
 
-Все четыре команды завершаются с кодом 0. Реальные браузерные проверки Edge, отчёты Lighthouse, скриншоты и ограничения описаны в [docs/lab6a/README.md](docs/lab6a/README.md). Архитектурная граница хуков и Context зафиксирована в [docs/lab6a/architecture.md](docs/lab6a/architecture.md).
+Все четыре команды завершаются с кодом 0. Реальные браузерные проверки Edge, отчёты Lighthouse, скриншоты и ограничения описаны в [docs/lab6b/README.md](docs/lab6b/README.md).
 
 ## Ограничения
 
 - Каталог и обложки зависят от доступности Open Library; аварийные ответы 429/503 и некорректный JSON воспроизводятся контролируемыми моками и явно помечены в отчёте.
 - Доступность означает `ebook_access:public`, а не наличие физического экземпляра BookNest.
-- Форма выдачи остаётся учебной и не отправляет данные на сервер.
+- CRUD-адаптер формы учебный и локальный: backend отсутствует, записи сохраняются только для текущего origin.
+- Форма выдачи `/loan` сохранена для совместимости и по-прежнему не отправляет данные на backend.
 - Локальный AuthContext не выполняет реальную авторизацию; она относится к ЛР9.
-- ЛР1–5 опубликованы отдельными PR. Ветка `lab-6a/hooks` основана на `lab-5/react` (`282b962`); push и создание PR для ЛР6A не выполнялись.
+- ЛР1–5 опубликованы отдельными PR. Ветка `lab-6b/router-forms` основана на `lab-6a/hooks` (`63053b8`); push и создание PR для ЛР6B не выполнялись.
