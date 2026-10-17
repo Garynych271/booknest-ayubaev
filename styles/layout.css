@@ -27,6 +27,9 @@
   align-content: start;
 }
 .catalog > h2, .catalog > p { grid-column: 1 / -1; }
+.catalog > [data-state] { grid-column: 1 / -1; }
+.pagination { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-4); margin-block-start: var(--space-5); }
+.wishlist__list a { flex: 1 1 var(--sidebar-size); overflow-wrap: anywhere; }
 .book-card {
   display: grid;
   grid-template-rows: auto auto auto 1fr auto;

@@ -64,7 +64,7 @@
 
           <p>
             <input type="checkbox" id="available" name="available" value="yes">
-            <label for="available">Только доступные</label>
+            <label for="available">Только открытый электронный доступ</label>
           </p>
 
           <button type="reset">Сбросить фильтры</button>
@@ -72,10 +72,22 @@
       </section>
 
       <section class="catalog" aria-labelledby="catalog-title">
-        <h2 id="catalog-title">Найденные книги</h2>
+        <h2 id="catalog-title" tabindex="-1">Найденные книги</h2>
         <p data-result-count role="status" aria-live="polite" aria-atomic="true"></p>
-        <p data-empty hidden>Книги не найдены. Измените запрос или сбросьте фильтры.</p>
-        <div class="book-grid" data-book-list></div>
+        <p data-state="loading" role="status" hidden>Загружаем книги…</p>
+        <p data-state="empty" data-empty role="status">Введите не менее двух символов названия или имени автора.</p>
+        <div data-state="error" hidden>
+          <p data-error-message role="alert"></p>
+          <button type="button" data-action="retry">Повторить</button>
+        </div>
+        <div data-state="success" hidden>
+          <div class="book-grid" data-book-list></div>
+          <nav class="pagination" aria-label="Страницы каталога">
+            <button type="button" data-action="previous" disabled>Назад</button>
+            <span data-page></span>
+            <button type="button" data-action="next" disabled>Вперёд</button>
+          </nav>
+        </div>
         <noscript><p>Для поиска и списка желаемого требуется JavaScript.</p></noscript>
       </section>
 
@@ -96,11 +108,11 @@
             <dt>Год</dt><dd data-year></dd>
             <dt>Жанр</dt><dd data-genre></dd>
             <dt>Доступность</dt><dd data-availability></dd>
-            <dt>Рейтинг клуба</dt><dd data-rating></dd>
+            <dt>Рейтинг Open Library</dt><dd data-rating></dd>
           </dl>
           <footer class="book-card__actions">
             <button type="button" data-action="toggle" aria-pressed="false">Хочу прочитать</button>
-            <a href="book.html" data-detail-link hidden>Подробнее о Solaris</a>
+            <a href="book.html" data-detail-link>Подробнее</a>
           </footer>
         </article>
       </template>
