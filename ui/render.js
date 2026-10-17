@@ -31,7 +31,7 @@ export function render(state, books, view) {
     const saved = state.wishlist.includes(book.id);
     button.setAttribute('aria-pressed', String(saved));
     button.textContent = saved ? 'В моём списке' : 'Хочу прочитать';
-    button.setAttribute('aria-label', `${saved ? 'Убрать из списка' : 'Хочу прочитать'}: ${book.title}`);
+    button.setAttribute('aria-label', `${button.textContent}: ${book.title}`);
     card.querySelector('[data-detail-link]').hidden = book.id !== 'b01';
     return card;
   }));
