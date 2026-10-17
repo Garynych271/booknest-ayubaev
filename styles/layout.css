@@ -71,7 +71,7 @@ form p:has(input[type="checkbox"], input[type="radio"]) {
   .main--catalog > h1, .club-note { grid-column: 1 / -1; }
   .book-detail { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); }
   .book-detail > h1, .book-detail__reviews, .book-detail__form { grid-column: 1 / -1; }
-  .book-detail__cover { grid-column: 1; grid-row: 2 / 4; }
+  .book-detail__cover { grid-column: 1; grid-row: 1 / 3; }
   .book-detail__specs, .book-detail__description { grid-column: 2; }
   .main--loan { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); }
   .main--loan > .breadcrumbs, .main--loan > h1 { grid-column: 1 / -1; }

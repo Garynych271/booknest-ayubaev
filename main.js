@@ -83,4 +83,5 @@ view.main.addEventListener('click', event => {
   update();
 });
 window.addEventListener('pagehide', () => { clearTimeout(timer); loader.cancel(); });
+window.addEventListener('pageshow', event => { if (event.persisted) search(); });
 search();

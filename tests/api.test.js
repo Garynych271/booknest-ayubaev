@@ -53,6 +53,7 @@ test('search: minimum length skips network, normalization and invalid data', asy
   assert.equal(result.books[0].available, true);
   assert.equal(result.books[0].rating, null);
   assert.equal(normalizeBook({ key: '../../bad' }), null);
+  assert.equal(normalizeBook({ key: '/works/OL19413970M' }), null);
   globalThis.fetch = async () => new Response('{}');
   await assert.rejects(searchBooks({ query: 'aa' }, 1), error => error.kind === 'data');
 });

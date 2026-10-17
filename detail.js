@@ -50,4 +50,5 @@ main.addEventListener('click', event => {
   }
 });
 window.addEventListener('pagehide', loader.cancel);
+window.addEventListener('pageshow', event => { if (event.persisted) load(); });
 load();
