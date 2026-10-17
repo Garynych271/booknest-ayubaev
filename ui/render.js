@@ -1,11 +1,16 @@
 import { PAGE_SIZE, MIN_QUERY, isWorkId } from '../api/books.js';
 
 export function coverImage(image, book) {
-  image.hidden = !book.cover;
   image.alt = 'Обложка: ' + book.title;
-  if (book.cover) image.src = 'https://covers.openlibrary.org/b/id/' + book.cover + '-M.jpg?default=false';
+  image.loading = 'eager';
+  const url = book.cover ? 'https://covers.openlibrary.org/b/id/' + book.cover + '-M.jpg?default=false' : '';
+  image.hidden = !url || image.src !== url || !image.complete || image.naturalWidth <= 1;
+  if (url && image.src !== url) image.src = url;
 }
 export function bindCoverFallback(root) {
+  root.addEventListener('load', event => {
+    if (event.target instanceof HTMLImageElement && event.target.hasAttribute('data-cover')) event.target.hidden = event.target.naturalWidth <= 1;
+  }, true);
   root.addEventListener('error', event => {
     if (event.target instanceof HTMLImageElement) event.target.hidden = true;
   }, true);
