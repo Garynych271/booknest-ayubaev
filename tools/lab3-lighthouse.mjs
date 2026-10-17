@@ -23,7 +23,7 @@ try {
     const observed = await page.evaluate(() => ({ scheme: getComputedStyle(document.documentElement).colorScheme, cards: document.querySelectorAll('[data-book-id]').length, wishlist: document.querySelector('[data-wishlist-count]').textContent }));
     if (observed.scheme !== theme || observed.cards !== 40 || observed.wishlist !== '1' || run.lhr.runtimeError) throw new Error(`Unexpected audit state: ${JSON.stringify(observed)}`);
     await writeFile(`docs/lab3/lighthouse/catalog-${theme}.json`, run.report[0]);
-    await writeFile(`docs/lab3/lighthouse/catalog-${theme}.html`, run.report[1]);
+    await writeFile(`docs/lab3/lighthouse/catalog-${theme}.html`, run.report[1].replace(/[ \t]+$/gm, ''));
     results.push({ theme, observed, measuredAt: run.lhr.fetchTime, performance: run.lhr.categories.performance.score * 100, accessibility: run.lhr.categories.accessibility.score * 100, warnings: run.lhr.runWarnings,
       accessibilityFailures: run.lhr.categories.accessibility.auditRefs.filter(ref => run.lhr.audits[ref.id].score === 0).map(ref => ref.id) });
     console.log(JSON.stringify(results.at(-1)));
