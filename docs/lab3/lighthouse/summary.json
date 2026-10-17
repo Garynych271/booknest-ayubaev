@@ -1,0 +1,28 @@
+[
+  {
+    "theme": "light",
+    "observed": {
+      "scheme": "light",
+      "cards": 40,
+      "wishlist": "1"
+    },
+    "measuredAt": "2026-10-17T04:15:38.027Z",
+    "performance": 100,
+    "accessibility": 100,
+    "warnings": [],
+    "accessibilityFailures": []
+  },
+  {
+    "theme": "dark",
+    "observed": {
+      "scheme": "dark",
+      "cards": 40,
+      "wishlist": "1"
+    },
+    "measuredAt": "2026-10-17T04:15:46.898Z",
+    "performance": 100,
+    "accessibility": 100,
+    "warnings": [],
+    "accessibilityFailures": []
+  }
+]

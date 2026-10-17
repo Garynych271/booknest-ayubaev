@@ -1,0 +1,55 @@
+TAP version 13
+# Subtest: dataset has 40 unique books in five genres, eight per genre
+ok 1 - dataset has 40 unique books in five genres, eight per genre
+  ---
+  duration_ms: 1.012
+  ...
+# Subtest: search ignores case, trims whitespace and matches title or author
+ok 2 - search ignores case, trims whitespace and matches title or author
+  ---
+  duration_ms: 10.2821
+  ...
+# Subtest: combined filters intersect and sorting does not mutate frozen inputs
+ok 3 - combined filters intersect and sorting does not mutate frozen inputs
+  ---
+  duration_ms: 0.7336
+  ...
+# Subtest: sort ties are deterministic
+ok 4 - sort ties are deterministic
+  ---
+  duration_ms: 0.4863
+  ...
+# Subtest: saved filters and wishlist reject bad types, unknown IDs and duplicates
+ok 5 - saved filters and wishlist reject bad types, unknown IDs and duplicates
+  ---
+  duration_ms: 0.398
+  ...
+# Subtest: wishlist toggles without mutating the input
+ok 6 - wishlist toggles without mutating the input
+  ---
+  duration_ms: 0.1414
+  ...
+# Subtest: round trip restores all filters and wishlist using one versioned key
+ok 7 - round trip restores all filters and wishlist using one versioned key
+  ---
+  duration_ms: 1.455
+  ...
+# Subtest: invalid JSON and invalid schemas safely recover default filters
+ok 8 - invalid JSON and invalid schemas safely recover default filters
+  ---
+  duration_ms: 0.4477
+  ...
+# Subtest: blocked storage getter, failed reads and quota failures never escape
+ok 9 - blocked storage getter, failed reads and quota failures never escape
+  ---
+  duration_ms: 0.2348
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 120.8864
