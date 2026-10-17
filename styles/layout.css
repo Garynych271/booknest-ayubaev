@@ -33,6 +33,19 @@
   gap: var(--space-4);
 }
 .book-card > p:last-child { align-self: end; }
+.book-grid {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--card-min)), 1fr));
+  gap: var(--space-5);
+}
+.book-card--interactive { grid-template-rows: auto auto 1fr auto; }
+.book-card__actions, .wishlist { display: grid; gap: var(--space-4); }
+.wishlist { grid-column: 1 / -1; }
+.wishlist__list { display: grid; gap: var(--space-3); padding: var(--space-0); list-style: none; }
+.wishlist__list li { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--space-4); }
+.wishlist__list span { flex: 1 1 var(--sidebar-size); min-inline-size: 0; overflow-wrap: anywhere; }
+.storage-notice { grid-column: 1 / -1; }
 .filters, .club-note, .loan-rules, .loan-summary, .loan-form, .related,
 .book-detail, .book-detail section, .loan-summary article, figure, form, fieldset {
   display: grid;
