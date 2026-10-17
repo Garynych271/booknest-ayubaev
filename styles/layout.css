@@ -1,0 +1,50 @@
+.page {
+  min-block-size: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+.site-header, .main, .site-footer {
+  inline-size: 100%;
+  max-inline-size: var(--content-max);
+  justify-self: center;
+  padding-inline: var(--page-gutter);
+}
+.site-header, .site-nav ul, .breadcrumbs ol {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+.site-header { justify-content: space-between; padding-block: var(--space-5); }
+.site-nav ul, .breadcrumbs ol { list-style: none; padding: var(--space-0); }
+.main { display: grid; align-content: start; gap: var(--space-6); padding-block: var(--space-6); }
+.main > *, .catalog > *, .book-detail > * { min-inline-size: 0; }
+.site-footer { padding-block: var(--space-5); }
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--card-min)), 1fr));
+  gap: var(--space-5);
+  align-content: start;
+}
+.catalog > h2, .catalog > p { grid-column: 1 / -1; }
+.book-card {
+  display: grid;
+  grid-template-rows: auto auto auto 1fr auto;
+  gap: var(--space-4);
+}
+.book-card > p:last-child { align-self: end; }
+.filters, .club-note, .loan-rules, .loan-summary, .loan-form, .related,
+.book-detail, .book-detail section, .loan-summary article, figure, form, fieldset {
+  display: grid;
+  align-content: start;
+  gap: var(--space-4);
+}
+form p { display: flex; flex-direction: column; gap: var(--space-2); }
+form p:has(input[type="checkbox"], input[type="radio"]) {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+.related ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--card-min)), 1fr)); gap: var(--space-5); }
+.related ul, .book-detail ol { list-style: none; padding: var(--space-0); }
+.related article, .book-detail ol, .book-detail li { display: grid; gap: var(--space-3); }

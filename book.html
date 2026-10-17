@@ -4,11 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BookNest — Solaris</title>
+    <link rel="stylesheet" href="styles/tokens.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/components.css">
   </head>
-  <body>
-    <header>
-      <a href="index.html" aria-label="BookNest, перейти в каталог">BookNest</a>
-      <nav aria-label="Основная навигация">
+  <body class="page">
+    <header class="site-header">
+      <a class="site-header__brand" href="index.html" aria-label="BookNest, перейти в каталог">BookNest</a>
+      <nav class="site-nav" aria-label="Основная навигация">
         <ul>
           <li><a href="index.html">Каталог</a></li>
           <li><a href="book.html" aria-current="page">Карточка книги</a></li>
@@ -17,18 +21,18 @@
       </nav>
     </header>
 
-    <main>
-      <nav aria-label="Хлебные крошки">
+    <main class="main main--book">
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
         <ol>
           <li><a href="index.html">Каталог</a></li>
           <li><span aria-current="page">Solaris</span></li>
         </ol>
       </nav>
 
-      <article>
+      <article class="book-detail">
         <h1>Solaris</h1>
 
-        <figure>
+        <figure class="book-detail__cover">
           <img
             src="https://covers.openlibrary.org/b/isbn/9780156027601-L.jpg"
             alt="Обложка книги Solaris Станислава Лема"
@@ -38,7 +42,7 @@
           <figcaption>Издание романа Станислава Лема о станции над планетой Solaris.</figcaption>
         </figure>
 
-        <section aria-labelledby="book-specs-title">
+        <section class="book-detail__specs" aria-labelledby="book-specs-title">
           <h2 id="book-specs-title">Характеристики</h2>
           <dl>
             <dt>Автор</dt>
@@ -56,7 +60,7 @@
           </dl>
         </section>
 
-        <section aria-labelledby="book-description-title">
+        <section class="book-detail__description" aria-labelledby="book-description-title">
           <h2 id="book-description-title">Описание</h2>
           <p>
             Психолог Крис Кельвин прибывает на исследовательскую станцию над планетой Solaris и сталкивается
@@ -68,7 +72,7 @@
           </p>
         </section>
 
-        <section aria-labelledby="reviews-title">
+        <section class="book-detail__reviews" aria-labelledby="reviews-title">
           <h2 id="reviews-title">Отзывы читателей</h2>
           <ol>
             <li>
@@ -94,7 +98,7 @@
           </ol>
         </section>
 
-        <section aria-labelledby="new-review-title">
+        <section class="book-detail__form" aria-labelledby="new-review-title">
           <h2 id="new-review-title">Оставить отзыв</h2>
           <form action="book.html" method="post">
             <fieldset>
@@ -143,7 +147,7 @@
         </section>
       </article>
 
-      <aside aria-labelledby="related-title">
+      <aside class="related" aria-labelledby="related-title">
         <h2 id="related-title">Похожие книги</h2>
         <ul>
           <li>
@@ -174,7 +178,7 @@
       </aside>
     </main>
 
-    <footer>
+    <footer class="site-footer">
       <p>BookNest, университетский книжный клуб. <a href="loan.html">Оформить выдачу Solaris</a>.</p>
     </footer>
   </body>
