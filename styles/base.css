@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-body);
+  line-height: var(--line-body);
+  color: var(--color-text);
+  background: var(--color-bg);
+  letter-spacing: 0;
+  /* No motion in either preference: no animations, transitions or smooth scroll. */
+  scroll-behavior: auto;
+}
+
+body, h1, h2, h3, p, ul, ol, dl, dd, figure, fieldset {
+  margin: var(--space-0);
+}
+
+body { font-size: var(--font-body-size); }
+h1, h2, h3 { line-height: var(--line-heading); overflow-wrap: anywhere; }
+h1 { font-size: var(--font-page); }
+h2, h3 { font-size: var(--font-title); }
+p, dd, figcaption, a, label { overflow-wrap: anywhere; }
+a { color: var(--color-accent); text-underline-offset: var(--space-1); }
+a:hover { color: var(--color-accent-hover); }
+img { display: block; max-inline-size: 100%; object-fit: contain; }
+input, select, textarea, button { font: inherit; max-inline-size: 100%; }
+button, input, select, textarea { accent-color: var(--color-accent); }
+textarea { resize: vertical; }
+fieldset { min-inline-size: 0; }
+legend { font-weight: var(--weight-medium); }
+code { overflow-wrap: anywhere; }
+:focus-visible {
+  outline: var(--focus-width) solid var(--color-focus);
+  outline-offset: var(--focus-offset);
+}
