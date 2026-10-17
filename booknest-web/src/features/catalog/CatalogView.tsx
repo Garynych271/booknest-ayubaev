@@ -8,14 +8,13 @@ import { EmptyState } from '../../shared/components/EmptyState';
 import { ErrorBox } from '../../shared/components/ErrorBox';
 import { BookList } from './BookList';
 import { Pagination } from './Pagination';
-import { Wishlist } from '../wishlist/Wishlist';
 export interface CatalogViewProps {
-  filters: Filters; page: number; wishlist: SavedBook[]; storageAvailable: boolean;
+  filters: Filters; page: number; wishlist: SavedBook[];
   onFiltersChange: (filters: Filters) => void; onReset: () => void;
-  onPageChange: (page: number) => void; onToggle: (book: Book) => void; onRemove: (id: string) => void;
+  onPageChange: (page: number) => void; onToggle: (book: Book) => void;
 }
 export function CatalogView(props: CatalogViewProps) {
-  const { filters, page, wishlist, storageAvailable, onFiltersChange, onReset, onPageChange, onToggle, onRemove } = props;
+  const { filters, page, wishlist, onFiltersChange, onReset, onPageChange, onToggle } = props;
   const books = useBooks(filters, page);
   const result: RequestState<SearchResult> = books.isTooShort
     ? { status: 'empty', message: 'Введите не менее двух символов названия или имени автора.' }
@@ -28,7 +27,7 @@ export function CatalogView(props: CatalogViewProps) {
   useEffect(() => { if (result.status === 'success' && page > totalPages) onPageChange(totalPages); }, [onPageChange, page, result.status, totalPages]);
   return <main className="main main--catalog">
     <h1>Каталог книг BookNest</h1>
-    <FiltersPanel filters={filters} onChange={onFiltersChange} onReset={onReset} storageAvailable={storageAvailable} />
+    <FiltersPanel filters={filters} onChange={onFiltersChange} onReset={onReset} />
     <section className="catalog" aria-labelledby="catalog-title" aria-busy={result.status === 'loading'}>
       <h2 id="catalog-title" tabIndex={-1}>Найденные книги</h2>
       {result.status === 'loading' && <Spinner label="Загружаем книги…" />}
@@ -40,7 +39,6 @@ export function CatalogView(props: CatalogViewProps) {
         <Pagination page={page} totalPages={totalPages} onChange={onPageChange} />
       </div>}
     </section>
-    <Wishlist books={wishlist} onRemove={onRemove} />
     <aside className="club-note"><h2>Правило книжного клуба</h2><p>Книги клуба выдаются на 14 дней. Электронная доступность поступает из Open Library и не означает свободный экземпляр клуба.</p></aside>
   </main>;
 }

@@ -1,10 +1,11 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Badge } from '../shared/components/Badge';
 import { Button } from '../shared/components/Button';
 export function LoanPage() {
   const [submitted, setSubmitted] = useState(false);
   return <main className="main main--loan">
-    <nav className="breadcrumbs" aria-label="Хлебные крошки"><ol><li><a href="?">Каталог</a></li><li><span aria-current="page">Форма выдачи</span></li></ol></nav>
+    <nav className="breadcrumbs" aria-label="Хлебные крошки"><ol><li><Link to="/books">Каталог</Link></li><li><span aria-current="page">Форма выдачи</span></li></ol></nav>
     <h1>Оформление выдачи книги</h1>
     <section className="loan-summary"><h2>Выбранная книга</h2><article><h3>Solaris</h3><img src="/booknest-cover.png" alt="Учебная обложка Solaris" width="180" height="270" /><Badge tone="available">Учебный экземпляр ЛР1–4</Badge><p>Станислав Лем, 1961</p><p>Форма не отправляет данные на сервер.</p></article></section>
     <section className="loan-form"><h2>Данные выдачи</h2>

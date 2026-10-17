@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { API_STORAGE_KEY, defaultFilters, loadPreferences, normalizeFilters, normalizeWishlist, savePreferences, toggleWishlist } from '../src/shared/lib/preferences';
-import { bookHref, readPage } from '../src/shared/lib/navigation';
+import { bookPath, editBookPath } from '../src/shared/lib/navigation';
 function memory(entries: Record<string, string> = {}): Storage {
   const values = new Map(Object.entries(entries));
   return { get length() { return values.size; }, clear: () => values.clear(), getItem: key => values.get(key) ?? null,
@@ -21,11 +21,10 @@ describe('preferences and navigation', () => {
     expect(storage.getItem(API_STORAGE_KEY)).toContain('"version":2');
     expect(storage.getItem('booknest.catalog.v1')).not.toBeNull();
   });
-  it('survives blocked storage and reads URL without a router', () => {
+  it('survives blocked storage and builds stable route paths', () => {
     expect(loadPreferences(() => { throw new Error('blocked'); }).storageAvailable).toBe(false);
     expect(savePreferences({ filters: defaultFilters(), page: 1, wishlist: [] }, () => { throw new Error('quota'); })).toBe(false);
-    expect(readPage('?view=book&id=OL1W')).toEqual({ view: 'book', id: 'OL1W' });
-    expect(readPage('?view=loan').view).toBe('loan');
-    expect(bookHref('OL1W')).toBe('?view=book&id=OL1W');
+    expect(bookPath('OL1W')).toBe('/books/OL1W');
+    expect(editBookPath('OL1W')).toBe('/books/OL1W/edit');
   });
 });

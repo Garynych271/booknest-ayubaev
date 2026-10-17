@@ -1,5 +1,6 @@
 import type { Book } from '../../types';
-import { bookHref } from '../../shared/lib/navigation';
+import { Link } from 'react-router-dom';
+import { bookPath } from '../../shared/lib/navigation';
 import { Badge } from '../../shared/components/Badge';
 import { Button } from '../../shared/components/Button';
 import { BookCover } from '../../shared/components/BookCover';
@@ -16,7 +17,7 @@ export function BookCard({ book, saved, onToggle }: BookCardProps) {
     </dl>
     <footer className="book-card__actions">
       <Button data-action="toggle" aria-pressed={saved} aria-label={`${saved ? 'В моём списке' : 'Хочу прочитать'}: ${book.title}`} onClick={() => onToggle(book)}>{saved ? 'В моём списке' : 'Хочу прочитать'}</Button>
-      <a href={bookHref(book.id)}>Подробнее: {book.title}</a>
+      <Link to={bookPath(book.id)}>Подробнее: {book.title}</Link>
     </footer>
   </article>;
 }

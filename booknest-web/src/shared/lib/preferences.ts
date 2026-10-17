@@ -9,6 +9,8 @@ export const defaultFilters = (): Filters => ({ query: '', genre: '', sort: 'tit
 export const isGenre = (value: unknown): value is Genre => typeof value === 'string' && Object.hasOwn(genres, value);
 export const isSort = (value: unknown): value is Sort => typeof value === 'string' && Object.hasOwn(sorts, value);
 export const isWorkId = (value: unknown): value is string => typeof value === 'string' && /^OL\d+W$/.test(value);
+export const isLocalBookId = (value: unknown): value is string => typeof value === 'string' && /^BN-[A-Z0-9-]+$/.test(value);
+export const isBookId = (value: unknown): value is string => isWorkId(value) || isLocalBookId(value);
 export function normalizeFilters(value: unknown): Filters {
   const source = record(value);
   return { query: typeof source.query === 'string' ? source.query.slice(0, 80) : '', genre: isGenre(source.genre) ? source.genre : '', sort: isSort(source.sort) ? source.sort : 'title', available: source.available === true };
@@ -18,7 +20,7 @@ export function normalizeWishlist(value: unknown): SavedBook[] {
   const seen = new Set<string>();
   return value.flatMap((item: unknown) => {
     const book = record(item);
-    if (typeof book.id !== 'string' || !(isWorkId(book.id) || /^b\d{2}$/.test(book.id)) || typeof book.title !== 'string' || typeof book.author !== 'string' || seen.has(book.id)) return [];
+    if (typeof book.id !== 'string' || !(isBookId(book.id) || /^b\d{2}$/.test(book.id)) || typeof book.title !== 'string' || typeof book.author !== 'string' || seen.has(book.id)) return [];
     seen.add(book.id);
     return [{ id: book.id, title: book.title.slice(0, 500), author: book.author.slice(0, 500) }];
   });

@@ -1,31 +1,40 @@
 import { useState } from 'react';
-import type { Book, Filters, Preferences } from '../types';
+import { Navigate, Route, Routes } from 'react-router-dom';
+import type { Book, Preferences, SavedBook } from '../types';
 import { defaultFilters, loadPreferences, savePreferences, toggleWishlist } from '../shared/lib/preferences';
-import { readPage } from '../shared/lib/navigation';
-import { Header } from './Header';
-import { Footer } from './Footer';
-import { CatalogView } from '../features/catalog/CatalogView';
-import { BookDetails } from '../features/books/BookDetails';
+import { AppLayout } from './AppLayout';
+import { RequireAuth } from './RequireAuth';
+import { CatalogPage } from '../pages/CatalogPage';
+import { BookDetailsPage } from '../pages/BookDetailsPage';
+import { BookFormPage } from '../pages/BookFormPage';
+import { WishlistPage } from '../pages/WishlistPage';
+import { LoginPage } from '../pages/LoginPage';
 import { LoanPage } from '../pages/LoanPage';
-import { useTheme } from '../shared/contexts/theme';
+import { NotFoundPage } from '../pages/NotFoundPage';
 
 export default function App() {
-  const { theme } = useTheme();
   const [loaded] = useState(loadPreferences);
-  const [preferences, setPreferences] = useState<Preferences>({ filters: loaded.filters, page: loaded.page, wishlist: loaded.wishlist });
+  const [wishlist, setWishlist] = useState(loaded.wishlist);
   const [storageAvailable, setStorageAvailable] = useState(loaded.storageAvailable);
-  const pageInfo = readPage(location.search);
-  const apply = (next: Preferences) => { setPreferences(next); setStorageAvailable(savePreferences(next)); };
-  const updateFilters = (filters: Filters) => apply({ ...preferences, filters, page: 1 });
-  const toggle = (book: Book) => apply({ ...preferences, wishlist: toggleWishlist(preferences.wishlist, book) });
-  return <div className="page" data-theme={theme}>
-    <Header view={pageInfo.view} wishlistCount={preferences.wishlist.length} />
-    {pageInfo.view === 'catalog' && <CatalogView filters={preferences.filters} page={preferences.page} wishlist={preferences.wishlist}
-      storageAvailable={storageAvailable} onFiltersChange={updateFilters}
-      onReset={() => updateFilters(defaultFilters())} onPageChange={page => apply({ ...preferences, page })}
-      onToggle={toggle} onRemove={id => apply({ ...preferences, wishlist: preferences.wishlist.filter(book => book.id !== id) })} />}
-    {pageInfo.view === 'book' && <BookDetails id={pageInfo.id} wishlist={preferences.wishlist} storageAvailable={storageAvailable} onToggle={toggle} />}
-    {pageInfo.view === 'loan' && <LoanPage />}
-    <Footer />
-  </div>;
+  const persist = (next: SavedBook[]) => {
+    const value: Preferences = { filters: defaultFilters(), page: 1, wishlist: next };
+    setWishlist(next);
+    setStorageAvailable(savePreferences(value));
+  };
+  const toggle = (book: Book) => persist(toggleWishlist(wishlist, book));
+  const remove = (id: string) => persist(wishlist.filter(book => book.id !== id));
+
+  return <Routes>
+    <Route element={<AppLayout wishlistCount={wishlist.length} />}>
+      <Route index element={<Navigate to="/books" replace />} />
+      <Route path="books" element={<CatalogPage wishlist={wishlist} onToggle={toggle} />} />
+      <Route path="books/new" element={<BookFormPage mode="create" />} />
+      <Route path="books/:bookId" element={<BookDetailsPage wishlist={wishlist} storageAvailable={storageAvailable} onToggle={toggle} />} />
+      <Route path="books/:bookId/edit" element={<BookFormPage mode="edit" />} />
+      <Route path="wishlist" element={<RequireAuth><WishlistPage books={wishlist} onRemove={remove} storageAvailable={storageAvailable} /></RequireAuth>} />
+      <Route path="login" element={<LoginPage />} />
+      <Route path="loan" element={<LoanPage />} />
+      <Route path="*" element={<NotFoundPage />} />
+    </Route>
+  </Routes>;
 }

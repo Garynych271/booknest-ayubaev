@@ -24,6 +24,6 @@ describe('global contexts', () => {
     const wrapper = ({ children }: PropsWithChildren) => <AuthProvider>{children}</AuthProvider>;
     const { result } = renderHook(useAuth, { wrapper });
     expect(result.current.user).toEqual({ id: 'local-reader', displayName: 'Учебный читатель', role: 'reader' });
-    expect(Object.keys(result.current)).toEqual(['user']);
+    expect(Object.keys(result.current)).toEqual(['user', 'signIn', 'signOut']);
   });
 });
