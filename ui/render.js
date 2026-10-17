@@ -21,7 +21,7 @@ export function render(state, view) {
   fields.available.checked = state.filters.available;
   view.main.querySelector('.catalog').setAttribute('aria-busy', String(state.loading));
   for (const panel of view.main.querySelectorAll('[data-state]')) panel.hidden = panel.dataset.state !== state.status;
-  view.count.textContent = state.status === 'success' ? 'Найдено книг: ' + state.total + '. На странице: ' + state.books.length : '';
+  view.count.textContent = state.status === 'success' ? 'Найдено записей: ' + state.total + '. Книг на странице: ' + state.books.length + (state.skipped ? '. Некорректных записей пропущено: ' + state.skipped : '') : '';
   view.empty.textContent = state.filters.query.trim().length < MIN_QUERY
     ? 'Введите не менее двух символов названия или имени автора.'
     : 'Книги не найдены. Измените запрос или сбросьте фильтры.';

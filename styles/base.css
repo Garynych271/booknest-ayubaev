@@ -19,7 +19,7 @@ body, h1, h2, h3, p, ul, ol, dl, dd, figure, fieldset {
 }
 
 body { font-size: var(--font-body-size); }
-[hidden] { display: none; }
+[hidden][hidden] { display: none; }
 h1, h2, h3 { line-height: var(--line-heading); overflow-wrap: anywhere; }
 h1 { font-size: var(--font-page); }
 h2, h3 { font-size: var(--font-title); }

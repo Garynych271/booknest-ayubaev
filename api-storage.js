@@ -23,7 +23,7 @@ export function loadApiPreferences(getStorage = () => globalThis.localStorage) {
       return { ...defaults, filters: normalizeFilters(value.filters), page: Number.isSafeInteger(value.page) && value.page > 0 ? value.page : 1, wishlist: normalizeSaved(value.wishlist) };
     }
     const legacy = JSON.parse(storage.getItem('booknest.catalog.v1') || 'null');
-    if (legacy?.version === 1) return { ...defaults, filters: normalizeFilters(legacy.filters), wishlist: normalizeSaved(legacyBooks.filter(book => legacy.wishlist?.includes?.(book.id))) };
+    if (legacy?.version === 1) return { ...defaults, filters: normalizeFilters(legacy.filters), wishlist: normalizeSaved(legacyBooks.filter(book => Array.isArray(legacy.wishlist) && legacy.wishlist.includes(book.id))) };
     return defaults;
   } catch (error) { return { ...defaults, storageAvailable: error instanceof SyntaxError }; }
 }

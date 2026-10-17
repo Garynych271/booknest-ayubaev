@@ -37,7 +37,8 @@ export async function searchBooks(filters, page, options) {
   if (filters.query.trim().length < MIN_QUERY) return { books: [], total: 0 };
   const data = await request('/search.json', searchParams(filters, page), options);
   if (!Array.isArray(data?.docs) || !Number.isFinite(data.numFound ?? data.num_found)) throw new ApiError('Invalid search response', 0, 'data');
-  return { books: data.docs.map(normalizeBook).filter(Boolean), total: Math.max(0, data.numFound ?? data.num_found) };
+  const books = data.docs.map(normalizeBook).filter(Boolean);
+  return { books, total: Math.max(0, data.numFound ?? data.num_found), skipped: data.docs.length - books.length };
 }
 
 export async function getBook(id, options) {

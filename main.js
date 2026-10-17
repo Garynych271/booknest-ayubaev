@@ -29,11 +29,16 @@ async function search() {
     update();
     return;
   }
+  let correctedPage = false;
   await loader.run(signal => searchBooks(state.filters, state.page, { signal }), result => {
     state.books = result.books;
     state.total = result.total;
+    state.skipped = result.skipped;
+    const last = Math.max(1, Math.ceil(result.total / PAGE_SIZE));
+    if (state.page > last) { state.page = last; correctedPage = result.total > 0; }
     state.status = result.books.length ? 'success' : 'empty';
   });
+  if (correctedPage) await search();
 }
 view.form.addEventListener('input', event => {
   const fields = view.form.elements;
