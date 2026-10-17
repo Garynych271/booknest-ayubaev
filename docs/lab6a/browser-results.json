@@ -1,0 +1,119 @@
+{
+  "measuredAt": "2026-10-17T12:51:44.647Z",
+  "browser": "155.0.4283.45",
+  "real": [
+    {
+      "name": "real API debounce, wishlist and persisted theme",
+      "passed": true,
+      "evidence": {
+        "searchRequestsAfterRapidInput": 1,
+        "wishlistAfterReload": 1,
+        "persistedTheme": "dark",
+        "currentUser": "Учебный читатель"
+      }
+    },
+    {
+      "name": "Slow 4G aborts the obsolete request",
+      "passed": true,
+      "evidence": {
+        "profile": {
+          "latency": 2000,
+          "downloadThroughput": 200000,
+          "uploadThroughput": 93750
+        },
+        "canceled": 1
+      }
+    },
+    {
+      "name": "Offline error recovers through Retry",
+      "passed": true,
+      "evidence": {
+        "message": "Нет подключения к сети. Подключитесь и повторите запрос.",
+        "recovered": true
+      }
+    },
+    {
+      "name": "real detail request remains functional",
+      "passed": true,
+      "evidence": {
+        "id": "OL109524W",
+        "title": "Solaris"
+      }
+    }
+  ],
+  "mockedMatrix": [
+    {
+      "theme": "light",
+      "width": 375,
+      "passed": true,
+      "observed": {
+        "viewport": 375,
+        "scrollWidth": 375,
+        "theme": "light"
+      },
+      "note": "Open Library response intercepted with a deterministic fixture"
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "passed": true,
+      "observed": {
+        "viewport": 768,
+        "scrollWidth": 768,
+        "theme": "light"
+      },
+      "note": "Open Library response intercepted with a deterministic fixture"
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "passed": true,
+      "observed": {
+        "viewport": 1440,
+        "scrollWidth": 1440,
+        "theme": "light"
+      },
+      "note": "Open Library response intercepted with a deterministic fixture"
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "passed": true,
+      "observed": {
+        "viewport": 375,
+        "scrollWidth": 375,
+        "theme": "dark"
+      },
+      "note": "Open Library response intercepted with a deterministic fixture"
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "passed": true,
+      "observed": {
+        "viewport": 768,
+        "scrollWidth": 768,
+        "theme": "dark"
+      },
+      "note": "Open Library response intercepted with a deterministic fixture"
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "passed": true,
+      "observed": {
+        "viewport": 1440,
+        "scrollWidth": 1440,
+        "theme": "dark"
+      },
+      "note": "Open Library response intercepted with a deterministic fixture"
+    }
+  ],
+  "pageErrors": [],
+  "normalConsoleErrors": [],
+  "expectedConsoleErrors": [
+    "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+    "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+    "Failed to load resource: net::ERR_INTERNET_DISCONNECTED"
+  ]
+}

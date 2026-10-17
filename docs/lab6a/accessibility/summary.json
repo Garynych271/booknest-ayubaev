@@ -1,0 +1,26 @@
+[
+  {
+    "name": "catalog-light",
+    "measuredAt": "2026-10-17T12:52:43.215Z",
+    "mode": "Lighthouse snapshot with real Open Library search",
+    "observed": {
+      "theme": "light",
+      "overflow": 0,
+      "switchChecked": false
+    },
+    "accessibility": 100,
+    "failures": []
+  },
+  {
+    "name": "catalog-dark",
+    "measuredAt": "2026-10-17T12:53:48.774Z",
+    "mode": "Lighthouse snapshot with real Open Library search",
+    "observed": {
+      "theme": "dark",
+      "overflow": 0,
+      "switchChecked": true
+    },
+    "accessibility": 100,
+    "failures": []
+  }
+]
