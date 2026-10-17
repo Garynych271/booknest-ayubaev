@@ -47,3 +47,23 @@
   --choice-size: 1.25rem;
   --measure: 70ch;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --color-bg: #181a1c;
+    --color-surface: #24272a;
+    --color-text: #f3f4f5;
+    --color-muted: #bbc2c7;
+    --color-border: #909aa2;
+    --color-rule: #464d53;
+    --color-accent: #ffafbf;
+    --color-accent-hover: #ffd1db;
+    --color-on-accent: #36111b;
+    --color-tint: #3b2630;
+    --color-focus: #72e2ce;
+    --color-invalid: #ff9c9c;
+    --color-disabled: #373c41;
+    --shadow-card: 0 2px 6px rgb(0 0 0 / 20%);
+  }
+}
