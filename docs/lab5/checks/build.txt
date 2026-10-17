@@ -1,0 +1,14 @@
+
+> booknest-web@0.0.0 build
+> tsc -b && vite build
+
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 41 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.61 kB │ gzip:  0.40 kB
+dist/assets/index-B-tnXBac.css    9.89 kB │ gzip:  2.60 kB
+dist/assets/index-DGA7LYBy.js   248.17 kB │ gzip: 77.54 kB
+
+✓ built in 346ms

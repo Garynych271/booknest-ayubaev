@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://openlibrary.org/search.json?q=%28title%3A%22Lem%22+OR+author%3A%22Lem%22%29&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=20&page=1&sort=title",
+    "errorText": "net::ERR_ABORTED",
+    "canceled": true
+  },
+  {
+    "url": "https://openlibrary.org/search.json?q=%28title%3A%22Dune%22+OR+author%3A%22Dune%22%29&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=20&page=1&sort=title",
+    "errorText": "net::ERR_INTERNET_DISCONNECTED",
+    "canceled": false
+  },
+  {
+    "url": "https://openlibrary.org/search.json?q=key%3A%2Fworks%2FOL109524W&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=1",
+    "errorText": "net::ERR_ABORTED",
+    "canceled": true
+  },
+  {
+    "url": "https://openlibrary.org/search.json?q=key%3A%2Fworks%2FOL999999999999999W&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=1",
+    "errorText": "net::ERR_ABORTED",
+    "canceled": true
+  }
+]
