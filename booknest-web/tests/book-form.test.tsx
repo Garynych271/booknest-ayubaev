@@ -1,7 +1,7 @@
 // @vitest-environment jsdom
 import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import { beforeEach, describe, expect, it } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import {
   BOOK_RECORDS_KEY,
   BookRecordApiError,
@@ -9,6 +9,7 @@ import {
   MOCK_422_TITLE,
   MOCK_500_TITLE,
   getBookDetails,
+  getEditableBook,
   saveBookRecord,
 } from '../src/api/bookRecords';
 import { BookForm } from '../src/features/book-form/BookForm';
@@ -27,6 +28,7 @@ const validValues: BookFormValues = {
 };
 
 beforeEach(() => localStorage.clear());
+afterEach(() => vi.unstubAllGlobals());
 
 describe('book form schema and UI', () => {
   it('accepts all eight fields and rejects an invalid date interval', () => {
@@ -75,5 +77,17 @@ describe('local CRUD adapter', () => {
     const pending = saveBookRecord('create', null, validValues, { storage: localStorage, delay: 50, signal: controller.signal });
     controller.abort();
     await expect(pending).rejects.toMatchObject({ name: 'AbortError' });
+  });
+
+  it('normalizes Open Library data to the form schema during prefill', async () => {
+    vi.stubGlobal('fetch', async (value: URL | RequestInfo) => String(value).includes('/works/')
+      ? new Response(JSON.stringify({ title: 'T'.repeat(130), description: 'D'.repeat(1100) }))
+      : new Response(JSON.stringify({ docs: [{ key: '/works/OL109524W', title: 'Solaris', author_name: ['A'.repeat(110)], first_publish_year: 2500 }] })));
+    const values = await getEditableBook('OL109524W', { storage: localStorage, delay: 0 });
+    expect(values.title).toHaveLength(120);
+    expect(values.author).toHaveLength(100);
+    expect(values.description).toHaveLength(1000);
+    expect(values.publishedYear).toBe(String(new Date().getFullYear()));
+    expect(bookFormSchema.safeParse(values).success).toBe(true);
   });
 });

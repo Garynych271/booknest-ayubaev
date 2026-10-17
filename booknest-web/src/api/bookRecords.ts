@@ -81,9 +81,11 @@ export async function getEditableBook(id: string, options: BookRecordOptions = {
   if (local) return local.values;
   const book = await getBook(id, options);
   const workDigits = book.id.replace(/\D/g, '').padStart(10, '0').slice(-10);
+  const currentYear = new Date().getFullYear();
+  const publishedYear = book.year !== null && book.year >= 1000 && book.year <= currentYear ? book.year : currentYear;
   return {
-    ...newBookDefaults(), title: book.title, author: book.author,
-    genre: 'novel', isbn: `978${workDigits}`, publishedYear: String(book.year ?? new Date().getFullYear()), description: book.description,
+    ...newBookDefaults(), title: book.title.slice(0, 120), author: book.author.slice(0, 100),
+    genre: 'novel', isbn: `978${workDigits}`, publishedYear: String(publishedYear), description: book.description.slice(0, 1000),
   };
 }
 

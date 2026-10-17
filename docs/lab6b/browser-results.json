@@ -1,5 +1,5 @@
 {
-  "measuredAt": "2026-10-17T13:42:34.216Z",
+  "measuredAt": "2026-10-17T13:46:08.450Z",
   "browser": "155.0.4283.45",
   "scenarios": [
     {
@@ -19,6 +19,7 @@
         "cards": 19,
         "detailId": "OL109524W",
         "detailTitle": "Solaris",
+        "externalEditPrefilled": true,
         "invalidDetailStatus": 404
       }
     },
@@ -63,7 +64,7 @@
       "name": "create, redirect, details, edit and stable ID",
       "passed": true,
       "evidence": {
-        "createdPath": "/books/BN-B764C3EC-AA0C-45EE-B0D8-AE4CECD228C2",
+        "createdPath": "/books/BN-57E526A3-1AC6-46B6-8B9E-EB791EF8D94D",
         "redirectAfterCreate": true,
         "prefilledEdit": true,
         "sameIdAfterEdit": true,
@@ -148,11 +149,27 @@
       "status": 200
     },
     {
+      "url": "https://openlibrary.org/works/OL109524W.json",
+      "status": 200
+    },
+    {
+      "url": "https://openlibrary.org/search.json?q=key%3A%2Fworks%2FOL109524W&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=1",
+      "status": 200
+    },
+    {
       "url": "https://openlibrary.org/search.json?q=%28title%3A%22Solaris%22+OR+author%3A%22Solaris%22%29&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=20&page=1&sort=title",
       "status": 200
     },
     {
       "url": "https://openlibrary.org/search.json?q=%28title%3A%22Solaris%22+OR+author%3A%22Solaris%22%29&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=20&page=1&sort=title",
+      "status": 200
+    },
+    {
+      "url": "https://covers.openlibrary.org/b/id/5278051-M.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://covers.openlibrary.org/b/id/2119438-M.jpg",
       "status": 200
     },
     {

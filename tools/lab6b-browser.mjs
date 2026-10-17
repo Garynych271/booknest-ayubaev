@@ -106,10 +106,14 @@ try {
     await page.goto(`${base}/books/OL109524W`);
     await page.waitForSelector('.book-detail[data-state="success"]');
     assert.equal(await page.locator('h1').textContent(), 'Solaris');
+    await page.goto(`${base}/books/OL109524W/edit`);
+    await page.waitForSelector('#record-title');
+    assert.equal(await page.locator('#record-title').inputValue(), 'Solaris');
+    assert.match(await page.locator('#record-isbn').inputValue(), /^\d{13}$/);
     await page.goto(`${base}/books/not-a-work`);
     await page.waitForSelector('[data-state="error"]');
     assert.match(await page.locator('[data-error-message]').textContent(), /404/);
-    return { cards, detailId: 'OL109524W', detailTitle: 'Solaris', invalidDetailStatus: 404 };
+    return { cards, detailId: 'OL109524W', detailTitle: 'Solaris', externalEditPrefilled: true, invalidDetailStatus: 404 };
   });
 
   await scenario('wishlist survives navigation and reload', async () => {
