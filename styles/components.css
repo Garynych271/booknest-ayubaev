@@ -55,6 +55,10 @@ button, .book-card__button {
   cursor: pointer;
 }
 .book-card__button { inline-size: 100%; }
+button[aria-pressed="true"] { background: var(--color-tint); color: var(--color-accent); }
+.wishlist { border-block-start: var(--border-width) solid var(--color-rule); padding-block-start: var(--space-5); }
+.wishlist__list li { border-block-end: var(--border-width) solid var(--color-rule); padding-block: var(--space-3); }
+.storage-notice { color: var(--color-invalid); }
 button:hover, .book-card__button:hover { background: var(--color-accent-hover); border-color: var(--color-accent-hover); }
 button[type="reset"] { color: var(--color-accent); background: var(--color-surface); }
 input:invalid:user-invalid, select:invalid:user-invalid, textarea:invalid:user-invalid { border-color: var(--color-invalid); }

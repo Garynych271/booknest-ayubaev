@@ -353,6 +353,8 @@ Artifacts/files:
 
 ### Лабораторная 3. W4 JavaScript catalog app, 8 баллов
 
+Обновление 17.10.2026: обязательные функции реализованы в `lab-3/js-app` от `lab-2/styles` (`2f44abd`). Реальные проверки, скриншоты, архитектура и ограничения: [отчёт ЛР3](lab3/README.md). Подготовлен [текст PR](lab3-pr.md); push и создание PR не выполнялись. Предыдущие PR ожидают проверки. ЛР4 и дополнительные задания ЛР3 не реализованы.
+
 Обязательно:
 
 - Local data: 40 books, 5 genres, fields `id`, `title`, `author`, `year`, `genre`, `rating`, `available`.

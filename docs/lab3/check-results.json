@@ -1,0 +1,14 @@
+[
+  {
+    "command": "node --test tests/books.test.js tests/storage.test.js",
+    "measuredAt": "2026-10-17T04:15:08.182Z",
+    "exitCode": 0,
+    "stderr": ""
+  },
+  {
+    "command": "node node_modules/eslint/bin/eslint.js main.js storage.js data lib ui tests --max-warnings=0 --format=json",
+    "measuredAt": "2026-10-17T04:15:08.420Z",
+    "exitCode": 0,
+    "stderr": ""
+  }
+]
