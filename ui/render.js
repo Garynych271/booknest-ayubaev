@@ -15,6 +15,31 @@ export function bindCoverFallback(root) {
     if (event.target instanceof HTMLImageElement) event.target.hidden = true;
   }, true);
 }
+
+export function renderBooks(container, books, template, wishlist = []) {
+  container.replaceChildren(...books.map(book => {
+    const card = template.content.firstElementChild.cloneNode(true);
+    card.dataset.bookId = book.id;
+    card.querySelector('[data-title]').textContent = book.title;
+    card.querySelector('[data-author]').textContent = book.author;
+    card.querySelector('[data-year]').textContent = book.year ?? 'Не указан';
+    card.querySelector('[data-genre]').textContent = book.genre;
+    card.querySelector('[data-availability]').textContent = book.available ? 'Открытый электронный доступ' : 'Открытый доступ не подтверждён';
+    card.querySelector('[data-rating]').textContent = book.rating === null ? 'Нет оценок' : book.rating.toFixed(1) + ' из 5';
+    coverImage(card.querySelector('[data-cover]'), book);
+    const button = card.querySelector('button');
+    button.dataset.id = book.id;
+    const saved = wishlist.some(item => item.id === book.id);
+    button.setAttribute('aria-pressed', String(saved));
+    button.textContent = saved ? 'В моём списке' : 'Хочу прочитать';
+    button.setAttribute('aria-label', button.textContent + ': ' + book.title);
+    const link = card.querySelector('[data-detail-link]');
+    link.href = 'book.html?id=' + encodeURIComponent(book.id);
+    link.textContent = 'Подробнее: ' + book.title;
+    return card;
+  }));
+}
+
 export function render(state, view) {
   const active = document.activeElement?.closest('[data-action]');
   const key = active ? { action: active.dataset.action, id: active.dataset.id } : null;
@@ -37,27 +62,7 @@ export function render(state, view) {
   view.main.querySelector('[data-page]').textContent = 'Страница ' + state.page + ' из ' + pageCount;
   view.main.querySelector('[data-action="previous"]').disabled = state.loading || state.page <= 1;
   view.main.querySelector('[data-action="next"]').disabled = state.loading || state.page >= pageCount;
-  view.list.replaceChildren(...(state.status === 'success' ? state.books : []).map(book => {
-    const card = view.template.content.firstElementChild.cloneNode(true);
-    card.dataset.bookId = book.id;
-    card.querySelector('[data-title]').textContent = book.title;
-    card.querySelector('[data-author]').textContent = book.author;
-    card.querySelector('[data-year]').textContent = book.year ?? 'Не указан';
-    card.querySelector('[data-genre]').textContent = book.genre;
-    card.querySelector('[data-availability]').textContent = book.available ? 'Открытый электронный доступ' : 'Открытый доступ не подтверждён';
-    card.querySelector('[data-rating]').textContent = book.rating === null ? 'Нет оценок' : book.rating.toFixed(1) + ' из 5';
-    coverImage(card.querySelector('[data-cover]'), book);
-    const button = card.querySelector('button');
-    button.dataset.id = book.id;
-    const saved = state.wishlist.some(item => item.id === book.id);
-    button.setAttribute('aria-pressed', String(saved));
-    button.textContent = saved ? 'В моём списке' : 'Хочу прочитать';
-    button.setAttribute('aria-label', button.textContent + ': ' + book.title);
-    const link = card.querySelector('[data-detail-link]');
-    link.href = 'book.html?id=' + encodeURIComponent(book.id);
-    link.textContent = 'Подробнее: ' + book.title;
-    return card;
-  }));
+  renderBooks(view.list, state.status === 'success' ? state.books : [], view.template, state.wishlist);
   view.wishlistCount.textContent = String(state.wishlist.length);
   view.wishlistEmpty.hidden = state.wishlist.length !== 0;
   view.wishlist.replaceChildren(...state.wishlist.map(book => {

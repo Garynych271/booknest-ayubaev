@@ -1,0 +1,89 @@
+{
+  "measuredAt": "2026-10-17T15:06:35.405Z",
+  "browser": "155.0.4283.45",
+  "baseline": {
+    "input": [
+      "So",
+      "Sol",
+      "Sola",
+      "Solar",
+      "Solari",
+      "Solaris"
+    ],
+    "requestCount": 6,
+    "requests": [
+      {
+        "url": "https://openlibrary.org/search.json?q=So&fields=key%2Ctitle&limit=1",
+        "at": 179048.671866
+      },
+      {
+        "url": "https://openlibrary.org/search.json?q=Sol&fields=key%2Ctitle&limit=1",
+        "at": 179048.74724
+      },
+      {
+        "url": "https://openlibrary.org/search.json?q=Sola&fields=key%2Ctitle&limit=1",
+        "at": 179048.826088
+      },
+      {
+        "url": "https://openlibrary.org/search.json?q=Solar&fields=key%2Ctitle&limit=1",
+        "at": 179048.903851
+      },
+      {
+        "url": "https://openlibrary.org/search.json?q=Solari&fields=key%2Ctitle&limit=1",
+        "at": 179048.981656
+      },
+      {
+        "url": "https://openlibrary.org/search.json?q=Solaris&fields=key%2Ctitle&limit=1",
+        "at": 179049.059206
+      }
+    ],
+    "screenshot": null,
+    "screenshotStatus": "Main Network panel was not captured; use the CDP request list as the automated evidence and capture the panel manually."
+  },
+  "debounced": {
+    "input": [
+      "So",
+      "Sol",
+      "Sola",
+      "Solar",
+      "Solari",
+      "Solaris"
+    ],
+    "requestCount": 1,
+    "requests": [
+      {
+        "url": "https://openlibrary.org/search.json?q=%28title%3A%22Solaris%22+OR+author%3A%22Solaris%22%29&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=20&page=1&sort=title",
+        "at": 179055.575174
+      }
+    ],
+    "screenshot": null,
+    "screenshotStatus": "Main Network panel was not captured; use the CDP request list as the automated evidence and capture the panel manually."
+  },
+  "profiler": {
+    "connected": true,
+    "recorded": false,
+    "browserHook": true,
+    "injectedScripts": [
+      "http://127.0.0.1:8097/",
+      "http://127.0.0.1:5188/@vite/client",
+      "http://127.0.0.1:5188/src/main.tsx"
+    ],
+    "controls": [
+      {
+        "title": "",
+        "ariaLabel": null,
+        "text": "Start recording"
+      },
+      {
+        "title": "",
+        "ariaLabel": null,
+        "text": "Initial Paint"
+      }
+    ],
+    "summary": []
+  },
+  "limitations": [
+    "The automated DevTools command opened the wrong Edge tool, so those screenshots were discarded.",
+    "React DevTools connected and exposed Start recording once, but no completed Profiler recording was obtained."
+  ]
+}

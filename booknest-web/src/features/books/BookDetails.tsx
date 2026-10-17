@@ -31,7 +31,7 @@ export function BookDetails({ id, wishlist, storageAvailable, onToggle }: BookDe
       <section className="book-detail__specs"><h2>Характеристики</h2><dl>
         <dt>Автор</dt><dd>{book.author}</dd><dt>Год первой публикации</dt><dd>{book.year ?? 'Не указан'}</dd>
         <dt>Темы</dt><dd>{book.genre}</dd><dt>Рейтинг Open Library</dt><dd>{book.rating === null ? 'Нет оценок' : `${book.rating.toFixed(1)} из 5`}</dd>
-        <dt>Электронный доступ</dt><dd><Badge tone={book.available ? 'available' : 'neutral'}>{book.available ? 'Открытый доступ' : 'Открытый доступ не подтверждён'}</Badge></dd>
+        <dt>Электронный доступ</dt><dd><Badge variant={book.available ? 'ok' : 'warn'}>{book.available ? 'Открытый доступ' : 'Открытый доступ не подтверждён'}</Badge></dd>
       </dl>{isWorkId(book.id) && <p><a href={`${BASE_URL}/works/${book.id}`}>Запись в Open Library</a></p>}
       <Button aria-pressed={saved} onClick={() => onToggle(book)}>{saved ? 'В моём списке' : 'Хочу прочитать'}</Button>
       <p><Link to={editBookPath(book.id)}>Редактировать запись</Link></p>
