@@ -2,19 +2,18 @@
   {
     "name": "index",
     "theme": "light",
-    "measuredAt": "2026-10-17T02:36:26.974Z",
+    "themeVerification": {
+      "dark": false,
+      "scheme": "light",
+      "background": "rgb(244, 245, 246)"
+    },
+    "measuredAt": "2026-10-17T02:49:43.507Z",
     "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
     "lighthouseVersion": "12.8.2",
     "performance": 100,
     "accessibility": 100,
     "warnings": [],
     "failedAudits": [
-      {
-        "id": "max-potential-fid",
-        "title": "Max Potential First Input Delay",
-        "score": 0.87,
-        "displayValue": "140 ms"
-      },
       {
         "id": "uses-long-cache-ttl",
         "title": "Serve static assets with an efficient cache policy",
@@ -56,6 +55,134 @@
         "title": "Improve image delivery",
         "score": 0.5,
         "displayValue": "Est savings of 10 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render blocking requests",
+        "score": 0,
+        "displayValue": "Est savings of 150 ms"
+      }
+    ]
+  },
+  {
+    "name": "book",
+    "theme": "light",
+    "themeVerification": {
+      "dark": false,
+      "scheme": "light",
+      "background": "rgb(244, 245, 246)"
+    },
+    "measuredAt": "2026-10-17T02:50:24.304Z",
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+    "lighthouseVersion": "12.8.2",
+    "performance": 100,
+    "accessibility": 100,
+    "warnings": [],
+    "failedAudits": [
+      {
+        "id": "uses-long-cache-ttl",
+        "title": "Serve static assets with an efficient cache policy",
+        "score": 0.5,
+        "displayValue": "4 resources found"
+      },
+      {
+        "id": "render-blocking-resources",
+        "title": "Eliminate render-blocking resources",
+        "score": 0.5,
+        "displayValue": "Est savings of 0 ms"
+      },
+      {
+        "id": "uses-text-compression",
+        "title": "Enable text compression",
+        "score": 0.5,
+        "displayValue": "Est savings of 10 KiB"
+      },
+      {
+        "id": "bf-cache",
+        "title": "Page prevented back/forward cache restoration",
+        "score": 0,
+        "displayValue": "2 failure reasons"
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "score": 0.5,
+        "displayValue": "Est savings of 10 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "title": "Document request latency",
+        "score": 0.5,
+        "displayValue": "Est savings of 5 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render blocking requests",
+        "score": 0,
+        "displayValue": "Est savings of 110 ms"
+      }
+    ]
+  },
+  {
+    "name": "loan",
+    "theme": "light",
+    "themeVerification": {
+      "dark": false,
+      "scheme": "light",
+      "background": "rgb(244, 245, 246)"
+    },
+    "measuredAt": "2026-10-17T02:51:01.192Z",
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+    "lighthouseVersion": "12.8.2",
+    "performance": 100,
+    "accessibility": 100,
+    "warnings": [],
+    "failedAudits": [
+      {
+        "id": "uses-long-cache-ttl",
+        "title": "Serve static assets with an efficient cache policy",
+        "score": 0.5,
+        "displayValue": "4 resources found"
+      },
+      {
+        "id": "render-blocking-resources",
+        "title": "Eliminate render-blocking resources",
+        "score": 0,
+        "displayValue": "Est savings of 120 ms"
+      },
+      {
+        "id": "uses-text-compression",
+        "title": "Enable text compression",
+        "score": 0.5,
+        "displayValue": "Est savings of 9 KiB"
+      },
+      {
+        "id": "bf-cache",
+        "title": "Page prevented back/forward cache restoration",
+        "score": 0,
+        "displayValue": "2 failure reasons"
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "score": 0.5,
+        "displayValue": "Est savings of 10 KiB"
+      },
+      {
+        "id": "document-latency-insight",
+        "title": "Document request latency",
+        "score": 0.5,
+        "displayValue": "Est savings of 4 KiB"
       },
       {
         "id": "network-dependency-tree-insight",
@@ -71,127 +198,14 @@
     ]
   },
   {
-    "name": "book",
-    "theme": "light",
-    "measuredAt": "2026-10-17T02:37:07.896Z",
-    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
-    "lighthouseVersion": "12.8.2",
-    "performance": 100,
-    "accessibility": 100,
-    "warnings": [],
-    "failedAudits": [
-      {
-        "id": "uses-long-cache-ttl",
-        "title": "Serve static assets with an efficient cache policy",
-        "score": 0.5,
-        "displayValue": "4 resources found"
-      },
-      {
-        "id": "render-blocking-resources",
-        "title": "Eliminate render-blocking resources",
-        "score": 0.5,
-        "displayValue": "Est savings of 0 ms"
-      },
-      {
-        "id": "uses-text-compression",
-        "title": "Enable text compression",
-        "score": 0.5,
-        "displayValue": "Est savings of 10 KiB"
-      },
-      {
-        "id": "bf-cache",
-        "title": "Page prevented back/forward cache restoration",
-        "score": 0,
-        "displayValue": "2 failure reasons"
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "score": 0.5,
-        "displayValue": "Est savings of 10 KiB"
-      },
-      {
-        "id": "document-latency-insight",
-        "title": "Document request latency",
-        "score": 0.5,
-        "displayValue": "Est savings of 5 KiB"
-      },
-      {
-        "id": "network-dependency-tree-insight",
-        "title": "Network dependency tree",
-        "score": 0
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render blocking requests",
-        "score": 0,
-        "displayValue": "Est savings of 50 ms"
-      }
-    ]
-  },
-  {
-    "name": "loan",
-    "theme": "light",
-    "measuredAt": "2026-10-17T02:37:44.017Z",
-    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
-    "lighthouseVersion": "12.8.2",
-    "performance": 100,
-    "accessibility": 100,
-    "warnings": [],
-    "failedAudits": [
-      {
-        "id": "uses-long-cache-ttl",
-        "title": "Serve static assets with an efficient cache policy",
-        "score": 0.5,
-        "displayValue": "4 resources found"
-      },
-      {
-        "id": "render-blocking-resources",
-        "title": "Eliminate render-blocking resources",
-        "score": 0,
-        "displayValue": "Est savings of 150 ms"
-      },
-      {
-        "id": "uses-text-compression",
-        "title": "Enable text compression",
-        "score": 0.5,
-        "displayValue": "Est savings of 9 KiB"
-      },
-      {
-        "id": "bf-cache",
-        "title": "Page prevented back/forward cache restoration",
-        "score": 0,
-        "displayValue": "2 failure reasons"
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "score": 0.5,
-        "displayValue": "Est savings of 10 KiB"
-      },
-      {
-        "id": "document-latency-insight",
-        "title": "Document request latency",
-        "score": 0.5,
-        "displayValue": "Est savings of 4 KiB"
-      },
-      {
-        "id": "network-dependency-tree-insight",
-        "title": "Network dependency tree",
-        "score": 0
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render blocking requests",
-        "score": 0,
-        "displayValue": "Est savings of 150 ms"
-      }
-    ]
-  },
-  {
     "name": "index",
     "theme": "dark",
-    "measuredAt": "2026-10-17T02:39:34.424Z",
+    "themeVerification": {
+      "dark": true,
+      "scheme": "dark",
+      "background": "rgb(24, 26, 28)"
+    },
+    "measuredAt": "2026-10-17T02:51:37.847Z",
     "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
     "lighthouseVersion": "12.8.2",
     "performance": 100,
@@ -249,14 +263,19 @@
         "id": "render-blocking-insight",
         "title": "Render blocking requests",
         "score": 0,
-        "displayValue": "Est savings of 130 ms"
+        "displayValue": "Est savings of 140 ms"
       }
     ]
   },
   {
     "name": "book",
     "theme": "dark",
-    "measuredAt": "2026-10-17T02:40:15.331Z",
+    "themeVerification": {
+      "dark": true,
+      "scheme": "dark",
+      "background": "rgb(24, 26, 28)"
+    },
+    "measuredAt": "2026-10-17T02:52:18.794Z",
     "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
     "lighthouseVersion": "12.8.2",
     "performance": 100,
@@ -315,7 +334,12 @@
   {
     "name": "loan",
     "theme": "dark",
-    "measuredAt": "2026-10-17T02:40:51.750Z",
+    "themeVerification": {
+      "dark": true,
+      "scheme": "dark",
+      "background": "rgb(24, 26, 28)"
+    },
+    "measuredAt": "2026-10-17T02:52:55.276Z",
     "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
     "lighthouseVersion": "12.8.2",
     "performance": 100,
@@ -332,7 +356,7 @@
         "id": "render-blocking-resources",
         "title": "Eliminate render-blocking resources",
         "score": 0,
-        "displayValue": "Est savings of 140 ms"
+        "displayValue": "Est savings of 130 ms"
       },
       {
         "id": "uses-text-compression",
@@ -367,7 +391,7 @@
         "id": "render-blocking-insight",
         "title": "Render blocking requests",
         "score": 0,
-        "displayValue": "Est savings of 140 ms"
+        "displayValue": "Est savings of 130 ms"
       }
     ]
   }
