@@ -1,9 +1,11 @@
 import { useCallback, useMemo } from 'react';
-import { getBook, MIN_QUERY, searchBooks } from '../../api/books';
+import { MIN_QUERY, searchBooks } from '../../api/books';
+import { getBookDetails, getEditableBook } from '../../api/bookRecords';
 import type { BookDetail, Filters, SearchResult } from '../../types';
 import { useDebounce } from '../../shared/hooks/useDebounce';
 import { useFetch } from '../../shared/hooks/useFetch';
 import type { FetchState } from '../../shared/hooks/useFetch';
+import type { BookFormValues } from '../../shared/validation/bookFormSchema';
 
 export interface BooksState {
   data: SearchResult | null;
@@ -35,7 +37,15 @@ export function useBooks(filters: Filters, page: number): BooksState {
 export function useBook(id: string | null): FetchState<BookDetail> {
   const fetcher = useCallback((signal: AbortSignal): Promise<BookDetail> => {
     if (id === null) return Promise.reject(new Error('Book identifier is missing'));
-    return getBook(id, { signal });
+    return getBookDetails(id, { signal });
   }, [id]);
   return useFetch(id ?? '', fetcher, id !== null);
+}
+
+export function useEditableBook(id: string | null): FetchState<BookFormValues> {
+  const fetcher = useCallback((signal: AbortSignal): Promise<BookFormValues> => {
+    if (id === null) return Promise.reject(new Error('Book identifier is missing'));
+    return getEditableBook(id, { signal });
+  }, [id]);
+  return useFetch(`edit:${id ?? ''}`, fetcher, id !== null);
 }

@@ -1,11 +1,9 @@
 import { useParams } from 'react-router-dom';
+import { BookForm } from '../features/book-form/BookForm';
 
 export interface BookFormPageProps { mode: 'create' | 'edit' }
 
 export function BookFormPage({ mode }: BookFormPageProps) {
   const { bookId } = useParams();
-  return <main className="main">
-    <h1>{mode === 'create' ? 'Новая запись BookNest' : 'Редактирование записи'}</h1>
-    <p data-form-placeholder>{mode === 'edit' ? `Загрузка данных ${bookId ?? ''}.` : 'Форма будет подключена к учебному mock API.'}</p>
-  </main>;
+  return <BookForm mode={mode} id={bookId ?? null} />;
 }
