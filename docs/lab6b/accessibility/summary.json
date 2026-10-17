@@ -1,0 +1,36 @@
+[
+  {
+    "name": "form-mobile-light",
+    "theme": "light",
+    "width": 375,
+    "height": 900,
+    "measuredAt": "2026-10-17T13:43:31.818Z",
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+    "observed": {
+      "path": "/books/new",
+      "viewport": 375,
+      "scrollWidth": 375,
+      "theme": "light",
+      "fields": 8
+    },
+    "accessibility": 100,
+    "failures": []
+  },
+  {
+    "name": "form-desktop-dark",
+    "theme": "dark",
+    "width": 1440,
+    "height": 1000,
+    "measuredAt": "2026-10-17T13:43:36.307Z",
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+    "observed": {
+      "path": "/books/new",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "theme": "dark",
+      "fields": 8
+    },
+    "accessibility": 100,
+    "failures": []
+  }
+]

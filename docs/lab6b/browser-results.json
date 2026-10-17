@@ -1,0 +1,186 @@
+{
+  "measuredAt": "2026-10-17T13:46:08.450Z",
+  "browser": "155.0.4283.45",
+  "scenarios": [
+    {
+      "name": "nested routes, direct URLs and history",
+      "passed": true,
+      "evidence": {
+        "directQuery": "Solaris",
+        "directPage": 2,
+        "backRestored": true,
+        "activeNav": "/books"
+      }
+    },
+    {
+      "name": "real Open Library catalog and detail requests",
+      "passed": true,
+      "evidence": {
+        "cards": 19,
+        "detailId": "OL109524W",
+        "detailTitle": "Solaris",
+        "externalEditPrefilled": true,
+        "invalidDetailStatus": 404
+      }
+    },
+    {
+      "name": "wishlist survives navigation and reload",
+      "passed": true,
+      "evidence": {
+        "countBeforeReload": "1",
+        "itemsAfterReload": 1
+      }
+    },
+    {
+      "name": "client and cross-field validation",
+      "passed": true,
+      "evidence": {
+        "emptyFieldErrors": 4,
+        "crossFieldError": true
+      }
+    },
+    {
+      "name": "mock 422, 409 and 500 handling",
+      "passed": true,
+      "evidence": [
+        {
+          "status": 422,
+          "submitDisabledDuringRequest": true,
+          "target": "#record-title"
+        },
+        {
+          "status": 409,
+          "submitDisabledDuringRequest": true,
+          "target": "#record-isbn"
+        },
+        {
+          "status": 500,
+          "submitDisabledDuringRequest": true,
+          "target": ".form-error"
+        }
+      ]
+    },
+    {
+      "name": "create, redirect, details, edit and stable ID",
+      "passed": true,
+      "evidence": {
+        "createdPath": "/books/BN-57E526A3-1AC6-46B6-8B9E-EB791EF8D94D",
+        "redirectAfterCreate": true,
+        "prefilledEdit": true,
+        "sameIdAfterEdit": true,
+        "storedRecords": 1
+      }
+    },
+    {
+      "name": "auth guard, login return and 404 route",
+      "passed": true,
+      "evidence": {
+        "guestRedirect": "/login",
+        "loginReturn": "/wishlist",
+        "unknownRoute": 404
+      }
+    },
+    {
+      "name": "Offline state recovers through Retry",
+      "passed": true,
+      "evidence": {
+        "message": "Нет подключения к сети. Подключитесь и повторите запрос.",
+        "recovered": true
+      }
+    }
+  ],
+  "responsive": [
+    {
+      "theme": "light",
+      "width": 375,
+      "passed": true,
+      "observed": {
+        "viewport": 375,
+        "scrollWidth": 375,
+        "theme": "light"
+      },
+      "route": "/books/new"
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "passed": true,
+      "observed": {
+        "viewport": 1440,
+        "scrollWidth": 1440,
+        "theme": "light"
+      },
+      "route": "/books/new"
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "passed": true,
+      "observed": {
+        "viewport": 375,
+        "scrollWidth": 375,
+        "theme": "dark"
+      },
+      "route": "/books/new"
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "passed": true,
+      "observed": {
+        "viewport": 1440,
+        "scrollWidth": 1440,
+        "theme": "dark"
+      },
+      "route": "/books/new"
+    }
+  ],
+  "openLibraryRequests": [
+    {
+      "url": "https://openlibrary.org/search.json?q=%28title%3A%22Solaris%22+OR+author%3A%22Solaris%22%29&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=20&page=1&sort=title",
+      "status": 200
+    },
+    {
+      "url": "https://openlibrary.org/works/OL109524W.json",
+      "status": 200
+    },
+    {
+      "url": "https://openlibrary.org/search.json?q=key%3A%2Fworks%2FOL109524W&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=1",
+      "status": 200
+    },
+    {
+      "url": "https://openlibrary.org/works/OL109524W.json",
+      "status": 200
+    },
+    {
+      "url": "https://openlibrary.org/search.json?q=key%3A%2Fworks%2FOL109524W&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=1",
+      "status": 200
+    },
+    {
+      "url": "https://openlibrary.org/search.json?q=%28title%3A%22Solaris%22+OR+author%3A%22Solaris%22%29&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=20&page=1&sort=title",
+      "status": 200
+    },
+    {
+      "url": "https://openlibrary.org/search.json?q=%28title%3A%22Solaris%22+OR+author%3A%22Solaris%22%29&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=20&page=1&sort=title",
+      "status": 200
+    },
+    {
+      "url": "https://covers.openlibrary.org/b/id/5278051-M.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://covers.openlibrary.org/b/id/2119438-M.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://openlibrary.org/search.json?q=%28title%3A%22Dune%22+OR+author%3A%22Dune%22%29&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=20&page=1&sort=title",
+      "status": 200
+    }
+  ],
+  "pageErrors": [],
+  "unexpectedConsoleErrors": [],
+  "expectedOfflineErrors": [
+    "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+    "Failed to load resource: net::ERR_INTERNET_DISCONNECTED"
+  ]
+}

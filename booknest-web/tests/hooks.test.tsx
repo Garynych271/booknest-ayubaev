@@ -2,8 +2,8 @@
 import { act, renderHook, waitFor } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import type { Filters } from '../src/types';
-import { useDebounce } from '../src/hooks/useDebounce';
-import { useFetch } from '../src/hooks/useFetch';
+import { useDebounce } from '../src/shared/hooks/useDebounce';
+import { useFetch } from '../src/shared/hooks/useFetch';
 
 const api = vi.hoisted(() => ({ searchBooks: vi.fn(), getBook: vi.fn() }));
 vi.mock('../src/api/books', async importOriginal => {
@@ -11,7 +11,7 @@ vi.mock('../src/api/books', async importOriginal => {
   return { ...actual, searchBooks: api.searchBooks, getBook: api.getBook };
 });
 
-import { useBooks } from '../src/hooks/useBooks';
+import { useBooks } from '../src/features/books/useBooks';
 
 const filters = (query: string): Filters => ({ query, genre: '', sort: 'title', available: false });
 

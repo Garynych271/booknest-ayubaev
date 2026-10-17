@@ -63,6 +63,9 @@ button[aria-pressed="true"] { background: var(--color-tint); color: var(--color-
 .wishlist { border-block-start: var(--border-width) solid var(--color-rule); padding-block-start: var(--space-5); }
 .wishlist__list li { border-block-end: var(--border-width) solid var(--color-rule); padding-block: var(--space-3); }
 .storage-notice { color: var(--color-invalid); }
+.field-error, .form-error { color: var(--color-invalid); font-size: var(--font-small); }
+.form-note { max-inline-size: var(--measure); color: var(--color-muted); }
+.form-cancel { background: var(--color-surface); color: var(--color-accent); }
 button:hover, .book-card__button:hover { background: var(--color-accent-hover); border-color: var(--color-accent-hover); }
 button[type="reset"] { color: var(--color-accent); background: var(--color-surface); }
 input:invalid:user-invalid, select:invalid:user-invalid, textarea:invalid:user-invalid { border-color: var(--color-invalid); }

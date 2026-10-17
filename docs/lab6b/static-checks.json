@@ -1,0 +1,55 @@
+{
+  "measuredAt": "2026-10-17T13:44:37.494Z",
+  "checks": [
+    {
+      "name": "required nested routes",
+      "passed": true
+    },
+    {
+      "name": "protected wishlist route",
+      "passed": true
+    },
+    {
+      "name": "no fetch in React components",
+      "passed": true
+    },
+    {
+      "name": "internal navigation uses Router primitives",
+      "passed": true
+    },
+    {
+      "name": "one create and edit form",
+      "passed": true
+    },
+    {
+      "name": "react-hook-form with Zod resolver",
+      "passed": true
+    },
+    {
+      "name": "schema type inferred with eight fields",
+      "passed": true
+    },
+    {
+      "name": "cross-field validation",
+      "passed": true
+    },
+    {
+      "name": "Context excludes page state",
+      "passed": true
+    },
+    {
+      "name": "component files at most 150 lines",
+      "passed": true,
+      "evidence": {
+        "file": "booknest-web/src/features/book-form/BookForm.tsx",
+        "lines": 67
+      }
+    },
+    {
+      "name": "required runtime dependencies",
+      "passed": true
+    }
+  ],
+  "passed": 11,
+  "total": 11
+}

@@ -60,6 +60,10 @@
   gap: var(--space-4);
 }
 form p { display: flex; flex-direction: column; gap: var(--space-2); }
+.book-record-form { max-inline-size: 52rem; }
+.book-record-form fieldset { grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--sidebar-size)), 1fr)); }
+.book-record-form fieldset, .form-actions { display: grid; gap: var(--space-4); }
+.form-actions { grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); }
 .filters form { grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--sidebar-size)), 1fr)); align-items: end; }
 form p:has(input[type="checkbox"], input[type="radio"]) {
   flex-direction: row;
