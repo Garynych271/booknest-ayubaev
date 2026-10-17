@@ -424,6 +424,8 @@ Artifacts/files:
 
 ### Лабораторная 5. W6 React + Vite + TypeScript, 8 баллов
 
+Статус 17.10.2026: реализация завершена в `lab-5/react` от `lab-4/api` (`9af96ee`). React-приложение находится в `booknest-web/`; реальные проверки и ограничения: [lab5/README.md](lab5/README.md), дерево компонентов: [lab5/components.md](lab5/components.md), описание PR: [lab5-pr.md](lab5-pr.md). Push/PR требуют подтверждения пользователя; лабораторная 6 не начиналась.
+
 Обязательно:
 
 - Move Lab 3-4 catalog to React + Vite + TypeScript preserving all functionality and styles.

@@ -1,0 +1,82 @@
+[
+  {
+    "name": "catalog-light",
+    "mode": "Lighthouse snapshot, real API for catalog/book",
+    "measuredAt": "2026-10-17T06:10:46.733Z",
+    "observed": {
+      "scheme": "light",
+      "overflow": 0,
+      "states": [
+        "success"
+      ]
+    },
+    "accessibility": 100,
+    "failures": []
+  },
+  {
+    "name": "book-light",
+    "mode": "Lighthouse snapshot, real API for catalog/book",
+    "measuredAt": "2026-10-17T06:10:52.001Z",
+    "observed": {
+      "scheme": "light",
+      "overflow": 0,
+      "states": [
+        "success"
+      ]
+    },
+    "accessibility": 100,
+    "failures": []
+  },
+  {
+    "name": "loan-light",
+    "mode": "Lighthouse snapshot, real API for catalog/book",
+    "measuredAt": "2026-10-17T06:10:55.497Z",
+    "observed": {
+      "scheme": "light",
+      "overflow": 0,
+      "states": []
+    },
+    "accessibility": 100,
+    "failures": []
+  },
+  {
+    "name": "catalog-dark",
+    "mode": "Lighthouse snapshot, real API for catalog/book",
+    "measuredAt": "2026-10-17T06:12:17.640Z",
+    "observed": {
+      "scheme": "dark",
+      "overflow": 0,
+      "states": [
+        "success"
+      ]
+    },
+    "accessibility": 100,
+    "failures": []
+  },
+  {
+    "name": "book-dark",
+    "mode": "Lighthouse snapshot, real API for catalog/book",
+    "measuredAt": "2026-10-17T06:12:22.440Z",
+    "observed": {
+      "scheme": "dark",
+      "overflow": 0,
+      "states": [
+        "success"
+      ]
+    },
+    "accessibility": 100,
+    "failures": []
+  },
+  {
+    "name": "loan-dark",
+    "mode": "Lighthouse snapshot, real API for catalog/book",
+    "measuredAt": "2026-10-17T06:12:25.914Z",
+    "observed": {
+      "scheme": "dark",
+      "overflow": 0,
+      "states": []
+    },
+    "accessibility": 100,
+    "failures": []
+  }
+]

@@ -1,0 +1,66 @@
+[
+    {
+        "Name":  "Badge.tsx",
+        "Lines":  5
+    },
+    {
+        "Name":  "BookCard.tsx",
+        "Lines":  22
+    },
+    {
+        "Name":  "BookCover.tsx",
+        "Lines":  14
+    },
+    {
+        "Name":  "BookDetails.tsx",
+        "Lines":  49
+    },
+    {
+        "Name":  "BookList.tsx",
+        "Lines":  6
+    },
+    {
+        "Name":  "Button.tsx",
+        "Lines":  5
+    },
+    {
+        "Name":  "CatalogPage.tsx",
+        "Lines":  64
+    },
+    {
+        "Name":  "EmptyState.tsx",
+        "Lines":  5
+    },
+    {
+        "Name":  "ErrorBox.tsx",
+        "Lines":  5
+    },
+    {
+        "Name":  "FiltersPanel.tsx",
+        "Lines":  17
+    },
+    {
+        "Name":  "Footer.tsx",
+        "Lines":  1
+    },
+    {
+        "Name":  "Header.tsx",
+        "Lines":  12
+    },
+    {
+        "Name":  "LoanPage.tsx",
+        "Lines":  28
+    },
+    {
+        "Name":  "Pagination.tsx",
+        "Lines":  9
+    },
+    {
+        "Name":  "Spinner.tsx",
+        "Lines":  4
+    },
+    {
+        "Name":  "Wishlist.tsx",
+        "Lines":  18
+    }
+]

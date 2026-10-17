@@ -1,0 +1,68 @@
+.site-header { border-block-end: var(--border-width) solid var(--color-rule); }
+.site-header__brand { font-family: var(--font-book); font-size: var(--font-page); font-weight: var(--weight-bold); text-decoration: none; }
+.site-nav a { display: block; padding: var(--space-3); border-radius: var(--radius-small); text-decoration: none; font-weight: var(--weight-medium); }
+.site-nav [aria-current="page"] { background: var(--color-tint); color: var(--color-accent); }
+.site-nav a:hover { background: var(--color-tint); }
+.site-footer { border-block-start: var(--border-width) solid var(--color-rule); color: var(--color-muted); font-size: var(--font-small); }
+.breadcrumbs { font-size: var(--font-small); }
+.breadcrumbs li { display: flex; align-items: center; gap: var(--space-3); }
+.breadcrumbs li:not(:first-child)::before { content: "/"; color: var(--color-muted); }
+.breadcrumbs a { display: inline-block; padding-block: var(--space-2); }
+.book-card { padding: var(--space-5); border: var(--border-width) solid var(--color-rule); border-radius: var(--radius-card); background: var(--color-surface); box-shadow: var(--shadow-card); }
+.book-card h3 { font-family: var(--font-book); }
+.book-card img { inline-size: 100%; block-size: var(--cover-height); }
+figcaption, dt { color: var(--color-muted); font-size: var(--font-small); }
+dl { display: grid; gap: var(--space-1); }
+dt { font-weight: var(--weight-medium); }
+dd { padding-block-end: var(--space-2); }
+.book-detail__cover img { inline-size: 100%; block-size: var(--detail-cover-height); }
+.loan-summary img { inline-size: 100%; block-size: var(--cover-height); }
+.book-detail__description p { max-inline-size: var(--measure); }
+.book-detail__reviews, .book-detail__form, .related, .club-note, .loan-rules {
+  padding-block-start: var(--space-5);
+  border-block-start: var(--border-width) solid var(--color-rule);
+}
+.related article { padding-block: var(--space-3); }
+label { font-weight: var(--weight-medium); }
+input:not([type="checkbox"], [type="radio"]), select, textarea {
+  inline-size: 100%;
+  min-inline-size: 0;
+  min-block-size: var(--control-height);
+  padding: var(--space-2) var(--space-3);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-small);
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+input::placeholder, textarea::placeholder { color: var(--color-muted); opacity: 1; }
+input[type="checkbox"], input[type="radio"] { flex: 0 0 var(--choice-size); inline-size: var(--choice-size); block-size: var(--choice-size); margin: var(--space-0); }
+input + label { cursor: pointer; }
+fieldset { padding: var(--space-4); border: var(--border-width) solid var(--color-rule); border-radius: var(--radius-small); }
+legend { padding-inline: var(--space-2); }
+button, .book-card__button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-block-size: var(--control-height);
+  padding: var(--space-2) var(--space-4);
+  border: var(--border-width) solid var(--color-accent);
+  border-radius: var(--radius-small);
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+  font-weight: var(--weight-medium);
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+.book-card__button { inline-size: 100%; }
+button[aria-pressed="true"] { background: var(--color-tint); color: var(--color-accent); }
+.badge { display: inline-block; inline-size: fit-content; padding: var(--space-1) var(--space-2); border: var(--border-width) solid var(--color-rule); border-radius: var(--radius-small); color: var(--color-muted); font-size: var(--font-small); }
+.badge[data-tone="available"] { border-color: var(--color-focus); color: var(--color-text); }
+.wishlist { border-block-start: var(--border-width) solid var(--color-rule); padding-block-start: var(--space-5); }
+.wishlist__list li { border-block-end: var(--border-width) solid var(--color-rule); padding-block: var(--space-3); }
+.storage-notice { color: var(--color-invalid); }
+button:hover, .book-card__button:hover { background: var(--color-accent-hover); border-color: var(--color-accent-hover); }
+button[type="reset"] { color: var(--color-accent); background: var(--color-surface); }
+input:invalid:user-invalid, select:invalid:user-invalid, textarea:invalid:user-invalid { border-color: var(--color-invalid); }
+:is(input, select, textarea):user-invalid:not(:focus-visible) { outline: var(--border-width) solid var(--color-invalid); }
+:is(input, select, textarea, button):disabled { background: var(--color-disabled); color: var(--color-muted); border-color: var(--color-border); cursor: not-allowed; }

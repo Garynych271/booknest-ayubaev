@@ -1,3 +1,4 @@
 # Disposable audit dependencies and browser profiles; not application dependencies.
 .audit-tools/
 node_modules/
+dist/

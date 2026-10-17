@@ -1,0 +1,12 @@
+
+> booknest-web@0.0.0 test
+> vitest run
+
+
+ RUN  v5.0.5 C:/Users/User/Desktop/booknest/booknest-ayubaev/booknest-web
+
+
+ Test Files  2 passed (2)
+      Tests  7 passed (7)
+   Start at  11:15:18
+   Duration  592ms (transform 51%, import 26%, tests 18%, worker 5%)
