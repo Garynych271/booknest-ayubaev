@@ -1,8 +1,9 @@
 import { books } from './data/books.js';
 import { defaultFilters, normalizeFilters, toggleWishlist } from './lib/books.js';
 import { render } from './ui/render.js';
+import { loadPreferences, savePreferences } from './storage.js';
 
-const state = { filters: defaultFilters(), wishlist: [], storageAvailable: true };
+const state = loadPreferences(books);
 const view = {
   main: document.querySelector('main'),
   form: document.querySelector('.filters form'),
@@ -18,6 +19,7 @@ const view = {
 };
 
 function update() {
+  state.storageAvailable = savePreferences(state);
   render(state, books, view);
 }
 
