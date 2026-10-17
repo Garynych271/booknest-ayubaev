@@ -1,0 +1,385 @@
+{
+  "measuredAt": "2026-10-17T05:23:18.754Z",
+  "real": [
+    {
+      "name": "normal search and exclusive success",
+      "passed": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n19 !== 20\n\n    at file:///C:/Users/User/Desktop/booknest/booknest-ayubaev/tools/lab4-browser.mjs:47:12\n    at async scenario (file:///C:/Users/User/Desktop/booknest/booknest-ayubaev/tools/lab4-browser.mjs:13:26)\n    at async file:///C:/Users/User/Desktop/booknest/booknest-ayubaev/tools/lab4-browser.mjs:40:3"
+    },
+    {
+      "name": "Slow 4G and canceled obsolete request",
+      "passed": true,
+      "evidence": {
+        "profile": {
+          "offline": false,
+          "latency": 2000,
+          "downloadThroughput": 200000,
+          "uploadThroughput": 93750,
+          "connectionType": "cellular4g"
+        },
+        "canceled": [
+          {
+            "event": "failed",
+            "url": "https://openlibrary.org/search.json?q=%28title%3A%22Lem%22+OR+author%3A%22Lem%22%29&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=20&page=1&sort=title",
+            "requestId": "58444.26",
+            "timestamp": 144053.259519,
+            "type": "Fetch",
+            "errorText": "net::ERR_ABORTED",
+            "canceled": true
+          }
+        ],
+        "count": "Найдено книг: 1710. На странице: 18"
+      }
+    },
+    {
+      "name": "Offline and recovery by Retry",
+      "passed": true,
+      "evidence": {
+        "message": "Нет подключения к сети. Подключитесь и повторите запрос.",
+        "recovered": true
+      }
+    },
+    {
+      "name": "separate work details",
+      "passed": true,
+      "evidence": {
+        "title": "BookNest — Solaris"
+      }
+    },
+    {
+      "name": "wrong work URL returns 404",
+      "passed": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n    'error',\n+   'success'\n  ]\n\n    at file:///C:/Users/User/Desktop/booknest/booknest-ayubaev/tools/lab4-browser.mjs:95:12\n    at async scenario (file:///C:/Users/User/Desktop/booknest/booknest-ayubaev/tools/lab4-browser.mjs:13:26)\n    at async file:///C:/Users/User/Desktop/booknest/booknest-ayubaev/tools/lab4-browser.mjs:91:3"
+    }
+  ],
+  "mocked": [
+    {
+      "name": "minimum query and debounce",
+      "passed": true,
+      "evidence": {
+        "requests": [
+          "https://openlibrary.org/search.json?q=%28title%3A%22abcd%22+OR+author%3A%22abcd%22%29&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=20&page=1&sort=title"
+        ]
+      }
+    },
+    {
+      "name": "pagination boundaries, persistent wishlist, detail link",
+      "passed": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   'empty',\n    'success'\n  ]\n\n    at file:///C:/Users/User/Desktop/booknest/booknest-ayubaev/tools/lab4-browser.mjs:153:12\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at process.processImmediate (node:internal/timers:459:9)\n    at process.callbackTrampoline (node:internal/async_hooks:130:17)\n    at async scenario (file:///C:/Users/User/Desktop/booknest/booknest-ayubaev/tools/lab4-browser.mjs:13:26)\n    at async file:///C:/Users/User/Desktop/booknest/booknest-ayubaev/tools/lab4-browser.mjs:140:3"
+    },
+    {
+      "name": "filters and sort use server query and reset page",
+      "passed": true,
+      "evidence": {
+        "url": "https://openlibrary.org/search.json?q=%28title%3A%22abcd%22+OR+author%3A%22abcd%22%29+AND+subject%3A%22programming%22+AND+ebook_access%3Apublic&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=20&page=1&sort=rating"
+      }
+    },
+    {
+      "name": "empty settles and Retry recovers",
+      "passed": true,
+      "evidence": {
+        "message": ""
+      }
+    },
+    {
+      "name": "429 settles and Retry recovers",
+      "passed": true,
+      "evidence": {
+        "message": "API отклонил запрос (HTTP 429). Проверьте запрос и повторите."
+      }
+    },
+    {
+      "name": "503 settles and Retry recovers",
+      "passed": true,
+      "evidence": {
+        "message": "Сервис временно недоступен (HTTP 503). Попробуйте позже."
+      }
+    },
+    {
+      "name": "malformed settles and Retry recovers",
+      "passed": true,
+      "evidence": {
+        "message": "API вернул некорректные данные. Повторите запрос позже."
+      }
+    },
+    {
+      "name": "keyboard focus, reset and removed wishlist",
+      "passed": true,
+      "evidence": {
+        "focusPreserved": true
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "theme": "light",
+      "width": 320,
+      "path": "index.html",
+      "passed": true,
+      "metrics": {
+        "width": 320,
+        "scroll": 320,
+        "scheme": "light"
+      }
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "path": "book.html?id=OL1000W",
+      "passed": true,
+      "metrics": {
+        "width": 320,
+        "scroll": 320,
+        "scheme": "light"
+      }
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "path": "loan.html",
+      "passed": true,
+      "metrics": {
+        "width": 320,
+        "scroll": 320,
+        "scheme": "light"
+      }
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "path": "index.html",
+      "passed": true,
+      "metrics": {
+        "width": 375,
+        "scroll": 375,
+        "scheme": "light"
+      }
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "path": "book.html?id=OL1000W",
+      "passed": true,
+      "metrics": {
+        "width": 375,
+        "scroll": 375,
+        "scheme": "light"
+      }
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "path": "loan.html",
+      "passed": true,
+      "metrics": {
+        "width": 375,
+        "scroll": 375,
+        "scheme": "light"
+      }
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "path": "index.html",
+      "passed": true,
+      "metrics": {
+        "width": 768,
+        "scroll": 768,
+        "scheme": "light"
+      }
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "path": "book.html?id=OL1000W",
+      "passed": true,
+      "metrics": {
+        "width": 768,
+        "scroll": 768,
+        "scheme": "light"
+      }
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "path": "loan.html",
+      "passed": true,
+      "metrics": {
+        "width": 768,
+        "scroll": 768,
+        "scheme": "light"
+      }
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "index.html",
+      "passed": true,
+      "metrics": {
+        "width": 1440,
+        "scroll": 1440,
+        "scheme": "light"
+      }
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "book.html?id=OL1000W",
+      "passed": true,
+      "metrics": {
+        "width": 1440,
+        "scroll": 1440,
+        "scheme": "light"
+      }
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "loan.html",
+      "passed": true,
+      "metrics": {
+        "width": 1440,
+        "scroll": 1440,
+        "scheme": "light"
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "path": "index.html",
+      "passed": true,
+      "metrics": {
+        "width": 320,
+        "scroll": 320,
+        "scheme": "dark"
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "path": "book.html?id=OL1000W",
+      "passed": true,
+      "metrics": {
+        "width": 320,
+        "scroll": 320,
+        "scheme": "dark"
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "path": "loan.html",
+      "passed": true,
+      "metrics": {
+        "width": 320,
+        "scroll": 320,
+        "scheme": "dark"
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "path": "index.html",
+      "passed": true,
+      "metrics": {
+        "width": 375,
+        "scroll": 375,
+        "scheme": "dark"
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "path": "book.html?id=OL1000W",
+      "passed": true,
+      "metrics": {
+        "width": 375,
+        "scroll": 375,
+        "scheme": "dark"
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "path": "loan.html",
+      "passed": true,
+      "metrics": {
+        "width": 375,
+        "scroll": 375,
+        "scheme": "dark"
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "path": "index.html",
+      "passed": true,
+      "metrics": {
+        "width": 768,
+        "scroll": 768,
+        "scheme": "dark"
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "path": "book.html?id=OL1000W",
+      "passed": true,
+      "metrics": {
+        "width": 768,
+        "scroll": 768,
+        "scheme": "dark"
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "path": "loan.html",
+      "passed": true,
+      "metrics": {
+        "width": 768,
+        "scroll": 768,
+        "scheme": "dark"
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "index.html",
+      "passed": true,
+      "metrics": {
+        "width": 1440,
+        "scroll": 1440,
+        "scheme": "dark"
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "book.html?id=OL1000W",
+      "passed": true,
+      "metrics": {
+        "width": 1440,
+        "scroll": 1440,
+        "scheme": "dark"
+      }
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "loan.html",
+      "passed": true,
+      "metrics": {
+        "width": 1440,
+        "scroll": 1440,
+        "scheme": "dark"
+      }
+    }
+  ],
+  "errors": [],
+  "browser": "155.0.4283.45",
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 429 (Too Many Requests)",
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+  ]
+}

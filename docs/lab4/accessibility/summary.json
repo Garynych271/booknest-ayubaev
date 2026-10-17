@@ -1,0 +1,58 @@
+[
+  {
+    "name": "index-light",
+    "mode": "Lighthouse snapshot, real API, no mocks; not a Performance audit",
+    "measuredAt": "2026-10-17T05:31:46.774Z",
+    "observed": {
+      "theme": "light",
+      "states": [
+        "success"
+      ],
+      "cards": 19
+    },
+    "accessibility": 100,
+    "failures": []
+  },
+  {
+    "name": "book-light",
+    "mode": "Lighthouse snapshot, real API, no mocks; not a Performance audit",
+    "measuredAt": "2026-10-17T05:31:51.121Z",
+    "observed": {
+      "theme": "light",
+      "states": [
+        "success"
+      ],
+      "cards": 0
+    },
+    "accessibility": 100,
+    "failures": []
+  },
+  {
+    "name": "index-dark",
+    "mode": "Lighthouse snapshot, real API, no mocks; not a Performance audit",
+    "measuredAt": "2026-10-17T05:31:56.023Z",
+    "observed": {
+      "theme": "dark",
+      "states": [
+        "success"
+      ],
+      "cards": 19
+    },
+    "accessibility": 100,
+    "failures": []
+  },
+  {
+    "name": "book-dark",
+    "mode": "Lighthouse snapshot, real API, no mocks; not a Performance audit",
+    "measuredAt": "2026-10-17T05:32:00.356Z",
+    "observed": {
+      "theme": "dark",
+      "states": [
+        "success"
+      ],
+      "cards": 0
+    },
+    "accessibility": 100,
+    "failures": []
+  }
+]

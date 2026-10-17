@@ -1,0 +1,26 @@
+[
+  {
+    "name": "search",
+    "url": "https://openlibrary.org/search.json?q=%28title%3A%22Solaris%22+OR+author%3A%22Solaris%22%29+AND+key%3A%2Fworks%2FOL*W&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=20&page=1&sort=title",
+    "measuredAt": "2026-10-17T05:24:15.021Z",
+    "exitCode": 0,
+    "stderr": "",
+    "statusLine": "HTTP/1.1 500 Internal Server Error"
+  },
+  {
+    "name": "work",
+    "url": "https://openlibrary.org/works/OL109524W.json",
+    "measuredAt": "2026-10-17T05:24:26.076Z",
+    "exitCode": 0,
+    "stderr": "",
+    "statusLine": "HTTP/1.1 200 OK"
+  },
+  {
+    "name": "missing",
+    "url": "https://openlibrary.org/works/OL999999999999999W.json",
+    "measuredAt": "2026-10-17T05:24:27.209Z",
+    "exitCode": 0,
+    "stderr": "",
+    "statusLine": "HTTP/1.1 404 Not Found"
+  }
+]

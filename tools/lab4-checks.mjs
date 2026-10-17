@@ -1,0 +1,10 @@
+import { spawnSync } from 'node:child_process';
+import { mkdir, writeFile } from 'node:fs/promises';
+await mkdir('docs/lab4', { recursive: true });
+const tests = spawnSync(process.execPath, ['--test', 'tests/api.test.js', 'tests/books.test.js', 'tests/storage.test.js'], { encoding: 'utf8', windowsHide: true });
+await writeFile('docs/lab4/unit-tests.txt', tests.stdout + tests.stderr);
+const lint = spawnSync(process.execPath, ['node_modules/eslint/bin/eslint.js', 'main.js', 'detail.js', 'storage.js', 'api-storage.js', 'api', 'data', 'lib', 'ui', 'tests', '--max-warnings=0', '--format=json'], { encoding: 'utf8', windowsHide: true });
+await writeFile('docs/lab4/eslint.json', lint.stdout);
+await writeFile('docs/lab4/checks-summary.json', JSON.stringify({ measuredAt: new Date().toISOString(), node: process.version, testsExitCode: tests.status, eslintExitCode: lint.status, eslintStderr: lint.stderr }, null, 2));
+console.log(tests.stdout, lint.stderr);
+process.exitCode = tests.status || lint.status;
