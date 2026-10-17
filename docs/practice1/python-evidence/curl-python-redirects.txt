@@ -1,0 +1,33 @@
+HTTP/1.1 301 Moved Permanently
+Connection: close
+Content-Length: 0
+Server: Varnish
+Retry-After: 0
+Accept-Ranges: bytes
+Date: Sat, 17 Oct 2026 18:26:53 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bma-essb1270065-BMA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1792261613.385156,VS0,VE0
+Location: https://www.python.org/
+Strict-Transport-Security: max-age=315360000; preload
+
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 51878
+content-security-policy-report-only: default-src 'self'; style-src 'self' 'unsafe-inline' https://ajax.googleapis.com; frame-src 'self' https://console.python.org; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; connect-src 'self' https://console.python.org https://analytics.python.org https://server.ethicalads.io https://2p66nmmycsj3.statuspage.io; script-src 'self' 'nonce-4efXOlJMbILdtFSZtFNzDw==' https://analytics.python.org https://media.ethicalads.io https://server.ethicalads.io https://ajax.googleapis.com; img-src 'self' data: https:; font-src 'self' data:; object-src 'none'; report-uri https://o20004.ingest.us.sentry.io/api/39935/security/?sentry_key=95f826ce8a6d47e9ab5dbb055c24eb74
+via: 1.1 varnish, 1.1 varnish, 1.1 varnish
+content-type: text/html; charset=utf-8
+x-frame-options: SAMEORIGIN
+server: nginx
+Accept-Ranges: bytes
+Date: Sat, 17 Oct 2026 18:26:54 GMT
+Age: 2818
+X-Served-By: cache-iad-kcgs7200067-IAD, cache-iad-kcgs7200067-IAD, cache-iad-kcgs7270046-IAD, cache-bma-essb1270045-BMA
+X-Cache: MISS, HIT, HIT
+X-Cache-Hits: 0, 7, 19
+X-Timer: S1792261614.062576,VS0,VE0
+Vary: Cookie
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Python.org — фазы первого запроса</title>
+    <style>
+      * { box-sizing: border-box; }
+      body { margin: 0; padding: 48px; color: #17202a; background: #f7f9fb; font: 18px/1.45 Arial, sans-serif; }
+      main { max-width: 1280px; margin: 0 auto; }
+      h1 { margin: 0 0 8px; font-size: 32px; }
+      .meta { margin: 0 0 34px; color: #465564; }
+      .request { padding: 24px; border: 1px solid #aab7c4; background: #fff; }
+      .summary { display: flex; justify-content: space-between; gap: 24px; margin-bottom: 20px; font-weight: 700; }
+      .timeline { display: flex; width: 100%; height: 64px; border: 1px solid #25384b; overflow: hidden; }
+      .phase { display: flex; min-width: 5px; align-items: center; justify-content: center; overflow: hidden; color: #111; font-size: 14px; font-weight: 700; white-space: nowrap; }
+      .dns { flex: 109.056; background: #7fd1b9; }
+      .tcp { flex: 163.148; background: #f5c36b; }
+      .tls { flex: 129.412; background: #ee8f75; }
+      .send { flex: 0.13; background: #bd9be2; }
+      .wait { flex: 134.297; background: #78aee8; }
+      .download { flex: 201.338; background: #91c96f; }
+      table { width: 100%; margin-top: 26px; border-collapse: collapse; }
+      th, td { padding: 10px 12px; border-bottom: 1px solid #d7dee5; text-align: left; }
+      th:last-child, td:last-child { text-align: right; }
+      .swatch { display: inline-block; width: 18px; height: 18px; margin-right: 10px; vertical-align: -3px; border: 1px solid #53606c; }
+      .note { margin: 24px 0 0; padding-left: 14px; border-left: 4px solid #375a7f; }
+      code { font-family: Consolas, monospace; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Network waterfall: первый документный запрос</h1>
+      <p class="meta">Microsoft Edge + Chrome DevTools Protocol · 17 октября 2026 · данные из <code>network-timing.json</code></p>
+
+      <section class="request" aria-labelledby="request-title">
+        <div class="summary" id="request-title">
+          <span>GET https://www.python.org/</span>
+          <span>200 · h2 · 52 769 bytes · 737,9 ms</span>
+        </div>
+
+        <div class="timeline" aria-label="Последовательность фаз первого запроса">
+          <div class="phase dns" title="DNS lookup: 109,1 ms">DNS</div>
+          <div class="phase tcp" title="Initial connection до TLS: 163,1 ms">Connection</div>
+          <div class="phase tls" title="SSL/TLS: 129,4 ms">SSL</div>
+          <div class="phase send" title="Request sent: 0,13 ms"></div>
+          <div class="phase wait" title="Waiting (TTFB): 134,3 ms">Waiting</div>
+          <div class="phase download" title="Content download: 201,3 ms">Download</div>
+        </div>
+
+        <table>
+          <thead><tr><th>Фаза</th><th>Интерпретация</th><th>Время</th></tr></thead>
+          <tbody>
+            <tr><td><span class="swatch dns"></span>DNS lookup</td><td>Получение IP-адреса домена</td><td>109,1 ms</td></tr>
+            <tr><td><span class="swatch tcp"></span>Initial connection</td><td>Установка соединения до начала TLS</td><td>163,1 ms</td></tr>
+            <tr><td><span class="swatch tls"></span>SSL/TLS</td><td>Защищённое согласование соединения</td><td>129,4 ms</td></tr>
+            <tr><td><span class="swatch send"></span>Request sent</td><td>Отправка HTTP-запроса</td><td>0,13 ms</td></tr>
+            <tr><td><span class="swatch wait"></span>Waiting (TTFB)</td><td>Ожидание первого байта ответа</td><td>134,3 ms</td></tr>
+            <tr><td><span class="swatch download"></span>Content download</td><td>Получение тела HTML-документа</td><td>201,3 ms</td></tr>
+          </tbody>
+        </table>
+
+        <p class="note">Stalled/queueing в доступном CDP timing равен 0 ms. Ширина сегментов пропорциональна измеренной длительности; очень короткая фаза отправки показана минимальной видимой полосой.</p>
+      </section>
+    </main>
+  </body>
+</html>
