@@ -6,7 +6,7 @@
 .site-footer { border-block-start: var(--border-width) solid var(--color-rule); color: var(--color-muted); font-size: var(--font-small); }
 .breadcrumbs { font-size: var(--font-small); }
 .breadcrumbs li { display: flex; align-items: center; gap: var(--space-3); }
-.breadcrumbs li + li::before { content: "/"; color: var(--color-muted); }
+.breadcrumbs li:not(:first-child)::before { content: "/"; color: var(--color-muted); }
 .breadcrumbs a { display: inline-block; padding-block: var(--space-2); }
 .book-card { padding: var(--space-5); border: var(--border-width) solid var(--color-rule); border-radius: var(--radius-card); background: var(--color-surface); box-shadow: var(--shadow-card); }
 .book-card h3 { font-family: var(--font-book); }
@@ -39,7 +39,7 @@ input[type="checkbox"], input[type="radio"] { flex: 0 0 var(--choice-size); inli
 input + label { cursor: pointer; }
 fieldset { padding: var(--space-4); border: var(--border-width) solid var(--color-rule); border-radius: var(--radius-small); }
 legend { padding-inline: var(--space-2); }
-button, .book-card > p:last-child a {
+button, .book-card__button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -54,9 +54,9 @@ button, .book-card > p:last-child a {
   text-align: center;
   cursor: pointer;
 }
-.book-card > p:last-child a { inline-size: 100%; }
-button:hover, .book-card > p:last-child a:hover { background: var(--color-accent-hover); border-color: var(--color-accent-hover); }
+.book-card__button { inline-size: 100%; }
+button:hover, .book-card__button:hover { background: var(--color-accent-hover); border-color: var(--color-accent-hover); }
 button[type="reset"] { color: var(--color-accent); background: var(--color-surface); }
-input:invalid:not(:placeholder-shown):not(:focus), select:user-invalid, textarea:user-invalid { border-color: var(--color-invalid); }
-input:user-invalid, select:user-invalid, textarea:user-invalid { outline: var(--border-width) solid var(--color-invalid); }
+input:invalid:user-invalid, select:invalid:user-invalid, textarea:invalid:user-invalid { border-color: var(--color-invalid); }
+:is(input, select, textarea):user-invalid:not(:focus-visible) { outline: var(--border-width) solid var(--color-invalid); }
 :is(input, select, textarea, button):disabled { background: var(--color-disabled); color: var(--color-muted); border-color: var(--color-border); cursor: not-allowed; }

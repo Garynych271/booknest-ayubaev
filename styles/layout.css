@@ -40,6 +40,7 @@
   gap: var(--space-4);
 }
 form p { display: flex; flex-direction: column; gap: var(--space-2); }
+.filters form { grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--sidebar-size)), 1fr)); align-items: end; }
 form p:has(input[type="checkbox"], input[type="radio"]) {
   flex-direction: row;
   align-items: flex-start;
