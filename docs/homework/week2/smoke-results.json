@@ -1,0 +1,115 @@
+{
+  "measuredAt": "2026-10-17T18:16:41.882Z",
+  "url": "http://127.0.0.1:8080/profile.html",
+  "h1Count": 1,
+  "headingLevels": [
+    1,
+    2,
+    2,
+    2
+  ],
+  "table": {
+    "caption": 1,
+    "columnHeaders": 4,
+    "rowHeaders": 3
+  },
+  "form": {
+    "controls": 3,
+    "labels": 3,
+    "emptyValid": false
+  },
+  "focusableCount": 13,
+  "focusOrder": [
+    {
+      "tag": "a",
+      "id": null,
+      "name": null,
+      "text": "BookNest",
+      "href": "index.html"
+    },
+    {
+      "tag": "a",
+      "id": null,
+      "name": null,
+      "text": "Каталог",
+      "href": "index.html"
+    },
+    {
+      "tag": "a",
+      "id": null,
+      "name": null,
+      "text": "Карточка книги",
+      "href": "book.html"
+    },
+    {
+      "tag": "a",
+      "id": null,
+      "name": null,
+      "text": "Форма выдачи",
+      "href": "loan.html"
+    },
+    {
+      "tag": "a",
+      "id": null,
+      "name": null,
+      "text": "Профиль читателя",
+      "href": "profile.html"
+    },
+    {
+      "tag": "a",
+      "id": null,
+      "name": null,
+      "text": "Каталог",
+      "href": "index.html"
+    },
+    {
+      "tag": "a",
+      "id": null,
+      "name": null,
+      "text": "aliya.nurlanova@example.com",
+      "href": "mailto:aliya.nurlanova@example.com"
+    },
+    {
+      "tag": "a",
+      "id": null,
+      "name": null,
+      "text": "Solaris",
+      "href": "book.html"
+    },
+    {
+      "tag": "input",
+      "id": "current-password",
+      "name": "currentPassword",
+      "text": "",
+      "href": null
+    },
+    {
+      "tag": "input",
+      "id": "new-password",
+      "name": "newPassword",
+      "text": "",
+      "href": null
+    },
+    {
+      "tag": "input",
+      "id": "password-confirmation",
+      "name": "passwordConfirmation",
+      "text": "",
+      "href": null
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "name": null,
+      "text": "Сменить пароль",
+      "href": null
+    },
+    {
+      "tag": "a",
+      "id": null,
+      "name": null,
+      "text": "Вернуться в каталог",
+      "href": "index.html"
+    }
+  ]
+}
