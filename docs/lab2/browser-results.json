@@ -1,0 +1,3348 @@
+{
+  "measuredAt": "2026-10-17T02:31:09.477Z",
+  "browser": "155.0.4283.45",
+  "executablePath": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+  "cases": [
+    {
+      "name": "index",
+      "theme": "light",
+      "width": 320,
+      "sourcesEqual": true,
+      "viewport": 320,
+      "scrollWidth": 320,
+      "scheme": "light",
+      "background": "rgb(244, 245, 246)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780451524935-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780132350884-M.jpg",
+          "loaded": true
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780062316097-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780201616224-M.jpg",
+          "loaded": true
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156001311-M.jpg",
+          "loaded": true
+        }
+      ],
+      "columns": "288px",
+      "cards": [
+        {
+          "x": 16,
+          "y": 927.96875,
+          "width": 288,
+          "height": 745.828125,
+          "bottom": 1673.796875,
+          "button": {
+            "x": 41,
+            "y": 1604.796875,
+            "width": 238,
+            "height": 44,
+            "bottom": 1648.796875
+          }
+        },
+        {
+          "x": 16,
+          "y": 1697.796875,
+          "width": 288,
+          "height": 721.03125,
+          "bottom": 2418.828125,
+          "button": {
+            "x": 41,
+            "y": 2349.828125,
+            "width": 238,
+            "height": 44,
+            "bottom": 2393.828125
+          }
+        },
+        {
+          "x": 16,
+          "y": 2442.828125,
+          "width": 288,
+          "height": 721.03125,
+          "bottom": 3163.859375,
+          "button": {
+            "x": 41,
+            "y": 3094.859375,
+            "width": 238,
+            "height": 44,
+            "bottom": 3138.859375
+          }
+        },
+        {
+          "x": 16,
+          "y": 3187.859375,
+          "width": 288,
+          "height": 721.03125,
+          "bottom": 3908.890625,
+          "button": {
+            "x": 41,
+            "y": 3839.890625,
+            "width": 238,
+            "height": 44,
+            "bottom": 3883.890625
+          }
+        },
+        {
+          "x": 16,
+          "y": 3932.890625,
+          "width": 288,
+          "height": 748.53125,
+          "bottom": 4681.421875,
+          "button": {
+            "x": 41,
+            "y": 4612.421875,
+            "width": 238,
+            "height": 44,
+            "bottom": 4656.421875
+          }
+        },
+        {
+          "x": 16,
+          "y": 4705.421875,
+          "width": 288,
+          "height": 721.03125,
+          "bottom": 5426.453125,
+          "button": {
+            "x": 41,
+            "y": 5357.453125,
+            "width": 238,
+            "height": 44,
+            "bottom": 5401.453125
+          }
+        }
+      ],
+      "nav": [
+        {
+          "x": 16,
+          "y": 85.59375,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 134.390625
+        },
+        {
+          "x": 110.21875,
+          "y": 85.59375,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 134.390625
+        },
+        {
+          "x": 16,
+          "y": 146.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 195.1875
+        }
+      ],
+      "sidebar": {
+        "x": 16,
+        "y": 364.1875,
+        "width": 288,
+        "height": 406.6875,
+        "bottom": 770.875
+      },
+      "catalog": {
+        "x": 16,
+        "y": 802.875,
+        "width": 288,
+        "height": 4623.578125,
+        "bottom": 5426.453125
+      },
+      "motion": 0
+    },
+    {
+      "name": "index",
+      "theme": "light",
+      "width": 375,
+      "sourcesEqual": true,
+      "viewport": 375,
+      "scrollWidth": 375,
+      "scheme": "light",
+      "background": "rgb(244, 245, 246)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780451524935-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780132350884-M.jpg",
+          "loaded": true
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780062316097-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780201616224-M.jpg",
+          "loaded": true
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156001311-M.jpg",
+          "loaded": true
+        }
+      ],
+      "columns": "343px",
+      "cards": [
+        {
+          "x": 16,
+          "y": 927.96875,
+          "width": 343,
+          "height": 721.03125,
+          "bottom": 1649,
+          "button": {
+            "x": 41,
+            "y": 1580,
+            "width": 293,
+            "height": 44,
+            "bottom": 1624
+          }
+        },
+        {
+          "x": 16,
+          "y": 1673,
+          "width": 343,
+          "height": 696.234375,
+          "bottom": 2369.234375,
+          "button": {
+            "x": 41,
+            "y": 2300.234375,
+            "width": 293,
+            "height": 44,
+            "bottom": 2344.234375
+          }
+        },
+        {
+          "x": 16,
+          "y": 2393.234375,
+          "width": 343,
+          "height": 721.03125,
+          "bottom": 3114.265625,
+          "button": {
+            "x": 41,
+            "y": 3045.265625,
+            "width": 293,
+            "height": 44,
+            "bottom": 3089.265625
+          }
+        },
+        {
+          "x": 16,
+          "y": 3138.265625,
+          "width": 343,
+          "height": 721.03125,
+          "bottom": 3859.296875,
+          "button": {
+            "x": 41,
+            "y": 3790.296875,
+            "width": 293,
+            "height": 44,
+            "bottom": 3834.296875
+          }
+        },
+        {
+          "x": 16,
+          "y": 3883.296875,
+          "width": 343,
+          "height": 748.53125,
+          "bottom": 4631.828125,
+          "button": {
+            "x": 41,
+            "y": 4562.828125,
+            "width": 293,
+            "height": 44,
+            "bottom": 4606.828125
+          }
+        },
+        {
+          "x": 16,
+          "y": 4655.828125,
+          "width": 343,
+          "height": 721.03125,
+          "bottom": 5376.859375,
+          "button": {
+            "x": 41,
+            "y": 5307.859375,
+            "width": 293,
+            "height": 44,
+            "bottom": 5351.859375
+          }
+        }
+      ],
+      "nav": [
+        {
+          "x": 16,
+          "y": 85.59375,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 134.390625
+        },
+        {
+          "x": 110.21875,
+          "y": 85.59375,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 134.390625
+        },
+        {
+          "x": 16,
+          "y": 146.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 195.1875
+        }
+      ],
+      "sidebar": {
+        "x": 16,
+        "y": 364.1875,
+        "width": 343,
+        "height": 406.6875,
+        "bottom": 770.875
+      },
+      "catalog": {
+        "x": 16,
+        "y": 802.875,
+        "width": 343,
+        "height": 4573.984375,
+        "bottom": 5376.859375
+      },
+      "motion": 0
+    },
+    {
+      "name": "index",
+      "theme": "light",
+      "width": 768,
+      "sourcesEqual": true,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "scheme": "light",
+      "background": "rgb(244, 245, 246)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780451524935-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780132350884-M.jpg",
+          "loaded": true
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780062316097-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780201616224-M.jpg",
+          "loaded": true
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156001311-M.jpg",
+          "loaded": true
+        }
+      ],
+      "columns": "348.969px 348.969px",
+      "cards": [
+        {
+          "x": 23.03125,
+          "y": 607.984375,
+          "width": 348.96875,
+          "height": 721.03125,
+          "bottom": 1329.015625,
+          "button": {
+            "x": 48.03125,
+            "y": 1260.015625,
+            "width": 298.96875,
+            "height": 44,
+            "bottom": 1304.015625
+          }
+        },
+        {
+          "x": 396,
+          "y": 607.984375,
+          "width": 348.96875,
+          "height": 721.03125,
+          "bottom": 1329.015625,
+          "button": {
+            "x": 421,
+            "y": 1260.015625,
+            "width": 298.96875,
+            "height": 44,
+            "bottom": 1304.015625
+          }
+        },
+        {
+          "x": 23.03125,
+          "y": 1353.015625,
+          "width": 348.96875,
+          "height": 721.03125,
+          "bottom": 2074.046875,
+          "button": {
+            "x": 48.03125,
+            "y": 2005.046875,
+            "width": 298.96875,
+            "height": 44,
+            "bottom": 2049.046875
+          }
+        },
+        {
+          "x": 396,
+          "y": 1353.015625,
+          "width": 348.96875,
+          "height": 721.03125,
+          "bottom": 2074.046875,
+          "button": {
+            "x": 421,
+            "y": 2005.046875,
+            "width": 298.96875,
+            "height": 44,
+            "bottom": 2049.046875
+          }
+        },
+        {
+          "x": 23.03125,
+          "y": 2098.046875,
+          "width": 348.96875,
+          "height": 748.53125,
+          "bottom": 2846.578125,
+          "button": {
+            "x": 48.03125,
+            "y": 2777.578125,
+            "width": 298.96875,
+            "height": 44,
+            "bottom": 2821.578125
+          }
+        },
+        {
+          "x": 396,
+          "y": 2098.046875,
+          "width": 348.96875,
+          "height": 748.53125,
+          "bottom": 2846.578125,
+          "button": {
+            "x": 421,
+            "y": 2777.578125,
+            "width": 298.96875,
+            "height": 44,
+            "bottom": 2821.578125
+          }
+        }
+      ],
+      "nav": [
+        {
+          "x": 359.65625,
+          "y": 24.390625,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 453.875,
+          "y": 24.390625,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 607.484375,
+          "y": 24.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        }
+      ],
+      "sidebar": {
+        "x": 23.03125,
+        "y": 202.59375,
+        "width": 721.9375,
+        "height": 273.09375,
+        "bottom": 475.6875
+      },
+      "catalog": {
+        "x": 23.03125,
+        "y": 507.6875,
+        "width": 721.9375,
+        "height": 2338.890625,
+        "bottom": 2846.578125
+      },
+      "motion": 0
+    },
+    {
+      "name": "index",
+      "theme": "light",
+      "width": 1440,
+      "sourcesEqual": true,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "scheme": "light",
+      "background": "rgb(244, 245, 246)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780451524935-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780132350884-M.jpg",
+          "loaded": true
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780062316097-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780201616224-M.jpg",
+          "loaded": true
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156001311-M.jpg",
+          "loaded": true
+        }
+      ],
+      "columns": "341.328px 341.328px 341.344px",
+      "cards": [
+        {
+          "x": 328,
+          "y": 302.890625,
+          "width": 341.328125,
+          "height": 721.03125,
+          "bottom": 1023.921875,
+          "button": {
+            "x": 353,
+            "y": 954.921875,
+            "width": 291.328125,
+            "height": 44,
+            "bottom": 998.921875
+          }
+        },
+        {
+          "x": 693.328125,
+          "y": 302.890625,
+          "width": 341.328125,
+          "height": 721.03125,
+          "bottom": 1023.921875,
+          "button": {
+            "x": 718.328125,
+            "y": 954.921875,
+            "width": 291.328125,
+            "height": 44,
+            "bottom": 998.921875
+          }
+        },
+        {
+          "x": 1058.65625,
+          "y": 302.890625,
+          "width": 341.34375,
+          "height": 721.03125,
+          "bottom": 1023.921875,
+          "button": {
+            "x": 1083.65625,
+            "y": 954.921875,
+            "width": 291.34375,
+            "height": 44,
+            "bottom": 998.921875
+          }
+        },
+        {
+          "x": 328,
+          "y": 1047.921875,
+          "width": 341.328125,
+          "height": 748.53125,
+          "bottom": 1796.453125,
+          "button": {
+            "x": 353,
+            "y": 1727.453125,
+            "width": 291.328125,
+            "height": 44,
+            "bottom": 1771.453125
+          }
+        },
+        {
+          "x": 693.328125,
+          "y": 1047.921875,
+          "width": 341.328125,
+          "height": 748.53125,
+          "bottom": 1796.453125,
+          "button": {
+            "x": 718.328125,
+            "y": 1727.453125,
+            "width": 291.328125,
+            "height": 44,
+            "bottom": 1771.453125
+          }
+        },
+        {
+          "x": 1058.65625,
+          "y": 1047.921875,
+          "width": 341.34375,
+          "height": 748.53125,
+          "bottom": 1796.453125,
+          "button": {
+            "x": 1083.65625,
+            "y": 1727.453125,
+            "width": 291.34375,
+            "height": 44,
+            "bottom": 1771.453125
+          }
+        }
+      ],
+      "nav": [
+        {
+          "x": 1014.6875,
+          "y": 24.390625,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 1108.90625,
+          "y": 24.390625,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 1262.515625,
+          "y": 24.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        }
+      ],
+      "sidebar": {
+        "x": 40,
+        "y": 202.59375,
+        "width": 256,
+        "height": 1593.859375,
+        "bottom": 1796.453125
+      },
+      "catalog": {
+        "x": 328,
+        "y": 202.59375,
+        "width": 1072,
+        "height": 1593.859375,
+        "bottom": 1796.453125
+      },
+      "motion": 0
+    },
+    {
+      "name": "index",
+      "theme": "light",
+      "width": 1600,
+      "sourcesEqual": true,
+      "viewport": 1600,
+      "scrollWidth": 1600,
+      "scheme": "light",
+      "background": "rgb(244, 245, 246)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780451524935-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780132350884-M.jpg",
+          "loaded": true
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780062316097-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780201616224-M.jpg",
+          "loaded": true
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156001311-M.jpg",
+          "loaded": true
+        }
+      ],
+      "columns": "341.328px 341.328px 341.344px",
+      "cards": [
+        {
+          "x": 408,
+          "y": 302.890625,
+          "width": 341.328125,
+          "height": 721.03125,
+          "bottom": 1023.921875,
+          "button": {
+            "x": 433,
+            "y": 954.921875,
+            "width": 291.328125,
+            "height": 44,
+            "bottom": 998.921875
+          }
+        },
+        {
+          "x": 773.328125,
+          "y": 302.890625,
+          "width": 341.328125,
+          "height": 721.03125,
+          "bottom": 1023.921875,
+          "button": {
+            "x": 798.328125,
+            "y": 954.921875,
+            "width": 291.328125,
+            "height": 44,
+            "bottom": 998.921875
+          }
+        },
+        {
+          "x": 1138.65625,
+          "y": 302.890625,
+          "width": 341.34375,
+          "height": 721.03125,
+          "bottom": 1023.921875,
+          "button": {
+            "x": 1163.65625,
+            "y": 954.921875,
+            "width": 291.34375,
+            "height": 44,
+            "bottom": 998.921875
+          }
+        },
+        {
+          "x": 408,
+          "y": 1047.921875,
+          "width": 341.328125,
+          "height": 748.53125,
+          "bottom": 1796.453125,
+          "button": {
+            "x": 433,
+            "y": 1727.453125,
+            "width": 291.328125,
+            "height": 44,
+            "bottom": 1771.453125
+          }
+        },
+        {
+          "x": 773.328125,
+          "y": 1047.921875,
+          "width": 341.328125,
+          "height": 748.53125,
+          "bottom": 1796.453125,
+          "button": {
+            "x": 798.328125,
+            "y": 1727.453125,
+            "width": 291.328125,
+            "height": 44,
+            "bottom": 1771.453125
+          }
+        },
+        {
+          "x": 1138.65625,
+          "y": 1047.921875,
+          "width": 341.34375,
+          "height": 748.53125,
+          "bottom": 1796.453125,
+          "button": {
+            "x": 1163.65625,
+            "y": 1727.453125,
+            "width": 291.34375,
+            "height": 44,
+            "bottom": 1771.453125
+          }
+        }
+      ],
+      "nav": [
+        {
+          "x": 1094.6875,
+          "y": 24.390625,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 1188.90625,
+          "y": 24.390625,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 1342.515625,
+          "y": 24.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        }
+      ],
+      "sidebar": {
+        "x": 120,
+        "y": 202.59375,
+        "width": 256,
+        "height": 1593.859375,
+        "bottom": 1796.453125
+      },
+      "catalog": {
+        "x": 408,
+        "y": 202.59375,
+        "width": 1072,
+        "height": 1593.859375,
+        "bottom": 1796.453125
+      },
+      "motion": 0
+    },
+    {
+      "name": "index",
+      "theme": "light",
+      "keyboard": [
+        {
+          "tag": "A",
+          "id": "",
+          "text": "BookNest",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Каталог",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Карточка книги",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Форма выдачи",
+          "outline": "solid"
+        },
+        {
+          "tag": "INPUT",
+          "id": "search",
+          "text": "",
+          "outline": "solid"
+        },
+        {
+          "tag": "SELECT",
+          "id": "genre",
+          "text": "Все жанры\n              Научная фантастика\n              Ром",
+          "outline": "solid"
+        },
+        {
+          "tag": "SELECT",
+          "id": "sort",
+          "text": "По названию\n              Сначала новые\n              По рей",
+          "outline": "solid"
+        },
+        {
+          "tag": "INPUT",
+          "id": "available",
+          "text": "",
+          "outline": "solid"
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Применить фильтры",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Solaris",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Оформить выдачу",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "1984",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Оформить выдачу",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Clean Code",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Оформить выдачу",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Sapiens",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Оформить выдачу",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "The Pragmatic Programmer",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Оформить выдачу",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Имя розы",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Оформить выдачу",
+          "outline": "solid"
+        },
+        {
+          "tag": "BODY",
+          "id": "",
+          "text": "BookNest\n      \n        \n          Каталог\n          Карточк",
+          "outline": "none"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "BookNest",
+          "outline": "solid"
+        }
+      ],
+      "focusControlsChecked": 21,
+      "emptyFormValidity": [
+        true
+      ]
+    },
+    {
+      "name": "index",
+      "theme": "light",
+      "longTitle": [
+        {
+          "height": 913.53125,
+          "bottom": -125.578125
+        },
+        {
+          "height": 913.53125,
+          "bottom": -125.578125
+        },
+        {
+          "height": 913.53125,
+          "bottom": -125.578125
+        }
+      ],
+      "shortContentFooterBottom": 900
+    },
+    {
+      "name": "index",
+      "theme": "dark",
+      "width": 320,
+      "sourcesEqual": true,
+      "viewport": 320,
+      "scrollWidth": 320,
+      "scheme": "dark",
+      "background": "rgb(24, 26, 28)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780451524935-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780132350884-M.jpg",
+          "loaded": true
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780062316097-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780201616224-M.jpg",
+          "loaded": true
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156001311-M.jpg",
+          "loaded": true
+        }
+      ],
+      "columns": "288px",
+      "cards": [
+        {
+          "x": 16,
+          "y": 927.96875,
+          "width": 288,
+          "height": 745.828125,
+          "bottom": 1673.796875,
+          "button": {
+            "x": 41,
+            "y": 1604.796875,
+            "width": 238,
+            "height": 44,
+            "bottom": 1648.796875
+          }
+        },
+        {
+          "x": 16,
+          "y": 1697.796875,
+          "width": 288,
+          "height": 721.03125,
+          "bottom": 2418.828125,
+          "button": {
+            "x": 41,
+            "y": 2349.828125,
+            "width": 238,
+            "height": 44,
+            "bottom": 2393.828125
+          }
+        },
+        {
+          "x": 16,
+          "y": 2442.828125,
+          "width": 288,
+          "height": 721.03125,
+          "bottom": 3163.859375,
+          "button": {
+            "x": 41,
+            "y": 3094.859375,
+            "width": 238,
+            "height": 44,
+            "bottom": 3138.859375
+          }
+        },
+        {
+          "x": 16,
+          "y": 3187.859375,
+          "width": 288,
+          "height": 721.03125,
+          "bottom": 3908.890625,
+          "button": {
+            "x": 41,
+            "y": 3839.890625,
+            "width": 238,
+            "height": 44,
+            "bottom": 3883.890625
+          }
+        },
+        {
+          "x": 16,
+          "y": 3932.890625,
+          "width": 288,
+          "height": 748.53125,
+          "bottom": 4681.421875,
+          "button": {
+            "x": 41,
+            "y": 4612.421875,
+            "width": 238,
+            "height": 44,
+            "bottom": 4656.421875
+          }
+        },
+        {
+          "x": 16,
+          "y": 4705.421875,
+          "width": 288,
+          "height": 721.03125,
+          "bottom": 5426.453125,
+          "button": {
+            "x": 41,
+            "y": 5357.453125,
+            "width": 238,
+            "height": 44,
+            "bottom": 5401.453125
+          }
+        }
+      ],
+      "nav": [
+        {
+          "x": 16,
+          "y": 85.59375,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 134.390625
+        },
+        {
+          "x": 110.21875,
+          "y": 85.59375,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 134.390625
+        },
+        {
+          "x": 16,
+          "y": 146.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 195.1875
+        }
+      ],
+      "sidebar": {
+        "x": 16,
+        "y": 364.1875,
+        "width": 288,
+        "height": 406.6875,
+        "bottom": 770.875
+      },
+      "catalog": {
+        "x": 16,
+        "y": 802.875,
+        "width": 288,
+        "height": 4623.578125,
+        "bottom": 5426.453125
+      },
+      "motion": 0
+    },
+    {
+      "name": "index",
+      "theme": "dark",
+      "width": 375,
+      "sourcesEqual": true,
+      "viewport": 375,
+      "scrollWidth": 375,
+      "scheme": "dark",
+      "background": "rgb(24, 26, 28)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780451524935-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780132350884-M.jpg",
+          "loaded": true
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780062316097-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780201616224-M.jpg",
+          "loaded": true
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156001311-M.jpg",
+          "loaded": true
+        }
+      ],
+      "columns": "343px",
+      "cards": [
+        {
+          "x": 16,
+          "y": 927.96875,
+          "width": 343,
+          "height": 721.03125,
+          "bottom": 1649,
+          "button": {
+            "x": 41,
+            "y": 1580,
+            "width": 293,
+            "height": 44,
+            "bottom": 1624
+          }
+        },
+        {
+          "x": 16,
+          "y": 1673,
+          "width": 343,
+          "height": 696.234375,
+          "bottom": 2369.234375,
+          "button": {
+            "x": 41,
+            "y": 2300.234375,
+            "width": 293,
+            "height": 44,
+            "bottom": 2344.234375
+          }
+        },
+        {
+          "x": 16,
+          "y": 2393.234375,
+          "width": 343,
+          "height": 721.03125,
+          "bottom": 3114.265625,
+          "button": {
+            "x": 41,
+            "y": 3045.265625,
+            "width": 293,
+            "height": 44,
+            "bottom": 3089.265625
+          }
+        },
+        {
+          "x": 16,
+          "y": 3138.265625,
+          "width": 343,
+          "height": 721.03125,
+          "bottom": 3859.296875,
+          "button": {
+            "x": 41,
+            "y": 3790.296875,
+            "width": 293,
+            "height": 44,
+            "bottom": 3834.296875
+          }
+        },
+        {
+          "x": 16,
+          "y": 3883.296875,
+          "width": 343,
+          "height": 748.53125,
+          "bottom": 4631.828125,
+          "button": {
+            "x": 41,
+            "y": 4562.828125,
+            "width": 293,
+            "height": 44,
+            "bottom": 4606.828125
+          }
+        },
+        {
+          "x": 16,
+          "y": 4655.828125,
+          "width": 343,
+          "height": 721.03125,
+          "bottom": 5376.859375,
+          "button": {
+            "x": 41,
+            "y": 5307.859375,
+            "width": 293,
+            "height": 44,
+            "bottom": 5351.859375
+          }
+        }
+      ],
+      "nav": [
+        {
+          "x": 16,
+          "y": 85.59375,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 134.390625
+        },
+        {
+          "x": 110.21875,
+          "y": 85.59375,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 134.390625
+        },
+        {
+          "x": 16,
+          "y": 146.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 195.1875
+        }
+      ],
+      "sidebar": {
+        "x": 16,
+        "y": 364.1875,
+        "width": 343,
+        "height": 406.6875,
+        "bottom": 770.875
+      },
+      "catalog": {
+        "x": 16,
+        "y": 802.875,
+        "width": 343,
+        "height": 4573.984375,
+        "bottom": 5376.859375
+      },
+      "motion": 0
+    },
+    {
+      "name": "index",
+      "theme": "dark",
+      "width": 768,
+      "sourcesEqual": true,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "scheme": "dark",
+      "background": "rgb(24, 26, 28)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780451524935-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780132350884-M.jpg",
+          "loaded": true
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780062316097-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780201616224-M.jpg",
+          "loaded": true
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156001311-M.jpg",
+          "loaded": true
+        }
+      ],
+      "columns": "348.969px 348.969px",
+      "cards": [
+        {
+          "x": 23.03125,
+          "y": 607.984375,
+          "width": 348.96875,
+          "height": 721.03125,
+          "bottom": 1329.015625,
+          "button": {
+            "x": 48.03125,
+            "y": 1260.015625,
+            "width": 298.96875,
+            "height": 44,
+            "bottom": 1304.015625
+          }
+        },
+        {
+          "x": 396,
+          "y": 607.984375,
+          "width": 348.96875,
+          "height": 721.03125,
+          "bottom": 1329.015625,
+          "button": {
+            "x": 421,
+            "y": 1260.015625,
+            "width": 298.96875,
+            "height": 44,
+            "bottom": 1304.015625
+          }
+        },
+        {
+          "x": 23.03125,
+          "y": 1353.015625,
+          "width": 348.96875,
+          "height": 721.03125,
+          "bottom": 2074.046875,
+          "button": {
+            "x": 48.03125,
+            "y": 2005.046875,
+            "width": 298.96875,
+            "height": 44,
+            "bottom": 2049.046875
+          }
+        },
+        {
+          "x": 396,
+          "y": 1353.015625,
+          "width": 348.96875,
+          "height": 721.03125,
+          "bottom": 2074.046875,
+          "button": {
+            "x": 421,
+            "y": 2005.046875,
+            "width": 298.96875,
+            "height": 44,
+            "bottom": 2049.046875
+          }
+        },
+        {
+          "x": 23.03125,
+          "y": 2098.046875,
+          "width": 348.96875,
+          "height": 748.53125,
+          "bottom": 2846.578125,
+          "button": {
+            "x": 48.03125,
+            "y": 2777.578125,
+            "width": 298.96875,
+            "height": 44,
+            "bottom": 2821.578125
+          }
+        },
+        {
+          "x": 396,
+          "y": 2098.046875,
+          "width": 348.96875,
+          "height": 748.53125,
+          "bottom": 2846.578125,
+          "button": {
+            "x": 421,
+            "y": 2777.578125,
+            "width": 298.96875,
+            "height": 44,
+            "bottom": 2821.578125
+          }
+        }
+      ],
+      "nav": [
+        {
+          "x": 359.65625,
+          "y": 24.390625,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 453.875,
+          "y": 24.390625,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 607.484375,
+          "y": 24.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        }
+      ],
+      "sidebar": {
+        "x": 23.03125,
+        "y": 202.59375,
+        "width": 721.9375,
+        "height": 273.09375,
+        "bottom": 475.6875
+      },
+      "catalog": {
+        "x": 23.03125,
+        "y": 507.6875,
+        "width": 721.9375,
+        "height": 2338.890625,
+        "bottom": 2846.578125
+      },
+      "motion": 0
+    },
+    {
+      "name": "index",
+      "theme": "dark",
+      "width": 1440,
+      "sourcesEqual": true,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "scheme": "dark",
+      "background": "rgb(24, 26, 28)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780451524935-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780132350884-M.jpg",
+          "loaded": true
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780062316097-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780201616224-M.jpg",
+          "loaded": true
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156001311-M.jpg",
+          "loaded": true
+        }
+      ],
+      "columns": "341.328px 341.328px 341.344px",
+      "cards": [
+        {
+          "x": 328,
+          "y": 302.890625,
+          "width": 341.328125,
+          "height": 721.03125,
+          "bottom": 1023.921875,
+          "button": {
+            "x": 353,
+            "y": 954.921875,
+            "width": 291.328125,
+            "height": 44,
+            "bottom": 998.921875
+          }
+        },
+        {
+          "x": 693.328125,
+          "y": 302.890625,
+          "width": 341.328125,
+          "height": 721.03125,
+          "bottom": 1023.921875,
+          "button": {
+            "x": 718.328125,
+            "y": 954.921875,
+            "width": 291.328125,
+            "height": 44,
+            "bottom": 998.921875
+          }
+        },
+        {
+          "x": 1058.65625,
+          "y": 302.890625,
+          "width": 341.34375,
+          "height": 721.03125,
+          "bottom": 1023.921875,
+          "button": {
+            "x": 1083.65625,
+            "y": 954.921875,
+            "width": 291.34375,
+            "height": 44,
+            "bottom": 998.921875
+          }
+        },
+        {
+          "x": 328,
+          "y": 1047.921875,
+          "width": 341.328125,
+          "height": 748.53125,
+          "bottom": 1796.453125,
+          "button": {
+            "x": 353,
+            "y": 1727.453125,
+            "width": 291.328125,
+            "height": 44,
+            "bottom": 1771.453125
+          }
+        },
+        {
+          "x": 693.328125,
+          "y": 1047.921875,
+          "width": 341.328125,
+          "height": 748.53125,
+          "bottom": 1796.453125,
+          "button": {
+            "x": 718.328125,
+            "y": 1727.453125,
+            "width": 291.328125,
+            "height": 44,
+            "bottom": 1771.453125
+          }
+        },
+        {
+          "x": 1058.65625,
+          "y": 1047.921875,
+          "width": 341.34375,
+          "height": 748.53125,
+          "bottom": 1796.453125,
+          "button": {
+            "x": 1083.65625,
+            "y": 1727.453125,
+            "width": 291.34375,
+            "height": 44,
+            "bottom": 1771.453125
+          }
+        }
+      ],
+      "nav": [
+        {
+          "x": 1014.6875,
+          "y": 24.390625,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 1108.90625,
+          "y": 24.390625,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 1262.515625,
+          "y": 24.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        }
+      ],
+      "sidebar": {
+        "x": 40,
+        "y": 202.59375,
+        "width": 256,
+        "height": 1593.859375,
+        "bottom": 1796.453125
+      },
+      "catalog": {
+        "x": 328,
+        "y": 202.59375,
+        "width": 1072,
+        "height": 1593.859375,
+        "bottom": 1796.453125
+      },
+      "motion": 0
+    },
+    {
+      "name": "index",
+      "theme": "dark",
+      "width": 1600,
+      "sourcesEqual": true,
+      "viewport": 1600,
+      "scrollWidth": 1600,
+      "scheme": "dark",
+      "background": "rgb(24, 26, 28)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780451524935-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780132350884-M.jpg",
+          "loaded": true
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780062316097-M.jpg",
+          "loaded": false
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780201616224-M.jpg",
+          "loaded": true
+        },
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156001311-M.jpg",
+          "loaded": true
+        }
+      ],
+      "columns": "341.328px 341.328px 341.344px",
+      "cards": [
+        {
+          "x": 408,
+          "y": 302.890625,
+          "width": 341.328125,
+          "height": 721.03125,
+          "bottom": 1023.921875,
+          "button": {
+            "x": 433,
+            "y": 954.921875,
+            "width": 291.328125,
+            "height": 44,
+            "bottom": 998.921875
+          }
+        },
+        {
+          "x": 773.328125,
+          "y": 302.890625,
+          "width": 341.328125,
+          "height": 721.03125,
+          "bottom": 1023.921875,
+          "button": {
+            "x": 798.328125,
+            "y": 954.921875,
+            "width": 291.328125,
+            "height": 44,
+            "bottom": 998.921875
+          }
+        },
+        {
+          "x": 1138.65625,
+          "y": 302.890625,
+          "width": 341.34375,
+          "height": 721.03125,
+          "bottom": 1023.921875,
+          "button": {
+            "x": 1163.65625,
+            "y": 954.921875,
+            "width": 291.34375,
+            "height": 44,
+            "bottom": 998.921875
+          }
+        },
+        {
+          "x": 408,
+          "y": 1047.921875,
+          "width": 341.328125,
+          "height": 748.53125,
+          "bottom": 1796.453125,
+          "button": {
+            "x": 433,
+            "y": 1727.453125,
+            "width": 291.328125,
+            "height": 44,
+            "bottom": 1771.453125
+          }
+        },
+        {
+          "x": 773.328125,
+          "y": 1047.921875,
+          "width": 341.328125,
+          "height": 748.53125,
+          "bottom": 1796.453125,
+          "button": {
+            "x": 798.328125,
+            "y": 1727.453125,
+            "width": 291.328125,
+            "height": 44,
+            "bottom": 1771.453125
+          }
+        },
+        {
+          "x": 1138.65625,
+          "y": 1047.921875,
+          "width": 341.34375,
+          "height": 748.53125,
+          "bottom": 1796.453125,
+          "button": {
+            "x": 1163.65625,
+            "y": 1727.453125,
+            "width": 291.34375,
+            "height": 44,
+            "bottom": 1771.453125
+          }
+        }
+      ],
+      "nav": [
+        {
+          "x": 1094.6875,
+          "y": 24.390625,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 1188.90625,
+          "y": 24.390625,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 1342.515625,
+          "y": 24.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        }
+      ],
+      "sidebar": {
+        "x": 120,
+        "y": 202.59375,
+        "width": 256,
+        "height": 1593.859375,
+        "bottom": 1796.453125
+      },
+      "catalog": {
+        "x": 408,
+        "y": 202.59375,
+        "width": 1072,
+        "height": 1593.859375,
+        "bottom": 1796.453125
+      },
+      "motion": 0
+    },
+    {
+      "name": "index",
+      "theme": "dark",
+      "keyboard": [
+        {
+          "tag": "A",
+          "id": "",
+          "text": "BookNest",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Каталог",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Карточка книги",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Форма выдачи",
+          "outline": "solid"
+        },
+        {
+          "tag": "INPUT",
+          "id": "search",
+          "text": "",
+          "outline": "solid"
+        },
+        {
+          "tag": "SELECT",
+          "id": "genre",
+          "text": "Все жанры\n              Научная фантастика\n              Ром",
+          "outline": "solid"
+        },
+        {
+          "tag": "SELECT",
+          "id": "sort",
+          "text": "По названию\n              Сначала новые\n              По рей",
+          "outline": "solid"
+        },
+        {
+          "tag": "INPUT",
+          "id": "available",
+          "text": "",
+          "outline": "solid"
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Применить фильтры",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Solaris",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Оформить выдачу",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "1984",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Оформить выдачу",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Clean Code",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Оформить выдачу",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Sapiens",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Оформить выдачу",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "The Pragmatic Programmer",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Оформить выдачу",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Имя розы",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Оформить выдачу",
+          "outline": "solid"
+        },
+        {
+          "tag": "BODY",
+          "id": "",
+          "text": "BookNest\n      \n        \n          Каталог\n          Карточк",
+          "outline": "none"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "BookNest",
+          "outline": "solid"
+        }
+      ],
+      "focusControlsChecked": 21,
+      "emptyFormValidity": [
+        true
+      ]
+    },
+    {
+      "name": "index",
+      "theme": "dark",
+      "longTitle": [
+        {
+          "height": 913.53125,
+          "bottom": -125.578125
+        },
+        {
+          "height": 913.53125,
+          "bottom": -125.578125
+        },
+        {
+          "height": 913.53125,
+          "bottom": -125.578125
+        }
+      ],
+      "shortContentFooterBottom": 900
+    },
+    {
+      "name": "book",
+      "theme": "light",
+      "width": 320,
+      "sourcesEqual": true,
+      "viewport": 320,
+      "scrollWidth": 320,
+      "scheme": "light",
+      "background": "rgb(244, 245, 246)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-L.jpg",
+          "loaded": false
+        }
+      ],
+      "columns": null,
+      "cards": [],
+      "nav": [
+        {
+          "x": 16,
+          "y": 85.59375,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 134.390625
+        },
+        {
+          "x": 110.21875,
+          "y": 85.59375,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 134.390625
+        },
+        {
+          "x": 16,
+          "y": 146.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 195.1875
+        }
+      ],
+      "sidebar": null,
+      "catalog": null,
+      "motion": 0
+    },
+    {
+      "name": "book",
+      "theme": "light",
+      "width": 375,
+      "sourcesEqual": true,
+      "viewport": 375,
+      "scrollWidth": 375,
+      "scheme": "light",
+      "background": "rgb(244, 245, 246)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-L.jpg",
+          "loaded": false
+        }
+      ],
+      "columns": null,
+      "cards": [],
+      "nav": [
+        {
+          "x": 16,
+          "y": 85.59375,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 134.390625
+        },
+        {
+          "x": 110.21875,
+          "y": 85.59375,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 134.390625
+        },
+        {
+          "x": 16,
+          "y": 146.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 195.1875
+        }
+      ],
+      "sidebar": null,
+      "catalog": null,
+      "motion": 0
+    },
+    {
+      "name": "book",
+      "theme": "light",
+      "width": 768,
+      "sourcesEqual": true,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "scheme": "light",
+      "background": "rgb(244, 245, 246)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-L.jpg",
+          "loaded": false
+        }
+      ],
+      "columns": null,
+      "cards": [],
+      "nav": [
+        {
+          "x": 359.65625,
+          "y": 24.390625,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 453.875,
+          "y": 24.390625,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 607.484375,
+          "y": 24.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        }
+      ],
+      "sidebar": null,
+      "catalog": null,
+      "motion": 0
+    },
+    {
+      "name": "book",
+      "theme": "light",
+      "width": 1440,
+      "sourcesEqual": true,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "scheme": "light",
+      "background": "rgb(244, 245, 246)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-L.jpg",
+          "loaded": false
+        }
+      ],
+      "columns": null,
+      "cards": [],
+      "nav": [
+        {
+          "x": 1014.6875,
+          "y": 24.390625,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 1108.90625,
+          "y": 24.390625,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 1262.515625,
+          "y": 24.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        }
+      ],
+      "sidebar": null,
+      "catalog": null,
+      "motion": 0
+    },
+    {
+      "name": "book",
+      "theme": "light",
+      "width": 1600,
+      "sourcesEqual": true,
+      "viewport": 1600,
+      "scrollWidth": 1600,
+      "scheme": "light",
+      "background": "rgb(244, 245, 246)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-L.jpg",
+          "loaded": false
+        }
+      ],
+      "columns": null,
+      "cards": [],
+      "nav": [
+        {
+          "x": 1094.6875,
+          "y": 24.390625,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 1188.90625,
+          "y": 24.390625,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 1342.515625,
+          "y": 24.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        }
+      ],
+      "sidebar": null,
+      "catalog": null,
+      "motion": 0
+    },
+    {
+      "name": "book",
+      "theme": "light",
+      "keyboard": [
+        {
+          "tag": "A",
+          "id": "",
+          "text": "BookNest",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Каталог",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Карточка книги",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Форма выдачи",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Каталог",
+          "outline": "solid"
+        },
+        {
+          "tag": "INPUT",
+          "id": "rating-5",
+          "text": "",
+          "outline": "solid"
+        },
+        {
+          "tag": "INPUT",
+          "id": "reviewer-name",
+          "text": "",
+          "outline": "solid"
+        },
+        {
+          "tag": "TEXTAREA",
+          "id": "review-text",
+          "text": "",
+          "outline": "solid"
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Отправить отзыв",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Пикник на обочине",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Марсианские хроники",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Левая рука Тьмы",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Гиперион",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Оформить выдачу Solaris",
+          "outline": "solid"
+        },
+        {
+          "tag": "BODY",
+          "id": "",
+          "text": "BookNest\n      \n        \n          Каталог\n          Карточк",
+          "outline": "none"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "BookNest",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Каталог",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Карточка книги",
+          "outline": "solid"
+        }
+      ],
+      "focusControlsChecked": 16,
+      "emptyFormValidity": [
+        false
+      ]
+    },
+    {
+      "name": "book",
+      "theme": "dark",
+      "width": 320,
+      "sourcesEqual": true,
+      "viewport": 320,
+      "scrollWidth": 320,
+      "scheme": "dark",
+      "background": "rgb(24, 26, 28)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-L.jpg",
+          "loaded": false
+        }
+      ],
+      "columns": null,
+      "cards": [],
+      "nav": [
+        {
+          "x": 16,
+          "y": 85.59375,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 134.390625
+        },
+        {
+          "x": 110.21875,
+          "y": 85.59375,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 134.390625
+        },
+        {
+          "x": 16,
+          "y": 146.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 195.1875
+        }
+      ],
+      "sidebar": null,
+      "catalog": null,
+      "motion": 0
+    },
+    {
+      "name": "book",
+      "theme": "dark",
+      "width": 375,
+      "sourcesEqual": true,
+      "viewport": 375,
+      "scrollWidth": 375,
+      "scheme": "dark",
+      "background": "rgb(24, 26, 28)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-L.jpg",
+          "loaded": false
+        }
+      ],
+      "columns": null,
+      "cards": [],
+      "nav": [
+        {
+          "x": 16,
+          "y": 85.59375,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 134.390625
+        },
+        {
+          "x": 110.21875,
+          "y": 85.59375,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 134.390625
+        },
+        {
+          "x": 16,
+          "y": 146.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 195.1875
+        }
+      ],
+      "sidebar": null,
+      "catalog": null,
+      "motion": 0
+    },
+    {
+      "name": "book",
+      "theme": "dark",
+      "width": 768,
+      "sourcesEqual": true,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "scheme": "dark",
+      "background": "rgb(24, 26, 28)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-L.jpg",
+          "loaded": false
+        }
+      ],
+      "columns": null,
+      "cards": [],
+      "nav": [
+        {
+          "x": 359.65625,
+          "y": 24.390625,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 453.875,
+          "y": 24.390625,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 607.484375,
+          "y": 24.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        }
+      ],
+      "sidebar": null,
+      "catalog": null,
+      "motion": 0
+    },
+    {
+      "name": "book",
+      "theme": "dark",
+      "width": 1440,
+      "sourcesEqual": true,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "scheme": "dark",
+      "background": "rgb(24, 26, 28)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-L.jpg",
+          "loaded": false
+        }
+      ],
+      "columns": null,
+      "cards": [],
+      "nav": [
+        {
+          "x": 1014.6875,
+          "y": 24.390625,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 1108.90625,
+          "y": 24.390625,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 1262.515625,
+          "y": 24.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        }
+      ],
+      "sidebar": null,
+      "catalog": null,
+      "motion": 0
+    },
+    {
+      "name": "book",
+      "theme": "dark",
+      "width": 1600,
+      "sourcesEqual": true,
+      "viewport": 1600,
+      "scrollWidth": 1600,
+      "scheme": "dark",
+      "background": "rgb(24, 26, 28)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-L.jpg",
+          "loaded": false
+        }
+      ],
+      "columns": null,
+      "cards": [],
+      "nav": [
+        {
+          "x": 1094.6875,
+          "y": 24.390625,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 1188.90625,
+          "y": 24.390625,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 1342.515625,
+          "y": 24.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        }
+      ],
+      "sidebar": null,
+      "catalog": null,
+      "motion": 0
+    },
+    {
+      "name": "book",
+      "theme": "dark",
+      "keyboard": [
+        {
+          "tag": "A",
+          "id": "",
+          "text": "BookNest",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Каталог",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Карточка книги",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Форма выдачи",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Каталог",
+          "outline": "solid"
+        },
+        {
+          "tag": "INPUT",
+          "id": "rating-5",
+          "text": "",
+          "outline": "solid"
+        },
+        {
+          "tag": "INPUT",
+          "id": "reviewer-name",
+          "text": "",
+          "outline": "solid"
+        },
+        {
+          "tag": "TEXTAREA",
+          "id": "review-text",
+          "text": "",
+          "outline": "solid"
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Отправить отзыв",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Пикник на обочине",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Марсианские хроники",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Левая рука Тьмы",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Гиперион",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Оформить выдачу Solaris",
+          "outline": "solid"
+        },
+        {
+          "tag": "BODY",
+          "id": "",
+          "text": "BookNest\n      \n        \n          Каталог\n          Карточк",
+          "outline": "none"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "BookNest",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Каталог",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Карточка книги",
+          "outline": "solid"
+        }
+      ],
+      "focusControlsChecked": 16,
+      "emptyFormValidity": [
+        false
+      ]
+    },
+    {
+      "name": "loan",
+      "theme": "light",
+      "width": 320,
+      "sourcesEqual": true,
+      "viewport": 320,
+      "scrollWidth": 320,
+      "scheme": "light",
+      "background": "rgb(244, 245, 246)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-M.jpg",
+          "loaded": false
+        }
+      ],
+      "columns": null,
+      "cards": [],
+      "nav": [
+        {
+          "x": 16,
+          "y": 85.59375,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 134.390625
+        },
+        {
+          "x": 110.21875,
+          "y": 85.59375,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 134.390625
+        },
+        {
+          "x": 16,
+          "y": 146.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 195.1875
+        }
+      ],
+      "sidebar": null,
+      "catalog": null,
+      "motion": 0
+    },
+    {
+      "name": "loan",
+      "theme": "light",
+      "width": 375,
+      "sourcesEqual": true,
+      "viewport": 375,
+      "scrollWidth": 375,
+      "scheme": "light",
+      "background": "rgb(244, 245, 246)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-M.jpg",
+          "loaded": false
+        }
+      ],
+      "columns": null,
+      "cards": [],
+      "nav": [
+        {
+          "x": 16,
+          "y": 85.59375,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 134.390625
+        },
+        {
+          "x": 110.21875,
+          "y": 85.59375,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 134.390625
+        },
+        {
+          "x": 16,
+          "y": 146.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 195.1875
+        }
+      ],
+      "sidebar": null,
+      "catalog": null,
+      "motion": 0
+    },
+    {
+      "name": "loan",
+      "theme": "light",
+      "width": 768,
+      "sourcesEqual": true,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "scheme": "light",
+      "background": "rgb(244, 245, 246)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-M.jpg",
+          "loaded": false
+        }
+      ],
+      "columns": null,
+      "cards": [],
+      "nav": [
+        {
+          "x": 359.65625,
+          "y": 24.390625,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 453.875,
+          "y": 24.390625,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 607.484375,
+          "y": 24.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        }
+      ],
+      "sidebar": null,
+      "catalog": null,
+      "motion": 0
+    },
+    {
+      "name": "loan",
+      "theme": "light",
+      "width": 1440,
+      "sourcesEqual": true,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "scheme": "light",
+      "background": "rgb(244, 245, 246)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-M.jpg",
+          "loaded": false
+        }
+      ],
+      "columns": null,
+      "cards": [],
+      "nav": [
+        {
+          "x": 1014.6875,
+          "y": 24.390625,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 1108.90625,
+          "y": 24.390625,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 1262.515625,
+          "y": 24.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        }
+      ],
+      "sidebar": null,
+      "catalog": null,
+      "motion": 0
+    },
+    {
+      "name": "loan",
+      "theme": "light",
+      "width": 1600,
+      "sourcesEqual": true,
+      "viewport": 1600,
+      "scrollWidth": 1600,
+      "scheme": "light",
+      "background": "rgb(244, 245, 246)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-M.jpg",
+          "loaded": false
+        }
+      ],
+      "columns": null,
+      "cards": [],
+      "nav": [
+        {
+          "x": 1094.6875,
+          "y": 24.390625,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 1188.90625,
+          "y": 24.390625,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 1342.515625,
+          "y": 24.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        }
+      ],
+      "sidebar": null,
+      "catalog": null,
+      "motion": 0
+    },
+    {
+      "name": "loan",
+      "theme": "light",
+      "keyboard": [
+        {
+          "tag": "A",
+          "id": "",
+          "text": "BookNest",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Каталог",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Карточка книги",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Форма выдачи",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Каталог",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Solaris",
+          "outline": "solid"
+        },
+        {
+          "tag": "INPUT",
+          "id": "reader-name",
+          "text": "",
+          "outline": "solid"
+        },
+        {
+          "tag": "INPUT",
+          "id": "reader-email",
+          "text": "",
+          "outline": "solid"
+        },
+        {
+          "tag": "INPUT",
+          "id": "reader-card",
+          "text": "",
+          "outline": "solid"
+        },
+        {
+          "tag": "SELECT",
+          "id": "book-copy",
+          "text": "Выберите экземпляр\n                BN-SF-042 — читальный зал",
+          "outline": "solid"
+        },
+        {
+          "tag": "INPUT",
+          "id": "loan-date",
+          "text": "",
+          "outline": "solid"
+        },
+        {
+          "tag": "INPUT",
+          "id": "loan-date",
+          "text": "",
+          "outline": "none"
+        },
+        {
+          "tag": "INPUT",
+          "id": "loan-days",
+          "text": "",
+          "outline": "solid"
+        },
+        {
+          "tag": "TEXTAREA",
+          "id": "loan-comment",
+          "text": "",
+          "outline": "solid"
+        },
+        {
+          "tag": "INPUT",
+          "id": "rules-accepted",
+          "text": "",
+          "outline": "solid"
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Оформить выдачу",
+          "outline": "solid"
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Очистить форму",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Вернуться в каталог",
+          "outline": "solid"
+        },
+        {
+          "tag": "BODY",
+          "id": "",
+          "text": "BookNest\n      \n        \n          Каталог\n          Карточк",
+          "outline": "none"
+        }
+      ],
+      "focusControlsChecked": 17,
+      "emptyFormValidity": [
+        false
+      ]
+    },
+    {
+      "name": "loan",
+      "theme": "dark",
+      "width": 320,
+      "sourcesEqual": true,
+      "viewport": 320,
+      "scrollWidth": 320,
+      "scheme": "dark",
+      "background": "rgb(24, 26, 28)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-M.jpg",
+          "loaded": false
+        }
+      ],
+      "columns": null,
+      "cards": [],
+      "nav": [
+        {
+          "x": 16,
+          "y": 85.59375,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 134.390625
+        },
+        {
+          "x": 110.21875,
+          "y": 85.59375,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 134.390625
+        },
+        {
+          "x": 16,
+          "y": 146.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 195.1875
+        }
+      ],
+      "sidebar": null,
+      "catalog": null,
+      "motion": 0
+    },
+    {
+      "name": "loan",
+      "theme": "dark",
+      "width": 375,
+      "sourcesEqual": true,
+      "viewport": 375,
+      "scrollWidth": 375,
+      "scheme": "dark",
+      "background": "rgb(24, 26, 28)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-M.jpg",
+          "loaded": false
+        }
+      ],
+      "columns": null,
+      "cards": [],
+      "nav": [
+        {
+          "x": 16,
+          "y": 85.59375,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 134.390625
+        },
+        {
+          "x": 110.21875,
+          "y": 85.59375,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 134.390625
+        },
+        {
+          "x": 16,
+          "y": 146.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 195.1875
+        }
+      ],
+      "sidebar": null,
+      "catalog": null,
+      "motion": 0
+    },
+    {
+      "name": "loan",
+      "theme": "dark",
+      "width": 768,
+      "sourcesEqual": true,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "scheme": "dark",
+      "background": "rgb(24, 26, 28)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-M.jpg",
+          "loaded": false
+        }
+      ],
+      "columns": null,
+      "cards": [],
+      "nav": [
+        {
+          "x": 359.65625,
+          "y": 24.390625,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 453.875,
+          "y": 24.390625,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 607.484375,
+          "y": 24.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        }
+      ],
+      "sidebar": null,
+      "catalog": null,
+      "motion": 0
+    },
+    {
+      "name": "loan",
+      "theme": "dark",
+      "width": 1440,
+      "sourcesEqual": true,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "scheme": "dark",
+      "background": "rgb(24, 26, 28)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-M.jpg",
+          "loaded": false
+        }
+      ],
+      "columns": null,
+      "cards": [],
+      "nav": [
+        {
+          "x": 1014.6875,
+          "y": 24.390625,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 1108.90625,
+          "y": 24.390625,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 1262.515625,
+          "y": 24.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        }
+      ],
+      "sidebar": null,
+      "catalog": null,
+      "motion": 0
+    },
+    {
+      "name": "loan",
+      "theme": "dark",
+      "width": 1600,
+      "sourcesEqual": true,
+      "viewport": 1600,
+      "scrollWidth": 1600,
+      "scheme": "dark",
+      "background": "rgb(24, 26, 28)",
+      "images": [
+        {
+          "src": "https://covers.openlibrary.org/b/isbn/9780156027601-M.jpg",
+          "loaded": false
+        }
+      ],
+      "columns": null,
+      "cards": [],
+      "nav": [
+        {
+          "x": 1094.6875,
+          "y": 24.390625,
+          "width": 82.21875,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 1188.90625,
+          "y": 24.390625,
+          "width": 141.609375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        },
+        {
+          "x": 1342.515625,
+          "y": 24.390625,
+          "width": 137.484375,
+          "height": 48.796875,
+          "bottom": 73.1875
+        }
+      ],
+      "sidebar": null,
+      "catalog": null,
+      "motion": 0
+    },
+    {
+      "name": "loan",
+      "theme": "dark",
+      "keyboard": [
+        {
+          "tag": "A",
+          "id": "",
+          "text": "BookNest",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Каталог",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Карточка книги",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Форма выдачи",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Каталог",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Solaris",
+          "outline": "solid"
+        },
+        {
+          "tag": "INPUT",
+          "id": "reader-name",
+          "text": "",
+          "outline": "solid"
+        },
+        {
+          "tag": "INPUT",
+          "id": "reader-email",
+          "text": "",
+          "outline": "solid"
+        },
+        {
+          "tag": "INPUT",
+          "id": "reader-card",
+          "text": "",
+          "outline": "solid"
+        },
+        {
+          "tag": "SELECT",
+          "id": "book-copy",
+          "text": "Выберите экземпляр\n                BN-SF-042 — читальный зал",
+          "outline": "solid"
+        },
+        {
+          "tag": "INPUT",
+          "id": "loan-date",
+          "text": "",
+          "outline": "solid"
+        },
+        {
+          "tag": "INPUT",
+          "id": "loan-date",
+          "text": "",
+          "outline": "none"
+        },
+        {
+          "tag": "INPUT",
+          "id": "loan-days",
+          "text": "",
+          "outline": "solid"
+        },
+        {
+          "tag": "TEXTAREA",
+          "id": "loan-comment",
+          "text": "",
+          "outline": "solid"
+        },
+        {
+          "tag": "INPUT",
+          "id": "rules-accepted",
+          "text": "",
+          "outline": "solid"
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Оформить выдачу",
+          "outline": "solid"
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Очистить форму",
+          "outline": "solid"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "text": "Вернуться в каталог",
+          "outline": "solid"
+        },
+        {
+          "tag": "BODY",
+          "id": "",
+          "text": "BookNest\n      \n        \n          Каталог\n          Карточк",
+          "outline": "none"
+        }
+      ],
+      "focusControlsChecked": 17,
+      "emptyFormValidity": [
+        false
+      ]
+    }
+  ],
+  "failures": [
+    "index/light/320: broken image",
+    "index/light/375: broken image",
+    "index/light/768: broken image",
+    "index/light/1440: broken image",
+    "index/light/1600: broken image",
+    "index/dark/320: broken image",
+    "index/dark/375: broken image",
+    "index/dark/768: broken image",
+    "index/dark/1440: broken image",
+    "index/dark/1600: broken image",
+    "book/light/320: broken image",
+    "book/light/375: broken image",
+    "book/light/768: broken image",
+    "book/light/1440: broken image",
+    "book/light/1600: broken image",
+    "book/dark/320: broken image",
+    "book/dark/375: broken image",
+    "book/dark/768: broken image",
+    "book/dark/1440: broken image",
+    "book/dark/1600: broken image",
+    "loan/light/320: broken image",
+    "loan/light/375: broken image",
+    "loan/light/768: broken image",
+    "loan/light/1440: broken image",
+    "loan/light/1600: broken image",
+    "loan/dark/320: broken image",
+    "loan/dark/375: broken image",
+    "loan/dark/768: broken image",
+    "loan/dark/1440: broken image",
+    "loan/dark/1600: broken image"
+  ],
+  "consoleErrors": []
+}

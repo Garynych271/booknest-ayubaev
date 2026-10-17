@@ -1,0 +1,141 @@
+{
+  "measuredAt": "2026-10-17T02:40:28.263Z",
+  "sweeps": [
+    {
+      "name": "index",
+      "theme": "light",
+      "from": 320,
+      "to": 1600,
+      "step": 16,
+      "samples": 81,
+      "overflow": []
+    },
+    {
+      "name": "book",
+      "theme": "light",
+      "from": 320,
+      "to": 1600,
+      "step": 16,
+      "samples": 81,
+      "overflow": []
+    },
+    {
+      "name": "loan",
+      "theme": "light",
+      "from": 320,
+      "to": 1600,
+      "step": 16,
+      "samples": 81,
+      "overflow": []
+    },
+    {
+      "name": "index",
+      "theme": "dark",
+      "from": 320,
+      "to": 1600,
+      "step": 16,
+      "samples": 81,
+      "overflow": []
+    },
+    {
+      "name": "book",
+      "theme": "dark",
+      "from": 320,
+      "to": 1600,
+      "step": 16,
+      "samples": 81,
+      "overflow": []
+    },
+    {
+      "name": "loan",
+      "theme": "dark",
+      "from": 320,
+      "to": 1600,
+      "step": 16,
+      "samples": 81,
+      "overflow": []
+    }
+  ],
+  "forms": [
+    {
+      "theme": "light",
+      "invalid": {
+        "invalid": true,
+        "userInvalid": true,
+        "color": "rgb(176, 37, 37)",
+        "token": "#b02525"
+      },
+      "outline": {
+        "visible": true,
+        "width": "3px"
+      },
+      "valid": true,
+      "disabled": {
+        "disabled": true,
+        "cursor": "not-allowed",
+        "background": "rgb(228, 231, 233)"
+      }
+    },
+    {
+      "theme": "dark",
+      "invalid": {
+        "invalid": true,
+        "userInvalid": true,
+        "color": "rgb(255, 156, 156)",
+        "token": "#ff9c9c"
+      },
+      "outline": {
+        "visible": true,
+        "width": "3px"
+      },
+      "valid": true,
+      "disabled": {
+        "disabled": true,
+        "cursor": "not-allowed",
+        "background": "rgb(55, 60, 65)"
+      }
+    }
+  ],
+  "navigation": [
+    "http://127.0.0.1:8124/index.html",
+    "http://127.0.0.1:8124/book.html",
+    "http://127.0.0.1:8124/loan.html"
+  ],
+  "console": [
+    "Failed to load resource: net::ERR_TIMED_OUT",
+    "Failed to load resource: the server responded with a status of 404 (File not found)",
+    "Failed to load resource: net::ERR_TIMED_OUT",
+    "Failed to load resource: net::ERR_TIMED_OUT",
+    "Failed to load resource: net::ERR_TIMED_OUT",
+    "Pattern attribute value [A-Za-zА-Яа-яЁёІіӘәҒғҚқҢңӨөҰұҮүҺһ .-]+ is not a valid regular expression: Uncaught SyntaxError: Failed to read the 'patternMismatch' property from 'ValidityState': Invalid regular expression: /[A-Za-zА-Яа-яЁёІіӘәҒғҚқҢңӨөҰұҮүҺһ .-]+/v: Invalid character in character class"
+  ],
+  "failures": [],
+  "inheritedNamePattern": {
+    "pattern": "[A-Za-zА-Яа-яЁёІіӘәҒғҚқҢңӨөҰұҮүҺһ .-]+",
+    "syntaxError": "Invalid regular expression: /[A-Za-zА-Яа-яЁёІіӘәҒғҚқҢңӨөҰұҮүҺһ .-]+/v: Invalid character in character class",
+    "digitsRejected": false
+  },
+  "stylesheets": [
+    {
+      "href": "http://127.0.0.1:8124/styles/tokens.css",
+      "rules": 2
+    },
+    {
+      "href": "http://127.0.0.1:8124/styles/base.css",
+      "rules": 18
+    },
+    {
+      "href": "http://127.0.0.1:8124/styles/layout.css",
+      "rules": 20
+    },
+    {
+      "href": "http://127.0.0.1:8124/styles/components.css",
+      "rules": 36
+    }
+  ],
+  "staticCSS": {
+    "mediaQueries": 2,
+    "tokens": 46,
+    "important": false
+  }
+}
