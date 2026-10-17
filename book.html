@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BookNest — Solaris</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" aria-label="BookNest, перейти в каталог">BookNest</a>
+      <nav aria-label="Основная навигация">
+        <ul>
+          <li><a href="index.html">Каталог</a></li>
+          <li><a href="book.html" aria-current="page">Карточка книги</a></li>
+          <li><a href="loan.html">Форма выдачи</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <nav aria-label="Хлебные крошки">
+        <ol>
+          <li><a href="index.html">Каталог</a></li>
+          <li><span aria-current="page">Solaris</span></li>
+        </ol>
+      </nav>
+
+      <article>
+        <h1>Solaris</h1>
+
+        <figure>
+          <img
+            src="https://covers.openlibrary.org/b/isbn/9780156027601-L.jpg"
+            alt="Обложка книги Solaris Станислава Лема"
+            width="360"
+            height="540"
+          >
+          <figcaption>Издание романа Станислава Лема о станции над планетой Solaris.</figcaption>
+        </figure>
+
+        <section aria-labelledby="book-specs-title">
+          <h2 id="book-specs-title">Характеристики</h2>
+          <dl>
+            <dt>Автор</dt>
+            <dd>Станислав Лем</dd>
+            <dt>Год первой публикации</dt>
+            <dd><time datetime="1961">1961</time></dd>
+            <dt>Жанр</dt>
+            <dd>Научная фантастика</dd>
+            <dt>ISBN</dt>
+            <dd><code>9780156027601</code></dd>
+            <dt>Язык</dt>
+            <dd>Русский перевод</dd>
+            <dt>Свободные экземпляры</dt>
+            <dd>3 из 5</dd>
+          </dl>
+        </section>
+
+        <section aria-labelledby="book-description-title">
+          <h2 id="book-description-title">Описание</h2>
+          <p>
+            Психолог Крис Кельвин прибывает на исследовательскую станцию над планетой Solaris и сталкивается
+            с океаном, который отвечает людям не словами, а материализованными воспоминаниями.
+          </p>
+          <p>
+            В клубе книгу читают как историю о границах знания, ответственности исследователя и честности перед
+            собственным прошлым.
+          </p>
+        </section>
+
+        <section aria-labelledby="reviews-title">
+          <h2 id="reviews-title">Отзывы читателей</h2>
+          <ol>
+            <li>
+              <article>
+                <h3>Тихая и тревожная фантастика</h3>
+                <p>
+                  <strong>Алия</strong>,
+                  <time datetime="2026-09-18">18 сентября 2026</time>
+                </p>
+                <p>После финала хочется спорить не о технологиях, а о том, можем ли мы вообще понять другое сознание.</p>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3>Хорошая книга для обсуждения</h3>
+                <p>
+                  <strong>Даниил</strong>,
+                  <time datetime="2026-09-24">24 сентября 2026</time>
+                </p>
+                <p>На встрече клуба было легко разделить роли: одни защищали ученых, другие говорили о праве на тайну.</p>
+              </article>
+            </li>
+          </ol>
+        </section>
+
+        <section aria-labelledby="new-review-title">
+          <h2 id="new-review-title">Оставить отзыв</h2>
+          <form action="book.html" method="post">
+            <fieldset>
+              <legend>Оценка</legend>
+              <p>
+                <input type="radio" id="rating-5" name="rating" value="5" required>
+                <label for="rating-5">5 — рекомендую</label>
+              </p>
+              <p>
+                <input type="radio" id="rating-4" name="rating" value="4">
+                <label for="rating-4">4 — хорошая книга</label>
+              </p>
+              <p>
+                <input type="radio" id="rating-3" name="rating" value="3">
+                <label for="rating-3">3 — есть спорные места</label>
+              </p>
+            </fieldset>
+
+            <p>
+              <label for="reviewer-name">Ваше имя</label>
+              <input
+                type="text"
+                id="reviewer-name"
+                name="reviewerName"
+                required
+                minlength="2"
+                maxlength="60"
+                pattern="[A-Za-zА-Яа-яЁёІіӘәҒғҚқҢңӨөҰұҮүҺһ ]+"
+              >
+            </p>
+
+            <p>
+              <label for="review-text">Текст отзыва</label>
+              <textarea
+                id="review-text"
+                name="reviewText"
+                required
+                minlength="20"
+                maxlength="600"
+                rows="6"
+              ></textarea>
+            </p>
+
+            <button type="submit">Отправить отзыв</button>
+          </form>
+        </section>
+      </article>
+
+      <aside aria-labelledby="related-title">
+        <h2 id="related-title">Похожие книги</h2>
+        <ul>
+          <li>
+            <article>
+              <h3><a href="book.html">Пикник на обочине</a></h3>
+              <p>Фантастика о зоне, людях и цене желания.</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3><a href="book.html">Марсианские хроники</a></h3>
+              <p>Лирическая история освоения Марса и человеческой памяти.</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3><a href="book.html">Левая рука Тьмы</a></h3>
+              <p>Роман о культуре, дипломатии и сложности взаимного понимания.</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3><a href="book.html">Гиперион</a></h3>
+              <p>Многоголосая космическая сага о паломничестве и выборе.</p>
+            </article>
+          </li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer>
+      <p>BookNest, университетский книжный клуб. <a href="loan.html">Оформить выдачу Solaris</a>.</p>
+    </footer>
+  </body>
+</html>
+

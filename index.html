@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BookNest — каталог книг</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" aria-label="BookNest, перейти в каталог">BookNest</a>
+      <nav aria-label="Основная навигация">
+        <ul>
+          <li><a href="index.html" aria-current="page">Каталог</a></li>
+          <li><a href="book.html">Карточка книги</a></li>
+          <li><a href="loan.html">Форма выдачи</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Каталог книг BookNest</h1>
+
+      <section aria-labelledby="filters-title">
+        <h2 id="filters-title">Фильтры каталога</h2>
+        <form action="index.html" method="get">
+          <p>
+            <label for="search">Поиск по названию или автору</label>
+            <input
+              type="search"
+              id="search"
+              name="q"
+              maxlength="80"
+              placeholder="Например, Solaris"
+            >
+          </p>
+
+          <p>
+            <label for="genre">Жанр</label>
+            <select id="genre" name="genre">
+              <option value="">Все жанры</option>
+              <option value="science-fiction">Научная фантастика</option>
+              <option value="novel">Роман</option>
+              <option value="non-fiction">Нон-фикшн</option>
+              <option value="history">История</option>
+              <option value="programming">Программирование</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="sort">Сортировка</label>
+            <select id="sort" name="sort">
+              <option value="title">По названию</option>
+              <option value="year-desc">Сначала новые</option>
+              <option value="rating-desc">По рейтингу</option>
+            </select>
+          </p>
+
+          <p>
+            <input type="checkbox" id="available" name="available" value="yes">
+            <label for="available">Только доступные</label>
+          </p>
+
+          <button type="submit">Применить фильтры</button>
+        </form>
+      </section>
+
+      <section aria-labelledby="catalog-title">
+        <h2 id="catalog-title">Найденные книги</h2>
+        <p>Показано 6 книг университетского книжного клуба.</p>
+
+        <article>
+          <h3><a href="book.html">Solaris</a></h3>
+          <figure>
+            <img
+              src="https://covers.openlibrary.org/b/isbn/9780156027601-M.jpg"
+              alt="Обложка книги Solaris Станислава Лема"
+              width="180"
+              height="270"
+            >
+            <figcaption>Станислав Лем, <time datetime="1961">1961</time></figcaption>
+          </figure>
+          <dl>
+            <dt>Жанр</dt>
+            <dd>Научная фантастика</dd>
+            <dt>Доступность</dt>
+            <dd>3 свободных экземпляра</dd>
+            <dt>Рейтинг клуба</dt>
+            <dd>4.8 из 5</dd>
+          </dl>
+          <p>Философская история о контакте человека с непостижимым океаном планеты Solaris.</p>
+          <p><a href="loan.html">Оформить выдачу</a></p>
+        </article>
+
+        <article>
+          <h3><a href="book.html">1984</a></h3>
+          <figure>
+            <img
+              src="https://covers.openlibrary.org/b/isbn/9780451524935-M.jpg"
+              alt="Обложка романа 1984 Джорджа Оруэлла"
+              width="180"
+              height="270"
+            >
+            <figcaption>Джордж Оруэлл, <time datetime="1949">1949</time></figcaption>
+          </figure>
+          <dl>
+            <dt>Жанр</dt>
+            <dd>Антиутопия</dd>
+            <dt>Доступность</dt>
+            <dd>1 свободный экземпляр</dd>
+            <dt>Рейтинг клуба</dt>
+            <dd>4.7 из 5</dd>
+          </dl>
+          <p>Роман о языке, власти и личной свободе в тоталитарном обществе.</p>
+          <p><a href="loan.html">Оформить выдачу</a></p>
+        </article>
+
+        <article>
+          <h3><a href="book.html">Clean Code</a></h3>
+          <figure>
+            <img
+              src="https://covers.openlibrary.org/b/isbn/9780132350884-M.jpg"
+              alt="Обложка книги Clean Code Роберта Мартина"
+              width="180"
+              height="270"
+            >
+            <figcaption>Роберт Мартин, <time datetime="2008">2008</time></figcaption>
+          </figure>
+          <dl>
+            <dt>Жанр</dt>
+            <dd>Программирование</dd>
+            <dt>Доступность</dt>
+            <dd>2 свободных экземпляра</dd>
+            <dt>Рейтинг клуба</dt>
+            <dd>4.6 из 5</dd>
+          </dl>
+          <p>Практическое руководство по читаемому, сопровождаемому и ответственному коду.</p>
+          <p><a href="loan.html">Оформить выдачу</a></p>
+        </article>
+
+        <article>
+          <h3><a href="book.html">Sapiens</a></h3>
+          <figure>
+            <img
+              src="https://covers.openlibrary.org/b/isbn/9780062316097-M.jpg"
+              alt="Обложка книги Sapiens Юваля Ноя Харари"
+              width="180"
+              height="270"
+            >
+            <figcaption>Юваль Ной Харари, <time datetime="2011">2011</time></figcaption>
+          </figure>
+          <dl>
+            <dt>Жанр</dt>
+            <dd>Нон-фикшн</dd>
+            <dt>Доступность</dt>
+            <dd>Нет свободных экземпляров</dd>
+            <dt>Рейтинг клуба</dt>
+            <dd>4.5 из 5</dd>
+          </dl>
+          <p>Краткая история человечества от когнитивной революции до современности.</p>
+          <p><a href="loan.html">Оформить выдачу</a></p>
+        </article>
+
+        <article>
+          <h3><a href="book.html">The Pragmatic Programmer</a></h3>
+          <figure>
+            <img
+              src="https://covers.openlibrary.org/b/isbn/9780201616224-M.jpg"
+              alt="Обложка книги The Pragmatic Programmer"
+              width="180"
+              height="270"
+            >
+            <figcaption>Эндрю Хант и Дэвид Томас, <time datetime="1999">1999</time></figcaption>
+          </figure>
+          <dl>
+            <dt>Жанр</dt>
+            <dd>Программирование</dd>
+            <dt>Доступность</dt>
+            <dd>4 свободных экземпляра</dd>
+            <dt>Рейтинг клуба</dt>
+            <dd>4.9 из 5</dd>
+          </dl>
+          <p>Книга о профессиональных привычках разработчика и инженерном мышлении.</p>
+          <p><a href="loan.html">Оформить выдачу</a></p>
+        </article>
+
+        <article>
+          <h3><a href="book.html">Имя розы</a></h3>
+          <figure>
+            <img
+              src="https://covers.openlibrary.org/b/isbn/9780156001311-M.jpg"
+              alt="Обложка романа Имя розы Умберто Эко"
+              width="180"
+              height="270"
+            >
+            <figcaption>Умберто Эко, <time datetime="1980">1980</time></figcaption>
+          </figure>
+          <dl>
+            <dt>Жанр</dt>
+            <dd>Исторический роман</dd>
+            <dt>Доступность</dt>
+            <dd>2 свободных экземпляра</dd>
+            <dt>Рейтинг клуба</dt>
+            <dd>4.4 из 5</dd>
+          </dl>
+          <p>Интеллектуальный детектив о монастырской библиотеке, знаках и тайнах знания.</p>
+          <p><a href="loan.html">Оформить выдачу</a></p>
+        </article>
+      </section>
+
+      <aside aria-labelledby="club-note-title">
+        <h2 id="club-note-title">Правило книжного клуба</h2>
+        <p>Книги выдаются на 14 дней. Если свободных экземпляров нет, библиотекарь предложит поставить книгу в список ожидания.</p>
+      </aside>
+    </main>
+
+    <footer>
+      <p>BookNest, университетский книжный клуб. Лабораторная 1: семантический HTML.</p>
+    </footer>
+  </body>
+</html>
+
