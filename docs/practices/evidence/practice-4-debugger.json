@@ -1,0 +1,46 @@
+{
+  "measuredAt": "2026-10-17T14:54:21.845Z",
+  "sourceRef": "lab-3/js-app",
+  "sourceCommit": "51b888612569460e656c7d2af597791c17660a93",
+  "browser": "155.0.4283.45",
+  "breakpoint": {
+    "url": "http://127.0.0.1:8144/main.js",
+    "line": 44
+  },
+  "paused": true,
+  "scope": [
+    {
+      "type": "local",
+      "name": null,
+      "description": "Object"
+    },
+    {
+      "type": "module",
+      "name": null,
+      "description": "Object"
+    },
+    {
+      "type": "global",
+      "name": null,
+      "description": "Window"
+    }
+  ],
+  "evaluation": {
+    "targetTag": "SPAN",
+    "targetText": "Solaris: вложенная цель события",
+    "targetMarker": "nested-label",
+    "currentTargetTag": "MAIN",
+    "closestAction": "toggle",
+    "closestBookId": "b01",
+    "sameNode": false
+  },
+  "behavior": {
+    "ariaPressed": "true",
+    "wishlistCount": "1"
+  },
+  "currentRenderBooks": {
+    "exported": true,
+    "cardCount": 1,
+    "title": "Solaris"
+  }
+}
