@@ -59,7 +59,9 @@ button, .book-card__button {
 .book-card__button { inline-size: 100%; }
 button[aria-pressed="true"] { background: var(--color-tint); color: var(--color-accent); }
 .badge { display: inline-block; inline-size: fit-content; padding: var(--space-1) var(--space-2); border: var(--border-width) solid var(--color-rule); border-radius: var(--radius-small); color: var(--color-muted); font-size: var(--font-small); }
-.badge[data-tone="available"] { border-color: var(--color-focus); color: var(--color-text); }
+.badge[data-variant="ok"] { border-color: var(--color-focus); color: var(--color-text); }
+.badge[data-variant="warn"] { border-color: var(--color-invalid); color: var(--color-text); }
+.badge[data-variant="busy"] { background: var(--color-tint); color: var(--color-text); }
 .wishlist { border-block-start: var(--border-width) solid var(--color-rule); padding-block-start: var(--space-5); }
 .wishlist__list li { border-block-end: var(--border-width) solid var(--color-rule); padding-block: var(--space-3); }
 .storage-notice { color: var(--color-invalid); }

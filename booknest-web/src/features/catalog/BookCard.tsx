@@ -12,7 +12,7 @@ export function BookCard({ book, saved, onToggle }: BookCardProps) {
     <dl>
       <dt>Год</dt><dd>{book.year ?? 'Не указан'}</dd>
       <dt>Темы</dt><dd>{book.genre}</dd>
-      <dt>Доступность</dt><dd><Badge tone={book.available ? 'available' : 'neutral'}>{book.available ? 'Открытый электронный доступ' : 'Открытый доступ не подтверждён'}</Badge></dd>
+      <dt>Доступность</dt><dd><Badge variant={book.available ? 'ok' : 'warn'}>{book.available ? 'Открытый электронный доступ' : 'Открытый доступ не подтверждён'}</Badge></dd>
       <dt>Рейтинг Open Library</dt><dd>{book.rating === null ? 'Нет оценок' : `${book.rating.toFixed(1)} из 5`}</dd>
     </dl>
     <footer className="book-card__actions">

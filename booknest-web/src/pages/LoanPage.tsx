@@ -7,7 +7,7 @@ export function LoanPage() {
   return <main className="main main--loan">
     <nav className="breadcrumbs" aria-label="Хлебные крошки"><ol><li><Link to="/books">Каталог</Link></li><li><span aria-current="page">Форма выдачи</span></li></ol></nav>
     <h1>Оформление выдачи книги</h1>
-    <section className="loan-summary"><h2>Выбранная книга</h2><article><h3>Solaris</h3><img src="/booknest-cover.png" alt="Учебная обложка Solaris" width="180" height="270" /><Badge tone="available">Учебный экземпляр ЛР1–4</Badge><p>Станислав Лем, 1961</p><p>Форма не отправляет данные на сервер.</p></article></section>
+    <section className="loan-summary"><h2>Выбранная книга</h2><article><h3>Solaris</h3><img src="/booknest-cover.png" alt="Учебная обложка Solaris" width="180" height="270" /><Badge variant="ok">Учебный экземпляр ЛР1–4</Badge><p>Станислав Лем, 1961</p><p>Форма не отправляет данные на сервер.</p></article></section>
     <section className="loan-form"><h2>Данные выдачи</h2>
       <form onSubmit={event => { event.preventDefault(); setSubmitted(true); }} onReset={() => setSubmitted(false)}>
         <fieldset><legend>Читатель</legend>
