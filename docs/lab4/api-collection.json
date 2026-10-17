@@ -1,0 +1,48 @@
+{
+  "info": {
+    "name": "BookNest Lab 4 - Open Library",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "Real public GET requests. No credentials. Imported GUI execution is a separate manual step; evidence here uses curl.exe."
+  },
+  "item": [
+    {
+      "name": "search",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://openlibrary.org/search.json?q=%28title%3A%22Solaris%22+OR+author%3A%22Solaris%22%29&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=20&page=1&sort=title"
+      }
+    },
+    {
+      "name": "work",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://openlibrary.org/works/OL109524W.json"
+      }
+    },
+    {
+      "name": "missing",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": "https://openlibrary.org/works/OL999999999999999W.json"
+      }
+    }
+  ]
+}

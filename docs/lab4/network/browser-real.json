@@ -1,0 +1,307 @@
+[
+  {
+    "event": "request",
+    "id": "46916.20",
+    "url": "https://openlibrary.org/search.json?q=%28title%3A%22Solaris%22+OR+author%3A%22Solaris%22%29&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=20&page=1&sort=title",
+    "time": 144539.068499
+  },
+  {
+    "event": "response",
+    "id": "46916.20",
+    "url": "https://openlibrary.org/search.json?q=%28title%3A%22Solaris%22+OR+author%3A%22Solaris%22%29&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=20&page=1&sort=title",
+    "status": 200,
+    "time": 144540.221864
+  },
+  {
+    "event": "request",
+    "id": "46916.25",
+    "url": "https://openlibrary.org/search.json?q=%28title%3A%22Lem%22+OR+author%3A%22Lem%22%29&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=20&page=1&sort=title",
+    "time": 144541.050357
+  },
+  {
+    "event": "failed",
+    "url": "https://openlibrary.org/search.json?q=%28title%3A%22Lem%22+OR+author%3A%22Lem%22%29&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=20&page=1&sort=title",
+    "requestId": "46916.25",
+    "timestamp": 144541.160727,
+    "type": "Fetch",
+    "errorText": "net::ERR_ABORTED",
+    "canceled": true
+  },
+  {
+    "event": "request",
+    "id": "46916.26",
+    "url": "https://openlibrary.org/search.json?q=%28title%3A%22Tolkien%22+OR+author%3A%22Tolkien%22%29&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=20&page=1&sort=title",
+    "time": 144541.51706
+  },
+  {
+    "event": "response",
+    "id": "46916.26",
+    "url": "https://openlibrary.org/search.json?q=%28title%3A%22Tolkien%22+OR+author%3A%22Tolkien%22%29&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=20&page=1&sort=title",
+    "status": 200,
+    "time": 144543.540823
+  },
+  {
+    "event": "request",
+    "id": "46916.35",
+    "url": "https://openlibrary.org/search.json?q=%28title%3A%22Tolkien%22+OR+author%3A%22Tolkien%22%29&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=20&page=2&sort=title",
+    "time": 144543.84479
+  },
+  {
+    "event": "response",
+    "id": "46916.35",
+    "url": "https://openlibrary.org/search.json?q=%28title%3A%22Tolkien%22+OR+author%3A%22Tolkien%22%29&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=20&page=2&sort=title",
+    "status": 200,
+    "time": 144544.205675
+  },
+  {
+    "event": "failed",
+    "url": "https://archive.org/download/m_covers_0012/m_covers_0012_57.zip/0012578652-M.jpg",
+    "requestId": "46916.37",
+    "timestamp": 144544.480381,
+    "type": "Image",
+    "errorText": "net::ERR_INTERNET_DISCONNECTED",
+    "canceled": false
+  },
+  {
+    "event": "failed",
+    "url": "https://archive.org/download/m_covers_0008/m_covers_0008_15.zip/0008157200-M.jpg",
+    "requestId": "46916.38",
+    "timestamp": 144544.483869,
+    "type": "Image",
+    "errorText": "net::ERR_INTERNET_DISCONNECTED",
+    "canceled": false
+  },
+  {
+    "event": "failed",
+    "url": "https://archive.org/download/m_covers_0013/m_covers_0013_43.zip/0013433228-M.jpg",
+    "requestId": "46916.40",
+    "timestamp": 144544.489772,
+    "type": "Image",
+    "errorText": "net::ERR_INTERNET_DISCONNECTED",
+    "canceled": false
+  },
+  {
+    "event": "request",
+    "id": "46916.43",
+    "url": "https://openlibrary.org/search.json?q=%28title%3A%22Dune%22+OR+author%3A%22Dune%22%29&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=20&page=1&sort=title",
+    "time": 144544.634404
+  },
+  {
+    "event": "failed",
+    "url": "https://openlibrary.org/search.json?q=%28title%3A%22Dune%22+OR+author%3A%22Dune%22%29&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=20&page=1&sort=title",
+    "requestId": "46916.43",
+    "timestamp": 144544.637922,
+    "type": "Fetch",
+    "errorText": "net::ERR_INTERNET_DISCONNECTED",
+    "canceled": false
+  },
+  {
+    "event": "request",
+    "id": "46916.44",
+    "url": "https://openlibrary.org/search.json?q=%28title%3A%22Dune%22+OR+author%3A%22Dune%22%29&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=20&page=1&sort=title",
+    "time": 144544.863166
+  },
+  {
+    "event": "response",
+    "id": "46916.44",
+    "url": "https://openlibrary.org/search.json?q=%28title%3A%22Dune%22+OR+author%3A%22Dune%22%29&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=20&page=1&sort=title",
+    "status": 200,
+    "time": 144545.856954
+  },
+  {
+    "event": "failed",
+    "url": "https://covers.openlibrary.org/b/id/5775339-M.jpg?default=false",
+    "requestId": "46916.45",
+    "timestamp": 144545.911111,
+    "type": "Image",
+    "errorText": "net::ERR_ABORTED",
+    "canceled": true
+  },
+  {
+    "event": "failed",
+    "url": "https://archive.org/download/m_covers_0013/m_covers_0013_06.zip/0013067524-M.jpg",
+    "requestId": "46916.31",
+    "timestamp": 144545.911129,
+    "type": "Image",
+    "errorText": "net::ERR_ABORTED",
+    "canceled": true
+  },
+  {
+    "event": "failed",
+    "url": "https://archive.org/download/m_covers_0012/m_covers_0012_99.zip/0012995315-M.jpg",
+    "requestId": "46916.32",
+    "timestamp": 144545.911139,
+    "type": "Image",
+    "errorText": "net::ERR_ABORTED",
+    "canceled": true
+  },
+  {
+    "event": "failed",
+    "url": "https://covers.openlibrary.org/b/id/6100348-M.jpg?default=false",
+    "requestId": "46916.48",
+    "timestamp": 144545.911189,
+    "type": "Image",
+    "errorText": "net::ERR_ABORTED",
+    "canceled": true
+  },
+  {
+    "event": "failed",
+    "url": "https://covers.openlibrary.org/b/id/9593398-M.jpg?default=false",
+    "requestId": "46916.47",
+    "timestamp": 144545.911209,
+    "type": "Image",
+    "errorText": "net::ERR_ABORTED",
+    "canceled": true
+  },
+  {
+    "event": "failed",
+    "url": "https://archive.org/download/m_covers_0012/m_covers_0012_58.zip/0012584721-M.jpg",
+    "requestId": "46916.21",
+    "timestamp": 144545.91125,
+    "type": "Image",
+    "errorText": "net::ERR_ABORTED",
+    "canceled": true
+  },
+  {
+    "event": "failed",
+    "url": "https://archive.org/download/m_covers_0011/m_covers_0011_98.zip/0011983277-M.jpg",
+    "requestId": "46916.27",
+    "timestamp": 144545.911266,
+    "type": "Image",
+    "errorText": "net::ERR_ABORTED",
+    "canceled": true
+  },
+  {
+    "event": "failed",
+    "url": "https://archive.org/download/m_covers_0008/m_covers_0008_61.zip/0008615973-M.jpg",
+    "requestId": "46916.24",
+    "timestamp": 144545.91128,
+    "type": "Image",
+    "errorText": "net::ERR_ABORTED",
+    "canceled": true
+  },
+  {
+    "event": "failed",
+    "url": "https://covers.openlibrary.org/b/id/2174185-M.jpg?default=false",
+    "requestId": "46916.50",
+    "timestamp": 144545.911298,
+    "type": "Image",
+    "errorText": "net::ERR_ABORTED",
+    "canceled": true
+  },
+  {
+    "event": "failed",
+    "url": "https://covers.openlibrary.org/b/id/13574621-M.jpg?default=false",
+    "requestId": "46916.49",
+    "timestamp": 144545.911333,
+    "type": "Image",
+    "errorText": "net::ERR_ABORTED",
+    "canceled": true
+  },
+  {
+    "event": "failed",
+    "url": "https://archive.org/download/m_covers_0010/m_covers_0010_21.zip/0010219963-M.jpg",
+    "requestId": "46916.34",
+    "timestamp": 144545.91139,
+    "type": "Image",
+    "errorText": "net::ERR_ABORTED",
+    "canceled": true
+  },
+  {
+    "event": "failed",
+    "url": "https://covers.openlibrary.org/b/id/3718620-M.jpg?default=false",
+    "requestId": "46916.46",
+    "timestamp": 144545.911405,
+    "type": "Image",
+    "errorText": "net::ERR_ABORTED",
+    "canceled": true
+  },
+  {
+    "event": "failed",
+    "url": "https://archive.org/download/m_covers_0010/m_covers_0010_97.zip/0010979551-M.jpg",
+    "requestId": "46916.29",
+    "timestamp": 144545.91143,
+    "type": "Image",
+    "errorText": "net::ERR_ABORTED",
+    "canceled": true
+  },
+  {
+    "event": "failed",
+    "url": "https://covers.openlibrary.org/b/id/2155723-M.jpg?default=false",
+    "requestId": "46916.51",
+    "timestamp": 144545.91145,
+    "type": "Image",
+    "errorText": "net::ERR_ABORTED",
+    "canceled": true
+  },
+  {
+    "event": "request",
+    "id": "46916.70",
+    "url": "https://openlibrary.org/works/OL109524W.json",
+    "time": 144545.946732
+  },
+  {
+    "event": "request",
+    "id": "46916.71",
+    "url": "https://openlibrary.org/search.json?q=key%3A%2Fworks%2FOL109524W&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=1",
+    "time": 144545.947063
+  },
+  {
+    "event": "response",
+    "id": "46916.70",
+    "url": "https://openlibrary.org/works/OL109524W.json",
+    "status": 200,
+    "time": 144546.250286
+  },
+  {
+    "event": "response",
+    "id": "46916.71",
+    "url": "https://openlibrary.org/search.json?q=key%3A%2Fworks%2FOL109524W&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=1",
+    "status": 200,
+    "time": 144546.276598
+  },
+  {
+    "event": "failed",
+    "url": "https://archive.org/download/m_covers_0012/m_covers_0012_31.zip/0012313764-M.jpg",
+    "requestId": "46916.73",
+    "timestamp": 144554.435445,
+    "type": "Image",
+    "errorText": "net::ERR_ABORTED",
+    "canceled": true
+  },
+  {
+    "event": "request",
+    "id": "46916.92",
+    "url": "https://openlibrary.org/works/OL999999999999999W.json",
+    "time": 144554.467234
+  },
+  {
+    "event": "request",
+    "id": "46916.93",
+    "url": "https://openlibrary.org/search.json?q=key%3A%2Fworks%2FOL999999999999999W&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=1",
+    "time": 144554.467534
+  },
+  {
+    "event": "response",
+    "id": "46916.92",
+    "url": "https://openlibrary.org/works/OL999999999999999W.json",
+    "status": 404,
+    "time": 144554.920168
+  },
+  {
+    "event": "response",
+    "id": "46916.93",
+    "url": "https://openlibrary.org/search.json?q=key%3A%2Fworks%2FOL999999999999999W&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=1",
+    "status": 200,
+    "time": 144554.921219
+  },
+  {
+    "event": "failed",
+    "url": "https://openlibrary.org/search.json?q=key%3A%2Fworks%2FOL999999999999999W&fields=key%2Ctitle%2Cauthor_name%2Cfirst_publish_year%2Csubject%2Cebook_access%2Cratings_average%2Ccover_i&limit=1",
+    "requestId": "46916.93",
+    "timestamp": 144554.921684,
+    "type": "Fetch",
+    "errorText": "net::ERR_ABORTED",
+    "canceled": true
+  }
+]

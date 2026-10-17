@@ -1,0 +1,13 @@
+HTTP/1.1 200 OK
+Server: nginx/1.30.6
+Date: Sat, 17 Oct 2026 05:26:27 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+access-control-allow-method: GET, OPTIONS
+access-control-max-age: 86400
+x-ol-stats: "MC 2 0.004 TT 0 0.007"
+Referrer-Policy: no-referrer-when-downgrade
+
+{"description": "The cult-classic by Stanislaw Lem that spawned the movie is now available for your Kindle! Until now the only English edition was a 1970 version, which was translated from French and which Lem himself described as a \"poor translation.\" This wonderful new English translation (by Bill Johnston) of Lem's classic Solaris is a must-have for fans of Lem's classic novel.\r\n\r\nTelling of humanity's encounter with an alien intelligence on the planet Solaris, the 1961 novel is a cult classic, exploring the ultimate futility of attempting to communicate with extra-terrestrial life.\r\n\r\nWhen Kris Kelvin arrives at the planet Solaris to study the ocean that covers its surface, he finds a painful, hitherto unconscious memory embodied in the living physical likeness of a long-dead lover. Others examining the planet, Kelvin learns, are plagued with their own repressed and newly corporeal memories. The Solaris ocean may be a massive brain that creates these incarnate memories, though its purpose in doing so is unknown, forcing the scientists to shift the focus of their quest and wonder if they can truly understand the universe without first understanding what lies within their hearts.", "title": "Solaris", "covers": [-1, 12313764, 13179059], "subject_places": ["Planet Solaris"], "subjects": ["Translations into English", "English fiction", "Polish Science fiction", "Polish fiction", "Translations from Polish", "Science fiction", "Fiction, science fiction, general", "Slavic philology", "Life on other planets", "Fiction", "Emotions", "Memory", "Psychologists"], "subject_people": ["Kris Kelvin"], "key": "/works/OL109524W", "authors": [{"author": {"key": "/authors/OL29655A"}, "type": {"key": "/type/author_role"}}], "subject_times": ["The Future"], "type": {"key": "/type/work"}, "first_sentence": {"type": "/type/text", "value": "At 19.00 hours, ship's time, I made my way to the launching bay."}, "first_publish_date": "August 2002", "excerpts": [{"excerpt": "At 19.00 hours, ship's time, I made my way to the launching bay."}], "identifiers": {"librarything": ["18415"], "wikidata": ["Q261281"]}, "genres": ["/tags/OL179T"], "latest_revision": 24, "revision": 24, "created": {"type": "/type/datetime", "value": "2009-10-17T23:16:23.155408"}, "last_modified": {"type": "/type/datetime", "value": "2026-08-29T10:18:28.983057"}}

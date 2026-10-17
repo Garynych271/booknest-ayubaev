@@ -1,0 +1,95 @@
+TAP version 13
+# Subtest: API client: encoded parameters, response.ok, HTTP and JSON failures
+ok 1 - API client: encoded parameters, response.ok, HTTP and JSON failures
+  ---
+  duration_ms: 51.3961
+  ...
+# Subtest: API client: cancellation and timeout are distinct and settle
+ok 2 - API client: cancellation and timeout are distinct and settle
+  ---
+  duration_ms: 25.6566
+  ...
+# Subtest: search: 20 per page, server filters/sorts, escaped user input
+ok 3 - search: 20 per page, server filters/sorts, escaped user input
+  ---
+  duration_ms: 1.1559
+  ...
+# Subtest: search: minimum length skips network, normalization and invalid data
+ok 4 - search: minimum length skips network, normalization and invalid data
+  ---
+  duration_ms: 3.7779
+  ...
+# Subtest: details: independent requests start together, work 404 is preserved
+ok 5 - details: independent requests start together, work 404 is preserved
+  ---
+  duration_ms: 4.9378
+  ...
+# Subtest: loader: stale success cannot replace latest result, loading always clears
+ok 6 - loader: stale success cannot replace latest result, loading always clears
+  ---
+  duration_ms: 2.4476
+  ...
+# Subtest: error messages distinguish Offline, network, 404, 4xx and 5xx
+ok 7 - error messages distinguish Offline, network, 404, 4xx and 5xx
+  ---
+  duration_ms: 0.7863
+  ...
+# Subtest: API storage: stable snapshots, legacy migration, bad data, blocked storage
+ok 8 - API storage: stable snapshots, legacy migration, bad data, blocked storage
+  ---
+  duration_ms: 1.8537
+  ...
+# Subtest: dataset has 40 unique books in five genres, eight per genre
+ok 9 - dataset has 40 unique books in five genres, eight per genre
+  ---
+  duration_ms: 2.4499
+  ...
+# Subtest: search ignores case, trims whitespace and matches title or author
+ok 10 - search ignores case, trims whitespace and matches title or author
+  ---
+  duration_ms: 22.1491
+  ...
+# Subtest: combined filters intersect and sorting does not mutate frozen inputs
+ok 11 - combined filters intersect and sorting does not mutate frozen inputs
+  ---
+  duration_ms: 1.1169
+  ...
+# Subtest: sort ties are deterministic
+ok 12 - sort ties are deterministic
+  ---
+  duration_ms: 0.4759
+  ...
+# Subtest: saved filters and wishlist reject bad types, unknown IDs and duplicates
+ok 13 - saved filters and wishlist reject bad types, unknown IDs and duplicates
+  ---
+  duration_ms: 0.6713
+  ...
+# Subtest: wishlist toggles without mutating the input
+ok 14 - wishlist toggles without mutating the input
+  ---
+  duration_ms: 0.2503
+  ...
+# Subtest: round trip restores all filters and wishlist using one versioned key
+ok 15 - round trip restores all filters and wishlist using one versioned key
+  ---
+  duration_ms: 3.2514
+  ...
+# Subtest: invalid JSON and invalid schemas safely recover default filters
+ok 16 - invalid JSON and invalid schemas safely recover default filters
+  ---
+  duration_ms: 1.0131
+  ...
+# Subtest: blocked storage getter, failed reads and quota failures never escape
+ok 17 - blocked storage getter, failed reads and quota failures never escape
+  ---
+  duration_ms: 0.4243
+  ...
+1..17
+# tests 17
+# suites 0
+# pass 17
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 288.9816
