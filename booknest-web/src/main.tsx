@@ -5,9 +5,15 @@ import './styles/base.css';
 import './styles/layout.css';
 import './styles/components.css';
 import App from './App.tsx';
+import { AuthProvider } from './contexts/AuthProvider.tsx';
+import { ThemeProvider } from './contexts/ThemeProvider.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <AuthProvider>
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
+    </AuthProvider>
   </StrictMode>,
 );

@@ -2,6 +2,8 @@
   min-block-size: 100dvh;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  color: var(--color-text);
+  background: var(--color-bg);
 }
 .site-header, .main, .site-footer {
   inline-size: 100%;
@@ -16,6 +18,7 @@
   gap: var(--space-3);
 }
 .site-header { justify-content: space-between; padding-block: var(--space-5); }
+.site-header__preferences { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); }
 .site-nav ul, .breadcrumbs ol { list-style: none; padding: var(--space-0); }
 .main { display: grid; align-content: start; gap: var(--space-6); padding-block: var(--space-6); }
 .main > *, .catalog > *, .book-detail > * { min-inline-size: 0; }
