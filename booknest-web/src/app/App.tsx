@@ -1,13 +1,13 @@
 import { useState } from 'react';
-import type { Book, Filters, Preferences } from './types';
-import { defaultFilters, loadPreferences, savePreferences, toggleWishlist } from './lib/preferences';
-import { readPage } from './lib/navigation';
-import { Header } from './components/Header';
-import { Footer } from './components/Footer';
-import { CatalogPage } from './components/CatalogPage';
-import { BookDetails } from './components/BookDetails';
-import { LoanPage } from './components/LoanPage';
-import { useTheme } from './contexts/theme';
+import type { Book, Filters, Preferences } from '../types';
+import { defaultFilters, loadPreferences, savePreferences, toggleWishlist } from '../shared/lib/preferences';
+import { readPage } from '../shared/lib/navigation';
+import { Header } from './Header';
+import { Footer } from './Footer';
+import { CatalogView } from '../features/catalog/CatalogView';
+import { BookDetails } from '../features/books/BookDetails';
+import { LoanPage } from '../pages/LoanPage';
+import { useTheme } from '../shared/contexts/theme';
 
 export default function App() {
   const { theme } = useTheme();
@@ -20,7 +20,7 @@ export default function App() {
   const toggle = (book: Book) => apply({ ...preferences, wishlist: toggleWishlist(preferences.wishlist, book) });
   return <div className="page" data-theme={theme}>
     <Header view={pageInfo.view} wishlistCount={preferences.wishlist.length} />
-    {pageInfo.view === 'catalog' && <CatalogPage filters={preferences.filters} page={preferences.page} wishlist={preferences.wishlist}
+    {pageInfo.view === 'catalog' && <CatalogView filters={preferences.filters} page={preferences.page} wishlist={preferences.wishlist}
       storageAvailable={storageAvailable} onFiltersChange={updateFilters}
       onReset={() => updateFilters(defaultFilters())} onPageChange={page => apply({ ...preferences, page })}
       onToggle={toggle} onRemove={id => apply({ ...preferences, wishlist: preferences.wishlist.filter(book => book.id !== id) })} />}

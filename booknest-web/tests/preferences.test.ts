@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { API_STORAGE_KEY, defaultFilters, loadPreferences, normalizeFilters, normalizeWishlist, savePreferences, toggleWishlist } from '../src/lib/preferences';
-import { bookHref, readPage } from '../src/lib/navigation';
+import { API_STORAGE_KEY, defaultFilters, loadPreferences, normalizeFilters, normalizeWishlist, savePreferences, toggleWishlist } from '../src/shared/lib/preferences';
+import { bookHref, readPage } from '../src/shared/lib/navigation';
 function memory(entries: Record<string, string> = {}): Storage {
   const values = new Map(Object.entries(entries));
   return { get length() { return values.size; }, clear: () => values.clear(), getItem: key => values.get(key) ?? null,

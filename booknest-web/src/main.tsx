@@ -4,9 +4,9 @@ import './styles/tokens.css';
 import './styles/base.css';
 import './styles/layout.css';
 import './styles/components.css';
-import App from './App.tsx';
-import { AuthProvider } from './contexts/AuthProvider.tsx';
-import { ThemeProvider } from './contexts/ThemeProvider.tsx';
+import App from './app/App.tsx';
+import { AuthProvider } from './shared/contexts/AuthProvider.tsx';
+import { ThemeProvider } from './shared/contexts/ThemeProvider.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

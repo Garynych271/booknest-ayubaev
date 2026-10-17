@@ -2,10 +2,10 @@
 import type { PropsWithChildren } from 'react';
 import { act, renderHook, waitFor } from '@testing-library/react';
 import { beforeEach, describe, expect, it } from 'vitest';
-import { AuthProvider } from '../src/contexts/AuthProvider';
-import { useAuth } from '../src/contexts/auth';
-import { ThemeProvider } from '../src/contexts/ThemeProvider';
-import { THEME_STORAGE_KEY, useTheme } from '../src/contexts/theme';
+import { AuthProvider } from '../src/shared/contexts/AuthProvider';
+import { useAuth } from '../src/shared/contexts/auth';
+import { ThemeProvider } from '../src/shared/contexts/ThemeProvider';
+import { THEME_STORAGE_KEY, useTheme } from '../src/shared/contexts/theme';
 
 beforeEach(() => localStorage.clear());
 

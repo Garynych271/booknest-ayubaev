@@ -1,6 +1,6 @@
-import type { Filters } from '../types';
-import { genres, sorts, isGenre, isSort } from '../lib/preferences';
-import { Button } from './Button';
+import type { Filters } from '../../types';
+import { genres, sorts, isGenre, isSort } from '../../shared/lib/preferences';
+import { Button } from '../../shared/components/Button';
 export interface FiltersPanelProps { filters: Filters; onChange: (filters: Filters) => void; onReset: () => void; storageAvailable: boolean }
 export function FiltersPanel({ filters, onChange, onReset, storageAvailable }: FiltersPanelProps) {
   return <section className="filters" aria-labelledby="filters-title">

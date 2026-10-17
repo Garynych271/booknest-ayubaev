@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import { errorMessage, isAbort } from '../api/client';
+import { errorMessage, isAbort } from '../../api/client';
 
 export interface FetchState<T> {
   data: T | null;

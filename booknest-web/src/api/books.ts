@@ -1,8 +1,8 @@
 import { request, ApiError } from './client';
 import type { RequestOptions } from './client';
 import type { Book, BookDetail, Filters, Genre, Sort, SearchResult } from '../types';
-import { isWorkId, normalizeFilters } from '../lib/preferences';
-import { record, strings, finite } from '../lib/values';
+import { isWorkId, normalizeFilters } from '../shared/lib/preferences';
+import { record, strings, finite } from '../shared/lib/values';
 export const PAGE_SIZE = 20;
 export const MIN_QUERY = 2;
 const fields = 'key,title,author_name,first_publish_year,subject,ebook_access,ratings_average,cover_i';

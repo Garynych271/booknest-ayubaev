@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import type { Book } from '../types';
+import type { Book } from '../../types';
 export interface BookCoverProps { book: Book; detail?: boolean }
 export function BookCover({ book, detail = false }: BookCoverProps) {
   const [status, setStatus] = useState<'loading' | 'ready' | 'error'>('loading');

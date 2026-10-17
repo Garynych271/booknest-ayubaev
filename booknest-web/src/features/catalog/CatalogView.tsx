@@ -1,20 +1,20 @@
 import { useEffect } from 'react';
-import { PAGE_SIZE } from '../api/books';
-import { useBooks } from '../hooks/useBooks';
-import type { Book, Filters, RequestState, SavedBook, SearchResult } from '../types';
+import { PAGE_SIZE } from '../../api/books';
+import { useBooks } from '../books/useBooks';
+import type { Book, Filters, RequestState, SavedBook, SearchResult } from '../../types';
 import { FiltersPanel } from './FiltersPanel';
-import { Spinner } from './Spinner';
-import { EmptyState } from './EmptyState';
-import { ErrorBox } from './ErrorBox';
+import { Spinner } from '../../shared/components/Spinner';
+import { EmptyState } from '../../shared/components/EmptyState';
+import { ErrorBox } from '../../shared/components/ErrorBox';
 import { BookList } from './BookList';
 import { Pagination } from './Pagination';
-import { Wishlist } from './Wishlist';
-export interface CatalogPageProps {
+import { Wishlist } from '../wishlist/Wishlist';
+export interface CatalogViewProps {
   filters: Filters; page: number; wishlist: SavedBook[]; storageAvailable: boolean;
   onFiltersChange: (filters: Filters) => void; onReset: () => void;
   onPageChange: (page: number) => void; onToggle: (book: Book) => void; onRemove: (id: string) => void;
 }
-export function CatalogPage(props: CatalogPageProps) {
+export function CatalogView(props: CatalogViewProps) {
   const { filters, page, wishlist, storageAvailable, onFiltersChange, onReset, onPageChange, onToggle, onRemove } = props;
   const books = useBooks(filters, page);
   const result: RequestState<SearchResult> = books.isTooShort

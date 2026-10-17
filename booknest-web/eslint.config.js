@@ -10,7 +10,7 @@ export default tseslint.config(
     languageOptions: { ecmaVersion: 2022, globals: globals.browser },
     plugins: { 'react-hooks': reactHooks, 'react-refresh': reactRefresh },
     rules: { ...reactHooks.configs.recommended.rules, 'react-refresh/only-export-components': ['error', { allowConstantExport: true }], '@typescript-eslint/no-explicit-any': 'error' } },
-  { files: ['src/components/**/*.tsx', 'src/App.tsx'], rules: {
+  { files: ['src/app/**/*.tsx', 'src/pages/**/*.tsx', 'src/features/**/*.tsx', 'src/shared/components/**/*.tsx', 'src/shared/contexts/**/*.tsx'], rules: {
     'no-restricted-globals': ['error', 'document', 'fetch'],
     'no-restricted-syntax': ['error', { selector: 'MemberExpression[property.name="document"]', message: 'Use React refs, not document.' }, { selector: 'JSXAttribute[name.name="key"][value.expression.name="index"]', message: 'Use a stable domain ID.' }],
   } },

@@ -1,6 +1,6 @@
 import type { View } from '../types';
-import { useAuth } from '../contexts/auth';
-import { useTheme } from '../contexts/theme';
+import { useAuth } from '../shared/contexts/auth';
+import { useTheme } from '../shared/contexts/theme';
 export interface HeaderProps { view: View; wishlistCount: number }
 export function Header({ view, wishlistCount }: HeaderProps) {
   const { user } = useAuth();

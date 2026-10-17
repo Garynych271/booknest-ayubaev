@@ -1,4 +1,4 @@
-import type { Book, SavedBook } from '../types';
+import type { Book, SavedBook } from '../../types';
 import { BookCard } from './BookCard';
 export interface BookListProps { books: Book[]; wishlist: SavedBook[]; onToggle: (book: Book) => void }
 export function BookList({ books, wishlist, onToggle }: BookListProps) {

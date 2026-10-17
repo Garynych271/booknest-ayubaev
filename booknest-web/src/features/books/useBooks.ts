@@ -1,9 +1,9 @@
 import { useCallback, useMemo } from 'react';
-import { getBook, MIN_QUERY, searchBooks } from '../api/books';
-import type { BookDetail, Filters, SearchResult } from '../types';
-import { useDebounce } from './useDebounce';
-import { useFetch } from './useFetch';
-import type { FetchState } from './useFetch';
+import { getBook, MIN_QUERY, searchBooks } from '../../api/books';
+import type { BookDetail, Filters, SearchResult } from '../../types';
+import { useDebounce } from '../../shared/hooks/useDebounce';
+import { useFetch } from '../../shared/hooks/useFetch';
+import type { FetchState } from '../../shared/hooks/useFetch';
 
 export interface BooksState {
   data: SearchResult | null;

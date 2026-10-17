@@ -1,5 +1,5 @@
 import type { PropsWithChildren } from 'react';
-import type { CurrentUser } from '../types';
+import type { CurrentUser } from '../../types';
 import { AuthContext } from './auth';
 
 const localUser: CurrentUser = { id: 'local-reader', displayName: 'Учебный читатель', role: 'reader' };

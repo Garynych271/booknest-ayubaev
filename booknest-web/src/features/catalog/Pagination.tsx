@@ -1,4 +1,4 @@
-import { Button } from './Button';
+import { Button } from '../../shared/components/Button';
 export interface PaginationProps { page: number; totalPages: number; onChange: (page: number) => void }
 export function Pagination({ page, totalPages, onChange }: PaginationProps) {
   return <nav className="pagination" aria-label="Страницы каталога">

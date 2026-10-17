@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { Badge } from './Badge';
-import { Button } from './Button';
+import { Badge } from '../shared/components/Badge';
+import { Button } from '../shared/components/Button';
 export function LoanPage() {
   const [submitted, setSubmitted] = useState(false);
   return <main className="main main--loan">

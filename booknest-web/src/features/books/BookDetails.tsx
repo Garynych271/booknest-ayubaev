@@ -1,12 +1,12 @@
-import { BASE_URL } from '../api/client';
-import { useBook } from '../hooks/useBooks';
-import type { BookDetail, RequestState, SavedBook } from '../types';
-import { Badge } from './Badge';
-import { BookCover } from './BookCover';
-import { Button } from './Button';
-import { EmptyState } from './EmptyState';
-import { ErrorBox } from './ErrorBox';
-import { Spinner } from './Spinner';
+import { BASE_URL } from '../../api/client';
+import { useBook } from './useBooks';
+import type { BookDetail, RequestState, SavedBook } from '../../types';
+import { Badge } from '../../shared/components/Badge';
+import { BookCover } from '../../shared/components/BookCover';
+import { Button } from '../../shared/components/Button';
+import { EmptyState } from '../../shared/components/EmptyState';
+import { ErrorBox } from '../../shared/components/ErrorBox';
+import { Spinner } from '../../shared/components/Spinner';
 export interface BookDetailsProps { id: string | null; wishlist: SavedBook[]; storageAvailable: boolean; onToggle: (book: BookDetail) => void }
 export function BookDetails({ id, wishlist, storageAvailable, onToggle }: BookDetailsProps) {
   const request = useBook(id);

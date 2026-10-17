@@ -1,8 +1,8 @@
-import type { Book } from '../types';
-import { bookHref } from '../lib/navigation';
-import { Badge } from './Badge';
-import { Button } from './Button';
-import { BookCover } from './BookCover';
+import type { Book } from '../../types';
+import { bookHref } from '../../shared/lib/navigation';
+import { Badge } from '../../shared/components/Badge';
+import { Button } from '../../shared/components/Button';
+import { BookCover } from '../../shared/components/BookCover';
 export interface BookCardProps { book: Book; saved: boolean; onToggle: (book: Book) => void }
 export function BookCard({ book, saved, onToggle }: BookCardProps) {
   return <article className="book-card book-card--interactive" data-book-id={book.id}>

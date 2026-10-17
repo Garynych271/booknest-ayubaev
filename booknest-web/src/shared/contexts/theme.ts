@@ -1,5 +1,5 @@
 import { createContext, useContext } from 'react';
-import type { Theme } from '../types';
+import type { Theme } from '../../types';
 
 export const THEME_STORAGE_KEY = 'booknest.theme';
 export interface ThemeContextValue { theme: Theme; toggleTheme: () => void }

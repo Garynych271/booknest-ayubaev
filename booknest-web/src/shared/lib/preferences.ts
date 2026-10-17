@@ -1,6 +1,6 @@
-import type { Filters, Genre, Sort, SavedBook, Preferences, LoadedPreferences } from '../types';
+import type { Filters, Genre, Sort, SavedBook, Preferences, LoadedPreferences } from '../../types';
 import { record } from './values';
-import { books as legacyBooks } from '../../../data/books.js';
+import { books as legacyBooks } from '../../../../data/books.js';
 
 export const API_STORAGE_KEY = 'booknest.catalog.v2';
 export const genres: Record<Genre, string> = { '': 'Все жанры', 'science-fiction': 'Научная фантастика', novel: 'Роман', 'non-fiction': 'Нон-фикшн', history: 'История', programming: 'Программирование' };
