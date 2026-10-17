@@ -389,6 +389,8 @@ Artifacts/files:
 
 ### Лабораторная 4. W5 external REST API, 8 баллов
 
+Статус 17.10.2026: реализация в `lab-4/api` от `lab-3/js-app` (`51b8886`); предыдущие PR ещё не объединены. Реальные результаты и ограничения: [lab4/README.md](lab4/README.md). Описание PR: [lab4-pr.md](lab4-pr.md). Публикация требует подтверждения пользователя; лабораторная 5 не начиналась.
+
 Обязательно:
 
 - Replace local catalog data with Open Library API.
