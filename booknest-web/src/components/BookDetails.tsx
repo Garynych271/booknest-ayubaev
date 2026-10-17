@@ -1,7 +1,6 @@
-import { useEffect, useState } from 'react';
-import { getBook } from '../api/books';
-import { BASE_URL, errorMessage, isAbort } from '../api/client';
-import type { BookDetail, CompletedRequest, RequestState, SavedBook } from '../types';
+import { BASE_URL } from '../api/client';
+import { useBook } from '../hooks/useBooks';
+import type { BookDetail, RequestState, SavedBook } from '../types';
 import { Badge } from './Badge';
 import { BookCover } from './BookCover';
 import { Button } from './Button';
@@ -9,23 +8,13 @@ import { EmptyState } from './EmptyState';
 import { ErrorBox } from './ErrorBox';
 import { Spinner } from './Spinner';
 export interface BookDetailsProps { id: string | null; wishlist: SavedBook[]; storageAvailable: boolean; onToggle: (book: BookDetail) => void }
-const initial: CompletedRequest<BookDetail> = { key: '', result: { status: 'empty', message: '' } };
 export function BookDetails({ id, wishlist, storageAvailable, onToggle }: BookDetailsProps) {
-  const [completed, setCompleted] = useState(initial);
-  const [attempt, setAttempt] = useState(0);
-  const key = `${id ?? ''}:${attempt}`;
-  const result: RequestState<BookDetail> = id === null ? { status: 'empty', message: 'Выберите книгу в каталоге.' } : completed.key === key ? completed.result : { status: 'loading' };
-  useEffect(() => {
-    if (id === null) return;
-    const controller = new AbortController();
-    void (async () => {
-      let next: RequestState<BookDetail> = { status: 'loading' };
-      try { next = { status: 'success', data: await getBook(id, { signal: controller.signal }) }; }
-      catch (error) { if (!isAbort(error)) next = { status: 'error', message: errorMessage(error, navigator.onLine) }; }
-      finally { if (!controller.signal.aborted && next.status !== 'loading') setCompleted({ key, result: next }); }
-    })();
-    return () => controller.abort();
-  }, [id, key]);
+  const request = useBook(id);
+  const result: RequestState<BookDetail> = id === null ? { status: 'empty', message: 'Выберите книгу в каталоге.' }
+    : request.isLoading ? { status: 'loading' }
+    : request.error ? { status: 'error', message: request.error }
+    : request.data ? { status: 'success', data: request.data }
+    : { status: 'loading' };
   const book = result.status === 'success' ? result.data : null;
   const saved = book ? wishlist.some(item => item.id === book.id) : false;
   return <main className="main main--book" aria-busy={result.status === 'loading'}>
@@ -33,7 +22,7 @@ export function BookDetails({ id, wishlist, storageAvailable, onToggle }: BookDe
     <h1>{book?.title ?? 'Карточка книги'}</h1>
     {result.status === 'loading' && <Spinner label="Загружаем книгу…" />}
     {result.status === 'empty' && <EmptyState><a href="?">{result.message}</a></EmptyState>}
-    {result.status === 'error' && <ErrorBox message={result.message} onRetry={() => setAttempt(value => value + 1)} />}
+    {result.status === 'error' && <ErrorBox message={result.message} onRetry={request.retry} />}
     {book && <article className="book-detail" data-state="success">
       <BookCover key={book.cover ?? 'none'} book={book} detail />
       <section className="book-detail__specs"><h2>Характеристики</h2><dl>

@@ -18,4 +18,3 @@ export type RequestState<T> =
   | { status: 'empty'; message: string }
   | { status: 'success'; data: T }
   | { status: 'error'; message: string };
-export interface CompletedRequest<T> { key: string; result: RequestState<T> }
