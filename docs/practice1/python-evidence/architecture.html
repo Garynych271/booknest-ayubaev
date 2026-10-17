@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Наблюдаемая архитектура python.org</title>
+    <style>
+      * { box-sizing: border-box; }
+      body { margin: 0; padding: 48px; color: #17202a; background: #f7f9fb; font: 18px/1.45 Arial, sans-serif; }
+      main { max-width: 1280px; margin: 0 auto; }
+      h1 { margin: 0 0 8px; font-size: 32px; }
+      .subtitle { margin: 0 0 38px; color: #465564; }
+      .flow { display: flex; align-items: stretch; gap: 14px; }
+      .node { flex: 1; min-height: 190px; padding: 22px; border: 2px solid #375a7f; background: #fff; }
+      .node h2 { margin: 0 0 12px; font-size: 22px; }
+      .node p { margin: 8px 0; }
+      .arrow { display: flex; align-items: center; color: #375a7f; font-size: 34px; font-weight: 700; }
+      .assets { border-color: #40845b; }
+      .unknown { margin-top: 28px; padding: 18px 22px; border: 2px dashed #a64b3c; background: #fff; }
+      .legend { margin-top: 28px; padding-top: 20px; border-top: 1px solid #aab7c4; }
+      code { font-family: Consolas, monospace; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Наблюдаемая архитектура доставки python.org</h1>
+      <p class="subtitle">Схема построена только по Network/CDP и HTTP-заголовкам, измеренным 11 и 17 октября 2026 года.</p>
+
+      <div class="flow" aria-label="Наблюдаемая цепочка доставки">
+        <section class="node">
+          <h2>Браузер</h2>
+          <p><code>GET /</code></p>
+          <p>Получает готовый HTML document, затем запрашивает CSS, JS, изображения и шрифты.</p>
+        </section>
+        <div class="arrow" aria-hidden="true">→</div>
+        <section class="node">
+          <h2>Пограничный кэш</h2>
+          <p><code>Via: varnish</code></p>
+          <p><code>X-Cache: MISS, HIT, HIT</code></p>
+          <p>Наблюдаемый промежуточный слой доставки и кэширования.</p>
+        </section>
+        <div class="arrow" aria-hidden="true">→</div>
+        <section class="node">
+          <h2>Web-сервер</h2>
+          <p><code>Server: nginx</code></p>
+          <p>Возвращает <code>text/html; charset=utf-8</code> со статусом 200.</p>
+        </section>
+        <div class="arrow" aria-hidden="true">→</div>
+        <section class="node assets">
+          <h2>Ресурсы страницы</h2>
+          <p>python.org и внешние origins</p>
+          <p>CSS, scripts, fonts, image, XHR и Fetch: 24 запроса в сохранённом прогоне.</p>
+        </section>
+      </div>
+
+      <section class="unknown">
+        <strong>За наблюдаемой HTTP-границей:</strong> способ генерации HTML на origin, шаблонизатор и хранилища не установлены измерениями. Схема не утверждает наличие конкретного backend или базы данных.
+      </section>
+
+      <p class="legend"><strong>Вывод:</strong> клиентское поведение соответствует традиционному server-rendered multi-page site, а не SPA: содержательный HTML приходит первым документом, ресурсы дополняют его, переходы открывают самостоятельные документы.</p>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+{
+  "measuredAt": "2026-10-17T18:27:32.236Z",
+  "tool": "Microsoft Edge + Chrome DevTools Protocol",
+  "document": {
+    "requestId": "9991579F3A52EF06E31D5B8DCC495CCD",
+    "url": "https://www.python.org/",
+    "method": "GET",
+    "startedAt": 191100.69227,
+    "status": 200,
+    "mimeType": "text/html",
+    "protocol": "h2",
+    "remoteIPAddress": "[2a04:4e42::223]",
+    "timing": {
+      "requestTime": 191100.694753,
+      "proxyStart": -1,
+      "proxyEnd": -1,
+      "dnsStart": 0,
+      "dnsEnd": 109.056,
+      "connectStart": 109.173,
+      "connectEnd": 401.739,
+      "sslStart": 272.321,
+      "sslEnd": 401.733,
+      "workerStart": -1,
+      "workerReady": -1,
+      "workerFetchStart": -1,
+      "workerRespondWithSettled": -1,
+      "sendStart": 401.883,
+      "sendEnd": 402.013,
+      "pushStart": 0,
+      "pushEnd": 0,
+      "receiveHeadersStart": 536.31,
+      "receiveHeadersEnd": 536.579
+    },
+    "finishedAt": 191101.43267,
+    "encodedDataLength": 52769
+  },
+  "phasesMs": {
+    "stalled": 0,
+    "dns": 109.056,
+    "connectionBeforeTls": 163.14800000000002,
+    "ssl": 129.41199999999998,
+    "requestSent": 0.12999999999999545,
+    "waitingTtfb": 134.29699999999997,
+    "contentDownload": 201.33800002038856
+  },
+  "totalMs": 737.9170000203885
+}
